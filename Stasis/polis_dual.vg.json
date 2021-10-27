@@ -1,0 +1,430 @@
+{
+  "$schema": "https://vega.github.io/schema/vega/v5.json",
+  "description": "A gallery of maps showcasing different cartographic projections.",
+  "autosize": "pad",
+
+  "signals": [
+    { "name": "mapWidth", "value": 600},
+    { "name": "mapHeight", "value": 400},
+    { "name": "projScale", "value": 45},
+    { "name": "projTranslate", "update": "[mapWidth / 2, mapHeight / 2]" },
+    {
+      "name": "Variable",
+      "value": "Mean Distance (km)",
+      "bind": {
+        "input": "select",
+        "options": [
+          "Area (Within Walls)",
+          "Area (Total Controlled)",
+          "Bronze",
+          "Colonies",
+          "Date of Abandonment",
+          "Delian League Participation",
+          "Democracy",
+          "Elevation (m)",
+          "Grid Layout",
+          "Hellenicity",
+          "Koinon",
+          "Mean Distance (km)",
+          "Mean Logarithmic Distance (ln(km))",
+          "Polis Number",
+          "Polisity",
+          "Prominence Measure 1",
+          "Prominence Measure 2",
+          "Prominence Measure 3",
+          "Proxenoi",
+          "Region Number",
+          "Silver",
+          "Staseis",
+          "Victors",
+          "Walls"
+        ]
+      }
+    }
+  ],
+
+  "data": [
+    {
+      "name": "projections",
+      "values": [
+        {"type":"mercator","scale":800,"center":[34,36], "label": "Mediterranean"},
+        {"type":"mercator","scale":2000,"center":[30,36], "label": "Aegean"}
+      ]
+    },
+    {
+      "name": "world",
+      "url": "data/earth-coastlines-500m.geo.json"
+    },
+    {
+      "name": "sphere",
+      "values": [{"type": "Sphere"}]
+    },
+    {
+      "name": "labelOffsets",
+      "values": [
+        {"dx": -1, "dy": -1},
+        {"dx": -1, "dy": 1},
+        {"dx": 1, "dy": -1},
+        {"dx": 1, "dy": 1}
+      ]
+    },
+    {
+      "name": "polis",
+      "url": "data/polis_sean.json",
+      "format": {
+        "type": "json",
+        "property": "features"
+      },
+      "transform": [
+        {
+          "type":"formula",
+          "as": "chosen",
+          "expr": "datum.properties[Variable]"
+        }
+      ]
+    },
+    {
+      "name": "filtered",
+      "source": "polis",
+      "transform": [
+        {"type":"filter",
+          "expr":"datum.properties['Staseis']>0"}
+      ]
+    },
+    {
+      "name": "binned",
+      "source": "polis",
+      "transform": [
+        {
+          "type": "extent", "field": "chosen",
+          "signal": "chosen_extent"
+        },
+        {
+          "type": "bin",
+          "signal": "bins",
+          "field": "chosen",
+          "maxbins": 10,
+          "extent": {"signal": "chosen_extent"}
+        },
+        {
+          "type": "aggregate",
+          "key": "bin0", "groupby": ["bin0", "bin1"],
+          "fields": ["bin0"], "ops": ["count"], "as": ["count"]
+        }
+      ]
+    }
+  ],
+
+  "layout": {
+    "columns": 2,
+    "padding": 10,
+    "bounds": "flush"
+  },
+  "scales": [
+    {
+      "name": "color",
+      "type": "quantize",
+      "domain": {"signal": "[bins.start, bins.stop]"},
+      "range": {"scheme": "inferno","count": {"signal": "(bins.stop - bins.start)/bins.step"}}
+    }
+  ],
+  "marks": [
+    {
+      "type": "group",
+      "from": {"data": "projections"},
+
+      "signals": [
+        {"name": "width", "update": "mapWidth"},
+        {"name": "height", "update": "mapHeight"}
+      ],
+
+      "encode": {
+        "update": {
+          "width": {"signal": "mapWidth"},
+          "height": {"signal": "mapHeight"},
+          "clip": {"value": true}
+        }
+      },
+
+      "projections": [
+        {
+          "name": "projection",
+          "type": {"signal": "parent.type"},
+          "scale": {"signal": "parent.scale"},
+          "center": {"signal": "parent.center"}
+        }
+      ],
+
+      "marks": [
+        {
+          "type": "rect",
+          "zindex": 0,
+          "encode": {
+            "enter": {
+              "width": {"signal": "width"},
+              "height": {"signal": "height"},
+              "fill": {"value": "transparent"},
+              "stroke": {"value": "#17171a"},
+              "strokeOpacity": {"value": 1},
+              "strokeWidth": {"value": 1}
+            }
+          }
+        },
+        {
+          "type": "shape",
+          "from": {"data": "sphere"},
+          "encode": {
+            "enter": {
+              "fill": {"value": "transparent"}
+            }
+          },
+          "transform": [
+            { "type": "geoshape", "projection": "projection" }
+          ]
+        },
+        {
+          "type": "shape",
+          "from": {"data": "world"},
+          "clip": {"sphere": "projection"},
+          "encode": {
+            "enter": {
+              "strokeWidth": {"value": 0.5},
+              "stroke": {"value": "#17171a"},
+              "fill": {"value": "transparent"}
+            }
+          },
+          "transform": [
+            { "type": "geoshape", "projection": "projection" }
+          ]
+        },
+        {
+          "type": "shape",
+          "from": {"data": "filtered"},
+          "encode": {
+            "enter": {
+              "tooltip": {"signal": "{title: datum.properties.Name,Staseis:datum.properties.Staseis}"}
+            },
+            "update": {
+              "opacity": {"value": 1},
+              "fill": {"scale": "color", "field": "chosen"}
+
+            }
+          },
+          "transform": [
+            {
+              "type": "geoshape",
+              "projection": "projection",
+              "pointRadius":2
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "encode": {
+            "enter": {
+              "fill": {"value": "#17171a"},
+              "x": {"value": 5},
+              "y": {"signal": "mapHeight - 5"},
+              "baseline": {"value": "bottom"},
+              "fontSize": {"value": 14},
+              "fontWeight": {"value": "bold"},
+              "text": {"signal": "parent.label"}
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "name": "scatter",
+      "style": "cell",
+      "from": {
+        "facet": {"name": "facet", "data": "polis", "groupby": "Group1"}
+      },
+      "signals": [
+        {"name": "width", "update": "mapWidth"},
+        {"name": "height", "update": "mapHeight"}
+      ],
+
+      "encode": {
+        "update": {
+          "width": {"signal": "mapWidth"},
+          "height": {"signal": "mapHeight"}
+        }
+      },
+      "marks": [
+        {
+          "name": "marks",
+          "zindex": 2,
+          "type": "symbol",
+          "from": {"data": "polis"},
+          "encode": {
+            "update": {
+              "width": {"signal": "width"},
+              "height": {"signal": "height"},
+              "x": {"scale": "x_scatter", "field": "chosen"},
+              "y": {"scale": "y_scatter", "field": "properties.Staseis"},
+              "shape": {"value": "circle"},
+              "fill": {"scale": "color", "field": "chosen"},
+              "opacity": {"value": 0.75},
+              "tooltip": {"signal": "{title: datum.properties.Name,Staseis:datum.properties.Staseis}"}
+            }
+          }
+        }
+      ],
+      "axes": [
+        {
+          "scale": "x_scatter",
+          "grid": true,
+          "gridColor": "#17171a",
+          "gridWidth": 0.5,
+          "zindex": 1,
+          "domain": true,
+          "orient": "bottom",
+          "tickCount": {"signal": "-1 + (bins.stop - bins.start)/bins.step"},
+          "tickMinStep": {"signal": "bins.step"},
+          "title": {"signal": "Variable"},
+          "titleColor": "#17171a",
+          "labelColor": "#17171a",
+          "labelFlush": true
+        },
+        {
+          "scale": "y_scatter",
+          "grid": true,
+          "gridColor": "#17171a",
+          "gridWidth": 0.5,
+          "zindex": 1,
+          "domain": false,
+          "orient": "left",
+          "titlePadding": 5,
+          "title": "Staseis",
+          "titleColor": "#17171a",
+          "labelColor": "#17171a"
+        }
+      ],
+      "scales": [
+        {
+          "name": "x_scatter",
+          "type": "linear",
+          "round": true,
+          "nice": false,
+          "zero": false,
+          "domain": {"signal": "[bins.start, bins.stop]"},
+          "range": "width"
+        },
+        {
+          "name": "y_scatter",
+          "type": "linear",
+          "round": true,
+          "nice": true,
+          "domain": {"data": "polis", "field": "properties.Staseis"},
+          "range": "height"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "name": "bar",
+      "style": "cell",
+      "from": {
+        "facet": {"name": "facet", "data": "polis", "groupby": "Group1"}
+      },
+      "signals": [
+        {"name": "width", "update": "mapWidth"},
+        {"name": "height", "update": "mapHeight"}
+      ],
+
+      "encode": {
+        "update": {
+          "width": {"signal": "mapWidth"},
+          "height": {"signal": "mapHeight"},
+          "stroke": {"value": "#858580"}
+        }
+      },
+      "marks": [
+        {
+          "type": "rect",
+          "from": {"data": "binned"},
+          "zindex": 1,
+          "encode": {
+            "update": {
+              "width": {"signal": "width"},
+              "height": {"signal": "height"},
+              "x": {"scale": "xscale", "field": "bin0"},
+              "x2": {"scale": "xscale", "field": "bin1"},
+              "y": {"scale": "yscale", "field": "count"},
+              "y2": {"scale": "yscale", "value": 0},
+              "fill": {"scale": "color", "field": "bin0"},
+              "fillOpacity": {"value": 1},
+              "tooltip": {"signal": "{'Number of Poleis': datum.count}"}
+
+            },
+            "hover": {
+              "fillOpacity": {"value": 0.5}
+            }
+          }
+        }
+      ],
+      "axes": [
+        {
+          "orient": "bottom",
+          "scale": "xscale",
+          "title": {"signal": "Variable"},
+          "zindex": 2,
+          "titleColor": "#17171a",
+          "labelColor": "#17171a",
+          "labelFlush": true
+        },
+        {
+          "orient": "right",
+          "scale": "yscale",
+          "title": "Number of Poleis",
+          "tickCount": 5,
+          "zindex": 2,
+          "titleColor": "#17171a",
+          "labelColor": "#17171a"
+        }
+      ],
+      "scales": [
+        {
+          "name": "xscale",
+          "type": "linear",
+          "range": "width",
+          "domain": {"signal": "[bins.start, bins.stop]"},
+          "bins": {"signal": "bins"}
+        },
+        {
+          "name": "yscale",
+          "type": "linear",
+          "range": "height",
+          "round": true,
+          "nice": true,
+          "domain": {"data": "binned", "field": "count"},
+          "zero": true
+        }
+      ]
+    }
+  ],
+  "legends": [
+    {
+      "title": {"signal": "Variable"},
+      "titleLimit" : 1000,
+      "titleColor":"#17171a",
+      "fill": "color",
+      "orient": "bottom",
+      "offset": 5,
+      "type": "gradient",
+      "gradientLength": 300,
+      "gradientThickness": 12,
+      "titlePadding": 10,
+      "titleOrient": "bottom",
+      "titleAnchor": "middle",
+      "direction": "horizontal",
+      "labelColor": "#17171a"
+    }
+  ],
+
+  "config": {
+    "legend": {"layout": {"anchor": "middle"}}
+  }
+}

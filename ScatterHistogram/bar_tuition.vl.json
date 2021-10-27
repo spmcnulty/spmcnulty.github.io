@@ -1,0 +1,177 @@
+{
+  "$schema": "https://vega.github.io/schema/vega/v5.json",
+  "title": "CPI-Inflation Adjusted Tuition",
+  "width": 500,
+  "height": 200,
+  "padding": 5,
+  "data": [
+    {"url": "data/data.csv",
+      "name": "table",
+      "format":{"type": "csv", "parse": "auto"},
+      "transform": [
+        {"type": "filter", "expr":"datum.Year != 1999"},
+        {"type": "collect", "sort": {"field": "Year"}}
+      ]
+    },{
+      "name": "events",
+      "values": [
+        { "description":"2007-2008 Recession","after":"2008"},
+        { "description":"Jordan Johnson Sexual Assault","after":"2012"},
+        { "description":"Jon Krakauer: Missoula","after":"2015"},
+        { "description":"COVID","after":"2020"}
+      ]
+    }
+  ],
+
+  "scales": [
+    {
+      "name": "xscale",
+      "type": "band",
+      "domain": {"data": "table", "field": "Year"},
+      "range": "width",
+      "padding": 0.0
+    },
+    {
+      "name": "yscale",
+      "type": "linear",
+      "domain": {"data": "table", "field": "total_non_res_inf"},
+      "range": "height",
+      "round": true,
+      "zero": true,
+      "nice": true
+    },
+    {
+      "name": "color",
+      "type": "ordinal",
+      "domain": {"data": "table", "field": "School"},
+      "range": ["#70002E","#00205B"]
+    },
+    {
+      "name": "non_res_color",
+      "type": "ordinal",
+      "domain": {"data": "table", "field": "School"},
+      "range": ["#9b4c6c","#4c628c"]
+    }
+  ],
+
+  "axes": [
+    {"orient": "bottom",
+      "scale": "xscale",
+      "tickSize": 0,
+      "labelPadding": 4,
+      "zindex": 1,
+      "title": "Year",
+      "labelAngle": -45,
+      "labelAlign":"right",
+      "labelBaseline": "top"},
+    {"orient": "left", "scale": "yscale", "format": "$,.0f", "title": "Dollars"}
+  ],
+
+  "marks": [
+    {
+      "name": "red_events",
+      "from": {"data": "events"},
+      "type": "rect",
+      "encode": {
+        "enter": {
+          "x": {"scale": "xscale", "field": "after"},
+          "width": {"scale": "xscale", "band": 0.25},
+          "y": {"value": 0},
+          "y2": {"signal": "height"},
+          "fill": {"value": "red"},
+          "opacity": {"value": 0.4},
+          "strokeOpacity": {"value": 0.4},
+          "strokeWidth": {"value": 0.25},
+          "stroke": {"value": "red"},
+          "tooltip": {"signal": "{title: datum.description,'Year': datum.after}"}
+        }
+      }
+    },
+    {
+      "type": "group",
+
+      "from": {
+        "facet": {
+          "data": "table",
+          "name": "facet",
+          "groupby": "Year"
+        }
+      },
+
+      "encode": {
+        "enter": {
+          "x": {"scale": "xscale", "field": "Year"}
+        }
+      },
+
+      "signals": [
+        {"name": "width", "update": "bandwidth('xscale')"}
+      ],
+
+      "scales": [
+        {
+          "name": "pos",
+          "type": "band",
+          "range": "width",
+          "domain": {"data": "facet", "field": "School"}
+        }
+      ],
+
+      "marks": [
+        {
+          "name": "bars",
+          "from": {"data": "facet"},
+          "type": "rect",
+          "encode": {
+            "enter": {
+              "x": {"scale": "pos", "field": "School"},
+              "width": {"scale": "pos", "band": 1},
+              "y": {"scale": "yscale", "field": "total_non_res_inf"},
+              "y2": {"scale": "yscale", "value": 0},
+              "fill": {"scale": "non_res_color", "field": "School"},
+              "strokeOpacity": {"value": 1},
+              "strokeWidth": {"value": 0.25},
+              "stroke": {"scale": "non_res_color", "field": "School"},
+              "tooltip": {"signal": "{title: 'Non-Resident','Tuition': format(datum.total_non_res_inf, '$,.2f'), 'School & Year': datum.School + ', ' + datum.Year}"}
+            }
+          }
+        },
+        {
+          "name": "bars2",
+          "from": {"data": "facet"},
+          "type": "rect",
+          "encode": {
+            "enter": {
+              "x": {"scale": "pos", "field": "School"},
+              "width": {"scale": "pos", "band": 1},
+              "y": {"scale": "yscale", "field": "total_res_inf"},
+              "y2": {"scale": "yscale", "value": 0},
+              "fill": {"scale": "color", "field": "School"},
+              "strokeOpacity": {"value": 1},
+              "strokeWidth": {"value": 0.25},
+              "stroke": {"scale": "color", "field": "School"},
+              "tooltip": {"signal": "{title: 'Resident','Tuition': format(datum.total_res_inf, '$,.2f'), 'School & Year': datum.School + ', ' + datum.Year}"}
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "legends": [
+    {
+      "fill": "color",
+      "title": "School",
+      "orient": "none",
+      "legendX": 15,
+      "encode": {
+        "symbols": {
+          "update": {
+            "strokeWidth": {"value": 0},
+            "shape": {"value": "square"},
+            "opacity": {"value": 1}
+          }
+        }
+      }
+    }
+  ]
+}

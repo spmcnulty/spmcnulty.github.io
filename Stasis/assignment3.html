@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+
+  <title>Incidence Rate of Stasis and Distance from Foreign Powers</title>
+  <style>
+    body{
+      background-color:#f2f2e6;
+      color:#17171a;
+    }
+  </style>
+</head>
+
+<body>
+<table>
+  <thead>
+  <tr>
+    <th colspan="2"><h5>Hypothesis: The incidence rate of staseis decreases the further a polis is from other poleis.  Staseis events will also be positively correlated with Hellenicity.</h5></th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td><center><div id="polis_geographic"></div></center></td>
+  </tr>
+  </tbody>
+</table>
+
+<p style="font-size:8px"><i>
+  The inspiration for my hypothesis originally came from some prior familiarity with the poleis Massalia and Alalie.  I known both were influenced very heavily by outside cultures, the Gauls in the case of Massalia and the Etruscans in the case of Alalie.  Since I had never heard of stasis before this assignment, despite some familiarity with these poleis, my feeling was that poleis influenced more,<br> and closer to, foreign cultures would be less likely to go through staseis events.</i></font></p>
+
+<p style="font-size:8px"><i>Initially, my hope was to compare the distance from each polis to a variety of "foreign" cities.  However, there were alot of problems with this method.  Specifically, there is a lack of information about such cities, for example many Gaulish settlements and tribes were not mentioned until the Roman era.  As a proxy for this, I decided to measure the average distance from each polis to each other polis.<br>  Thus poleis with larger average distances would be considered further away from the "main Greek core" and therefore more influenced by other cultures.</i></font></p>
+
+<p style="font-size:8px"><i>In my hypothesis, the mechanism of action for this effect would be that people in poleis closer to other cultures would be more likely to see themselves as one people in contrast to those other cultures, and thus be less likely to infight.  This is in contrast to poleis in the "main Greek core", where people would be less likely to form a "Greek identity" and thus be more likely to infight with each other.<br>  This does have precedence in Greek history where several Greek poleis united to fight against the Persians.</i></font></p>
+
+<p style="font-size:8px"><i>This hypothesis does appear to be atleast correlatively supported by the visualization.  However, it should be noted that prominance is a significant confounding variable.  More distant poleis are almost certainly going to be written about less, and would have been more likely to be smaller and less influential.</i></font></p>
+
+<div id="vis_bar"></div>
+
+<p style="font-size:8px">
+  Poleis data kindly provided by Dr. Scott Arcenas.
+</p>
+<p style="font-size:8px">
+  Land Boundaries: <a href="https://github.com/simonepri/geo-maps">https://github.com/simonepri/geo-maps</a>
+</p>
+<p style="font-size:8px">
+  Color Scheme Inspiration: <a href="https://matplotlib.org/stable/tutorials/colors/colormaps.html">https://matplotlib.org/stable/tutorials/colors/colormaps.html</a>
+</p>
+
+<script>
+  const spec_polis = "polis_dual.vg.json";
+  vegaEmbed("#polis_geographic", spec_polis)
+          .then(result => console.log(result))
+          .catch(console.warn);
+
+</script>
+</body>
+
+</html>
