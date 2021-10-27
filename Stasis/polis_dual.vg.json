@@ -53,7 +53,7 @@
     },
     {
       "name": "world",
-      "url": "data/earth-coastlines-500m.geo.json"
+      "url": "data/earth-coastlines-5km.geo.json"
     },
     {
       "name": "sphere",
