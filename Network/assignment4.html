@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+
+  <title>Media Crossovers</title>
+  <style>
+    body{
+      background-color:#f2f1e1;
+      color:#403333;
+    }
+  </style>
+</head>
+
+<body>
+<table>
+  <thead>
+  <tr>
+    <th colspan="2"><h5>Hypothesis: All media can be connected through crossovers into a large connected universe.  Animation is also more likely to have crossovers.</h5></th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td><center><h5>Network Graph of Crossovers</h5></center></td>
+    <td><center><h5>Bar Graph of Averages</h5></center></td>
+  </tr>
+  <tr>
+    <td><center><div id="crossover_network"></div></center></td>
+    <td><center><div id="crossover_bar"></div></center></td>
+  </tr>
+  </tbody>
+</table>
+
+<p style="font-size:8px"><i>
+  This visualization was inspired by a blog post from 2002 written by Dwayne McDuffie, a writer for several comics and TV Shows.  In this blog post McDuffie claims that all shows, comics, and movies can eventually be connected together into a single "expanded universe" through crossovers.  The intent was to show the ridiculousness of claiming that a crossover would have a meaningful<br> impact on the continuty of a franchise.  As well, McDuffie highlighted a now old show St. Elsewhere which ends with the twist that the entirety of the show was in a child's imagination.  Thus, any show that can be connected to St. Elsewhere through crossovers is technically also in this child's mind.</i></font></p>
+
+<p style="font-size:8px"><i>For the purposes of the visualization evidence was gathered of crossovers from 51 well known movies, shows, and franchises.  A "crossover" is considered to be significant evidence that the universes of two pieces of media are linked, either through in universe events, such as characters meeting, or "word of god" statements from the show's creators.  The majority of these crossovers come<br> from the two data sources listed below, as well as an emmy skit from 2011. </i></font></p>
+
+<p style="font-size:8px"><i>The TV Show St. Elsewhere is represented by a noticeably different mark for the purposes of highlighting its importance in the hypothesis.  As well, the links can be clicked to be taken to the wikipedia page for the respective piece of media.</i></font></p>
+
+<p style="font-size:8px"><i>The above graph should also be taken as a subgraph of the complete graph of all media and crossovers between media, since it is not feasible to represent all media.  Despite this, the graph does given significant evidence that much of the existing fictional canon that humanity has created could be linked together through various crossover events.  However, interestingly, there is an<br> informal notion among fans that animation has the most crossover events.  This doesn't appear to be true, since animation has the fewest cross overs events per show on average.  Yet, animation has the largest average number of disjoint graphs formed upon the removal of a show from the graph.  Much of this is due to the Simpsons, which would create 5 disjoint graphs upon its removal.</i></font></p>
+
+<div id="vis_bar"></div>
+
+<p style="font-size:8px">
+  Hypothesis Inspiration: <a href="https://web.archive.org/web/20120625061214/http://www.slushfactory.com/content/EpupypyZAZTDOLwdfz.php">https://web.archive.org/web/20120625061214/http://www.slushfactory.com/content/EpupypyZAZTDOLwdfz.php</a>
+</p>
+<p style="font-size:8px">
+  Crossover Data Sources: <a href="http://poobala.com/crossoverlist.html">http://poobala.com/crossoverlist.html</a> <a href="https://fictionalcrossover.fandom.com/">https://fictionalcrossover.fandom.com/</a>
+</p>
+<p style="font-size:8px">
+  2011 Emmy Skit: <a href="https://www.youtube.com/watch?v=TDJpTSQc6wc">https://www.youtube.com/watch?v=TDJpTSQc6wc</a>
+</p>
+
+<script>
+  vega.scheme('stelse_col', ['#f2f1e1']);
+  const spec_crossover_network = "crossover_network.vg.json";
+  vegaEmbed("#crossover_network", spec_crossover_network)
+          .then(result => console.log(result))
+          .catch(console.warn);
+  const spec_crossover_bar = "crossover_bar.vg.json";
+  vegaEmbed("#crossover_bar", spec_crossover_bar)
+          .then(result => console.log(result))
+          .catch(console.warn);
+
+</script>
+</body>
+
+</html>

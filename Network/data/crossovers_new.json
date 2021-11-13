@@ -1,0 +1,858 @@
+{
+  "nodes": [
+    {
+      "name": "M*A*S*H",
+      "Primary Series Genre": "Live Action Comedy",
+      "Disjoint Graphs Formed": 1,
+      "index": 0,
+      "Crossovers (Node Degree)": 1
+    },
+    {
+      "name": "Cheers",
+      "Primary Series Genre": "Live Action Comedy",
+      "Disjoint Graphs Formed": 1,
+      "index": 1,
+      "Crossovers (Node Degree)": 2
+    },
+    {
+      "name": "St. Elsewhere",
+      "Primary Series Genre": "Live Action Drama",
+      "Disjoint Graphs Formed": 2,
+      "index": 2,
+      "Crossovers (Node Degree)": 3
+    },
+    {
+      "name": "Arrested Development",
+      "Primary Series Genre": "Live Action Comedy",
+      "Disjoint Graphs Formed": 1,
+      "index": 3,
+      "Crossovers (Node Degree)": 4
+    },
+    {
+      "name": "Iron Man",
+      "Primary Series Genre": "Superhero",
+      "Disjoint Graphs Formed": 1,
+      "index": 4,
+      "Crossovers (Node Degree)": 5
+    },
+    {
+      "name": "Homicide",
+      "Primary Series Genre": "Live Action Drama",
+      "Disjoint Graphs Formed": 3,
+      "index": 5,
+      "Crossovers (Node Degree)": 6
+    },
+    {
+      "name": "The Wire",
+      "Primary Series Genre": "Live Action Drama",
+      "Disjoint Graphs Formed": 1,
+      "index": 6,
+      "Crossovers (Node Degree)": 1
+    },
+    {
+      "name": "X-Files",
+      "Primary Series Genre": "Live Action Drama",
+      "Disjoint Graphs Formed": 1,
+      "index": 7,
+      "Crossovers (Node Degree)": 3
+    },
+    {
+      "name": "Better Call Saul",
+      "Primary Series Genre": "Live Action Drama",
+      "Disjoint Graphs Formed": 1,
+      "index": 8,
+      "Crossovers (Node Degree)": 1
+    },
+    {
+      "name": "The Walking Dead",
+      "Primary Series Genre": "Live Action Drama",
+      "Disjoint Graphs Formed": 2,
+      "index": 9,
+      "Crossovers (Node Degree)": 2
+    },
+    {
+      "name": "Fear The Walking Dead",
+      "Primary Series Genre": "Live Action Drama",
+      "Disjoint Graphs Formed": 1,
+      "index": 10,
+      "Crossovers (Node Degree)": 1
+    },
+    {
+      "name": "The Office (U.K.)",
+      "Primary Series Genre": "Live Action Comedy",
+      "Disjoint Graphs Formed": 1,
+      "index": 11,
+      "Crossovers (Node Degree)": 1
+    },
+    {
+      "name": "Parks and Rec",
+      "Primary Series Genre": "Live Action Comedy",
+      "Disjoint Graphs Formed": 1,
+      "index": 12,
+      "Crossovers (Node Degree)": 7
+    },
+    {
+      "name": "The Office (U.S.)",
+      "Primary Series Genre": "Live Action Comedy",
+      "Disjoint Graphs Formed": 2,
+      "index": 13,
+      "Crossovers (Node Degree)": 8
+    },
+    {
+      "name": "Breaking Bad",
+      "Primary Series Genre": "Live Action Drama",
+      "Disjoint Graphs Formed": 3,
+      "index": 14,
+      "Crossovers (Node Degree)": 9
+    },
+    {
+      "name": "Law and Order: SVU",
+      "Primary Series Genre": "Live Action Drama",
+      "Disjoint Graphs Formed": 2,
+      "index": 15,
+      "Crossovers (Node Degree)": 13
+    },
+    {
+      "name": "Law and Order",
+      "Primary Series Genre": "Live Action Drama",
+      "Disjoint Graphs Formed": 1,
+      "index": 16,
+      "Crossovers (Node Degree)": 6
+    },
+    {
+      "name": "Law and Order: Criminal Intent",
+      "Primary Series Genre": "Live Action Drama",
+      "Disjoint Graphs Formed": 1,
+      "index": 17,
+      "Crossovers (Node Degree)": 3
+    },
+    {
+      "name": "Law and Order: Trial by Jury",
+      "Primary Series Genre": "Live Action Drama",
+      "Disjoint Graphs Formed": 1,
+      "index": 18,
+      "Crossovers (Node Degree)": 4
+    },
+    {
+      "name": "Law and Order: Organized Crime",
+      "Primary Series Genre": "Live Action Drama",
+      "Disjoint Graphs Formed": 1,
+      "index": 19,
+      "Crossovers (Node Degree)": 3
+    },
+    {
+      "name": "Law and Order: LA",
+      "Primary Series Genre": "Live Action Drama",
+      "Disjoint Graphs Formed": 1,
+      "index": 20,
+      "Crossovers (Node Degree)": 2
+    },
+    {
+      "name": "30 Rock",
+      "Primary Series Genre": "Live Action Comedy",
+      "Disjoint Graphs Formed": 1,
+      "index": 21,
+      "Crossovers (Node Degree)": 7
+    },
+    {
+      "name": "Mad Men",
+      "Primary Series Genre": "Live Action Drama",
+      "Disjoint Graphs Formed": 1,
+      "index": 22,
+      "Crossovers (Node Degree)": 7
+    },
+    {
+      "name": "Castle",
+      "Primary Series Genre": "Live Action Drama",
+      "Disjoint Graphs Formed": 1,
+      "index": 23,
+      "Crossovers (Node Degree)": 7
+    },
+    {
+      "name": "The Big Bang Theory",
+      "Primary Series Genre": "Live Action Comedy",
+      "Disjoint Graphs Formed": 1,
+      "index": 24,
+      "Crossovers (Node Degree)": 7
+    },
+    {
+      "name": "24",
+      "Primary Series Genre": "Live Action Drama",
+      "Disjoint Graphs Formed": 1,
+      "index": 25,
+      "Crossovers (Node Degree)": 1
+    },
+    {
+      "name": "Bless The Harts",
+      "Primary Series Genre": "Animated",
+      "Disjoint Graphs Formed": 1,
+      "index": 26,
+      "Crossovers (Node Degree)": 1
+    },
+    {
+      "name": "King of the Hill",
+      "Primary Series Genre": "Animated",
+      "Disjoint Graphs Formed": 2,
+      "index": 27,
+      "Crossovers (Node Degree)": 2
+    },
+    {
+      "name": "The Simpsons",
+      "Primary Series Genre": "Animated",
+      "Disjoint Graphs Formed": 5,
+      "index": 28,
+      "Crossovers (Node Degree)": 8
+    },
+    {
+      "name": "Futurama",
+      "Primary Series Genre": "Animated",
+      "Disjoint Graphs Formed": 2,
+      "index": 29,
+      "Crossovers (Node Degree)": 2
+    },
+    {
+      "name": "Adventure Time",
+      "Primary Series Genre": "Animated",
+      "Disjoint Graphs Formed": 1,
+      "index": 30,
+      "Crossovers (Node Degree)": 1
+    },
+    {
+      "name": "Family Guy",
+      "Primary Series Genre": "Animated",
+      "Disjoint Graphs Formed": 1,
+      "index": 31,
+      "Crossovers (Node Degree)": 3
+    },
+    {
+      "name": "American Dad",
+      "Primary Series Genre": "Animated",
+      "Disjoint Graphs Formed": 1,
+      "index": 32,
+      "Crossovers (Node Degree)": 2
+    },
+    {
+      "name": "South Park",
+      "Primary Series Genre": "Animated",
+      "Disjoint Graphs Formed": 2,
+      "index": 33,
+      "Crossovers (Node Degree)": 1
+    },
+    {
+      "name": "Scooby Doo",
+      "Primary Series Genre": "Animated",
+      "Disjoint Graphs Formed": 2,
+      "index": 34,
+      "Crossovers (Node Degree)": 4
+    },
+    {
+      "name": "Supernatural",
+      "Primary Series Genre": "Live Action Drama",
+      "Disjoint Graphs Formed": 1,
+      "index": 35,
+      "Crossovers (Node Degree)": 1
+    },
+    {
+      "name": "Batman",
+      "Primary Series Genre": "Superhero",
+      "Disjoint Graphs Formed": 1,
+      "index": 36,
+      "Crossovers (Node Degree)": 6
+    },
+    {
+      "name": "Superman",
+      "Primary Series Genre": "Superhero",
+      "Disjoint Graphs Formed": 1,
+      "index": 37,
+      "Crossovers (Node Degree)": 3
+    },
+    {
+      "name": "Spiderman",
+      "Primary Series Genre": "Superhero",
+      "Disjoint Graphs Formed": 1,
+      "index": 38,
+      "Crossovers (Node Degree)": 6
+    },
+    {
+      "name": "Captain America",
+      "Primary Series Genre": "Superhero",
+      "Disjoint Graphs Formed": 1,
+      "index": 39,
+      "Crossovers (Node Degree)": 7
+    },
+    {
+      "name": "Hulk",
+      "Primary Series Genre": "Superhero",
+      "Disjoint Graphs Formed": 1,
+      "index": 40,
+      "Crossovers (Node Degree)": 6
+    },
+    {
+      "name": "X-Men",
+      "Primary Series Genre": "Superhero",
+      "Disjoint Graphs Formed": 1,
+      "index": 41,
+      "Crossovers (Node Degree)": 3
+    },
+    {
+      "name": "Deadpool",
+      "Primary Series Genre": "Superhero",
+      "Disjoint Graphs Formed": 1,
+      "index": 42,
+      "Crossovers (Node Degree)": 2
+    },
+    {
+      "name": "Alien",
+      "Primary Series Genre": "Film",
+      "Disjoint Graphs Formed": 2,
+      "index": 43,
+      "Crossovers (Node Degree)": 3
+    },
+    {
+      "name": "Predator",
+      "Primary Series Genre": "Film",
+      "Disjoint Graphs Formed": 1,
+      "index": 44,
+      "Crossovers (Node Degree)": 1
+    },
+    {
+      "name": "Evil Dead",
+      "Primary Series Genre": "Film",
+      "Disjoint Graphs Formed": 1,
+      "index": 45,
+      "Crossovers (Node Degree)": 7
+    },
+    {
+      "name": "A Nightmare on Elm Street",
+      "Primary Series Genre": "Film",
+      "Disjoint Graphs Formed": 1,
+      "index": 46,
+      "Crossovers (Node Degree)": 2
+    },
+    {
+      "name": "Friday the 13th",
+      "Primary Series Genre": "Film",
+      "Disjoint Graphs Formed": 1,
+      "index": 47,
+      "Crossovers (Node Degree)": 3
+    },
+    {
+      "name": "Star Trek",
+      "Primary Series Genre": "Live Action Drama",
+      "Disjoint Graphs Formed": 1,
+      "index": 48,
+      "Crossovers (Node Degree)": 3
+    },
+    {
+      "name": "Doctor Who",
+      "Primary Series Genre": "Live Action Drama",
+      "Disjoint Graphs Formed": 1,
+      "index": 49,
+      "Crossovers (Node Degree)": 2
+    },
+    {
+      "name": "Transformers",
+      "Primary Series Genre": "Animated",
+      "Disjoint Graphs Formed": 1,
+      "index": 50,
+      "Crossovers (Node Degree)": 5
+    }
+  ],
+  "links": [
+    {
+      "source": 0,
+      "target": 2,
+      "value": 1
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "value": 1
+    },
+    {
+      "source": 1,
+      "target": 28,
+      "value": 1
+    },
+    {
+      "source": 2,
+      "target": 5,
+      "value": 1
+    },
+    {
+      "source": 3,
+      "target": 4,
+      "value": 1
+    },
+    {
+      "source": 3,
+      "target": 5,
+      "value": 1
+    },
+    {
+      "source": 3,
+      "target": 39,
+      "value": 1
+    },
+    {
+      "source": 3,
+      "target": 40,
+      "value": 1
+    },
+    {
+      "source": 4,
+      "target": 38,
+      "value": 1
+    },
+    {
+      "source": 4,
+      "target": 39,
+      "value": 1
+    },
+    {
+      "source": 4,
+      "target": 40,
+      "value": 1
+    },
+    {
+      "source": 4,
+      "target": 45,
+      "value": 1
+    },
+    {
+      "source": 5,
+      "target": 6,
+      "value": 1
+    },
+    {
+      "source": 5,
+      "target": 7,
+      "value": 1
+    },
+    {
+      "source": 5,
+      "target": 15,
+      "value": 1
+    },
+    {
+      "source": 5,
+      "target": 16,
+      "value": 1
+    },
+    {
+      "source": 7,
+      "target": 28,
+      "value": 1
+    },
+    {
+      "source": 7,
+      "target": 50,
+      "value": 1
+    },
+    {
+      "source": 8,
+      "target": 14,
+      "value": 1
+    },
+    {
+      "source": 9,
+      "target": 10,
+      "value": 1
+    },
+    {
+      "source": 9,
+      "target": 14,
+      "value": 1
+    },
+    {
+      "source": 11,
+      "target": 13,
+      "value": 1
+    },
+    {
+      "source": 12,
+      "target": 13,
+      "value": 1
+    },
+    {
+      "source": 12,
+      "target": 14,
+      "value": 1
+    },
+    {
+      "source": 12,
+      "target": 15,
+      "value": 1
+    },
+    {
+      "source": 12,
+      "target": 21,
+      "value": 1
+    },
+    {
+      "source": 12,
+      "target": 22,
+      "value": 1
+    },
+    {
+      "source": 12,
+      "target": 23,
+      "value": 1
+    },
+    {
+      "source": 12,
+      "target": 24,
+      "value": 1
+    },
+    {
+      "source": 13,
+      "target": 14,
+      "value": 1
+    },
+    {
+      "source": 13,
+      "target": 15,
+      "value": 1
+    },
+    {
+      "source": 13,
+      "target": 21,
+      "value": 1
+    },
+    {
+      "source": 13,
+      "target": 22,
+      "value": 1
+    },
+    {
+      "source": 13,
+      "target": 23,
+      "value": 1
+    },
+    {
+      "source": 13,
+      "target": 24,
+      "value": 1
+    },
+    {
+      "source": 14,
+      "target": 15,
+      "value": 1
+    },
+    {
+      "source": 14,
+      "target": 21,
+      "value": 1
+    },
+    {
+      "source": 14,
+      "target": 22,
+      "value": 1
+    },
+    {
+      "source": 14,
+      "target": 23,
+      "value": 1
+    },
+    {
+      "source": 14,
+      "target": 24,
+      "value": 1
+    },
+    {
+      "source": 15,
+      "target": 16,
+      "value": 1
+    },
+    {
+      "source": 15,
+      "target": 17,
+      "value": 1
+    },
+    {
+      "source": 15,
+      "target": 18,
+      "value": 1
+    },
+    {
+      "source": 15,
+      "target": 19,
+      "value": 1
+    },
+    {
+      "source": 15,
+      "target": 20,
+      "value": 1
+    },
+    {
+      "source": 15,
+      "target": 21,
+      "value": 1
+    },
+    {
+      "source": 15,
+      "target": 22,
+      "value": 1
+    },
+    {
+      "source": 15,
+      "target": 23,
+      "value": 1
+    },
+    {
+      "source": 15,
+      "target": 24,
+      "value": 1
+    },
+    {
+      "source": 16,
+      "target": 17,
+      "value": 1
+    },
+    {
+      "source": 16,
+      "target": 18,
+      "value": 1
+    },
+    {
+      "source": 16,
+      "target": 19,
+      "value": 1
+    },
+    {
+      "source": 16,
+      "target": 20,
+      "value": 1
+    },
+    {
+      "source": 17,
+      "target": 18,
+      "value": 1
+    },
+    {
+      "source": 18,
+      "target": 19,
+      "value": 1
+    },
+    {
+      "source": 21,
+      "target": 22,
+      "value": 1
+    },
+    {
+      "source": 21,
+      "target": 23,
+      "value": 1
+    },
+    {
+      "source": 21,
+      "target": 24,
+      "value": 1
+    },
+    {
+      "source": 22,
+      "target": 23,
+      "value": 1
+    },
+    {
+      "source": 22,
+      "target": 24,
+      "value": 1
+    },
+    {
+      "source": 23,
+      "target": 24,
+      "value": 1
+    },
+    {
+      "source": 25,
+      "target": 28,
+      "value": 1
+    },
+    {
+      "source": 26,
+      "target": 27,
+      "value": 1
+    },
+    {
+      "source": 27,
+      "target": 28,
+      "value": 1
+    },
+    {
+      "source": 28,
+      "target": 29,
+      "value": 1
+    },
+    {
+      "source": 28,
+      "target": 31,
+      "value": 1
+    },
+    {
+      "source": 28,
+      "target": 32,
+      "value": 1
+    },
+    {
+      "source": 28,
+      "target": 33,
+      "value": 1
+    },
+    {
+      "source": 29,
+      "target": 30,
+      "value": 1
+    },
+    {
+      "source": 31,
+      "target": 32,
+      "value": 1
+    },
+    {
+      "source": 31,
+      "target": 34,
+      "value": 1
+    },
+    {
+      "source": 34,
+      "target": 35,
+      "value": 1
+    },
+    {
+      "source": 34,
+      "target": 36,
+      "value": 1
+    },
+    {
+      "source": 34,
+      "target": 37,
+      "value": 1
+    },
+    {
+      "source": 36,
+      "target": 37,
+      "value": 1
+    },
+    {
+      "source": 36,
+      "target": 38,
+      "value": 1
+    },
+    {
+      "source": 36,
+      "target": 39,
+      "value": 1
+    },
+    {
+      "source": 36,
+      "target": 40,
+      "value": 1
+    },
+    {
+      "source": 36,
+      "target": 43,
+      "value": 1
+    },
+    {
+      "source": 37,
+      "target": 43,
+      "value": 1
+    },
+    {
+      "source": 38,
+      "target": 39,
+      "value": 1
+    },
+    {
+      "source": 38,
+      "target": 40,
+      "value": 1
+    },
+    {
+      "source": 38,
+      "target": 45,
+      "value": 1
+    },
+    {
+      "source": 38,
+      "target": 50,
+      "value": 1
+    },
+    {
+      "source": 39,
+      "target": 40,
+      "value": 1
+    },
+    {
+      "source": 39,
+      "target": 42,
+      "value": 1
+    },
+    {
+      "source": 39,
+      "target": 45,
+      "value": 1
+    },
+    {
+      "source": 40,
+      "target": 45,
+      "value": 1
+    },
+    {
+      "source": 41,
+      "target": 42,
+      "value": 1
+    },
+    {
+      "source": 41,
+      "target": 45,
+      "value": 1
+    },
+    {
+      "source": 41,
+      "target": 48,
+      "value": 1
+    },
+    {
+      "source": 43,
+      "target": 44,
+      "value": 1
+    },
+    {
+      "source": 45,
+      "target": 46,
+      "value": 1
+    },
+    {
+      "source": 45,
+      "target": 47,
+      "value": 1
+    },
+    {
+      "source": 46,
+      "target": 47,
+      "value": 1
+    },
+    {
+      "source": 47,
+      "target": 50,
+      "value": 1
+    },
+    {
+      "source": 48,
+      "target": 49,
+      "value": 1
+    },
+    {
+      "source": 48,
+      "target": 50,
+      "value": 1
+    },
+    {
+      "source": 49,
+      "target": 50,
+      "value": 1
+    }
+  ]
+}

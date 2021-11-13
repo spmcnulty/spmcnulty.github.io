@@ -1,0 +1,134 @@
+{
+  "$schema": "https://vega.github.io/schema/vega/v5.json",
+  "description": "A basic bar chart example, with value labels shown upon mouse hover.",
+  "width": 450,
+  "height": 330,
+  "padding": {"left": 0, "top": 0, "right": 0, "bottom": 83},
+
+  "data": [
+    {
+      "name": "table",
+      "values": [
+        {"category": "Live Action Comedy", "Average Crossovers (Node Degree)": 4.625, "Average Disjoint Graphs Formed": 1.125},
+        {"category": "Live Action Drama", "Average Crossovers (Node Degree)": 3.9, "Average Disjoint Graphs Formed": 1.35},
+        {"category": "Superhero", "Average Crossovers (Node Degree)": 4.75, "Average Disjoint Graphs Formed": 1.0},
+        {"category": "Animated", "Average Crossovers (Node Degree)": 2.9, "Average Disjoint Graphs Formed": 1.8},
+        {"category": "Film", "Average Crossovers (Node Degree)": 3.2, "Average Disjoint Graphs Formed": 1.2}
+      ],
+      "transform": [
+        {
+          "type":"formula",
+          "as": "chosen",
+          "expr": "datum[BarVariable]"
+        }
+      ]
+    }
+  ],
+
+  "signals": [
+    {
+      "name": "BarVariable",
+      "value": "Average Crossovers (Node Degree)",
+      "bind": {
+        "input": "select",
+        "options": [
+          "Average Crossovers (Node Degree)",
+          "Average Disjoint Graphs Formed"
+        ]
+      }
+    },
+    {
+      "name": "tooltip",
+      "value": {},
+      "on": [
+        {"events": "rect:mouseover", "update": "datum"},
+        {"events": "rect:mouseout",  "update": "{}"}
+      ]
+    }
+  ],
+
+  "scales": [
+    {
+      "name": "color",
+      "type": "ordinal",
+      "domain": {"data": "table", "field": "category"},
+      "range": {"scheme": "darkred"}
+    },
+    {
+      "name": "xscale",
+      "type": "band",
+      "domain": {"data": "table", "field": "category"},
+      "range": "width",
+      "padding": 0.05,
+      "round": true
+    },
+    {
+      "name": "yscale",
+      "domain": {"data": "table", "field": "chosen"},
+      "nice": true,
+      "range": "height"
+    }
+  ],
+
+  "axes": [
+    {
+      "orient": "bottom",
+      "scale": "xscale",
+      "title": "Primary Series Genre",
+      "titleColor": "#403333",
+      "labelColor": "#403333"
+    },
+    {
+      "orient": "left",
+      "scale": "yscale",
+      "title": {"signal": "BarVariable"},
+      "titleColor": "#403333",
+      "labelColor": "#403333"
+    }
+  ],
+
+  "marks": [
+    {
+      "type": "rect",
+      "from": {"data":"table"},
+      "encode": {
+        "enter": {
+          "x": {"scale": "xscale", "field": "category"},
+          "width": {"scale": "xscale", "band": 1},
+          "y2": {"scale": "yscale", "value": 0},
+          "y": {"scale": "yscale", "field": "chosen"}
+        },
+        "update": {
+          "fill": {"scale": "color", "field": "category"},
+          "y": {"scale": "yscale", "field": "chosen"},
+          "y2": {"scale": "yscale", "value": 0},
+          "fillOpacity": {"value": 1}
+        },
+        "hover": {
+          "fillOpacity": {"value": 0.5}
+        }
+      }
+    },
+    {
+      "type": "text",
+      "encode": {
+        "enter": {
+          "align": {"value": "center"},
+          "baseline": {"value": "top"},
+          "fill": {"value": "#403333"},
+          "fontStyle": {"value": "bold"},
+          "fontSize": {"value": 12}
+        },
+        "update": {
+          "x": {"scale": "xscale", "signal": "tooltip.category", "band": 0.5},
+          "y": {"scale": "yscale", "signal": "tooltip.chosen", "offset": 10},
+          "text": {"signal": "tooltip.chosen"},
+          "fillOpacity": [
+            {"test": "datum === tooltip", "value": 0},
+            {"value": 1}
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,128 @@
+{
+  "$schema": "https://vega.github.io/schema/vega/v5.json",
+  "description": "A node-link diagram with force-directed layout, depicting character co-occurrence in the novel Les Misérables.",
+  "width": 700,
+  "height": 450,
+  "padding": 0,
+  "autosize": "none",
+
+  "signals": [
+    {
+      "name": "NetworkVariable",
+      "value": "Primary Series Genre",
+      "bind": {
+        "input": "select",
+        "options": [
+          "Primary Series Genre",
+          "Crossovers (Node Degree)",
+          "Disjoint Graphs Formed"
+        ]
+      }
+    },
+    { "name": "cx", "update": "width / 2" },
+    { "name": "cy", "update": "height / 2" }
+  ],
+
+  "data": [
+    {
+      "name": "node-data",
+      "url": "data/crossovers.json",
+      "format": {"type": "json", "property": "nodes"},
+      "transform": [
+        {
+          "type":"formula",
+          "as": "chosen",
+          "expr": "datum[NetworkVariable]"
+        }
+      ]
+    },
+    {
+      "name": "link-data",
+      "url": "data/crossovers.json",
+      "format": {"type": "json", "property": "links"}
+    }
+  ],
+
+  "scales": [
+    {
+      "name": "color",
+      "type": "ordinal",
+      "domain": {"data": "node-data", "field": "chosen"},
+      "range": {"scheme": "darkred"}
+    },
+    {
+      "name": "stelse_sch",
+      "type": "ordinal",
+      "domain": {"data": "node-data", "field": "chosen"},
+      "range": {"scheme": "stelse_col","count": 1}
+    }
+  ],
+
+  "marks": [
+    {
+      "name": "nodes",
+      "type": "symbol",
+      "zindex": 1,
+
+      "from": {"data": "node-data"},
+      "encode": {
+        "enter": {
+          "tooltip": {"signal": "datum.name"},
+          "size": {"signal": "datum.name === 'St. Elsewhere' ? 400 : 100"},
+          "href" : {"signal":"datum.url"}
+        },
+        "update": {
+          "cursor": {"value": "pointer"},
+          "fill": {"scale": {"signal": "datum.name === 'St. Elsewhere' ? 'stelse_sch' : 'color'"}, "field": "chosen"},
+          "stroke": {"scale": "color","field": "chosen"},
+          "strokeWidth": {"signal": "datum.name === 'St. Elsewhere' ? 5 : 0"}
+        }
+      },
+
+      "transform": [
+        {
+          "type": "force",
+          "iterations": 400,
+          "static": true,
+          "signal": "force",
+          "forces": [
+            {"force": "center", "x": {"signal": "cx"}, "y": {"signal": "cy"}},
+            {"force": "collide", "radius": 8},
+            {"force": "nbody", "strength": -30},
+            {"force": "link", "links": "link-data", "distance": 23}
+          ]
+        }
+      ]
+    },
+    {
+      "type": "path",
+      "from": {"data": "link-data"},
+      "interactive": false,
+      "encode": {
+        "update": {
+          "stroke": {"value": "#ccc"},
+          "strokeWidth": {"value": 0.5}
+        }
+      },
+      "transform": [
+        {
+          "type": "linkpath",
+          "require": {"signal": "force"},
+          "shape": "line",
+          "sourceX": "datum.source.x", "sourceY": "datum.source.y",
+          "targetX": "datum.target.x", "targetY": "datum.target.y"
+        }
+      ]
+    }
+  ],
+  "legends": [
+    {
+      "title": {"signal": "NetworkVariable"},
+      "titleLimit" : 1000,
+      "titleColor":"#403333",
+      "labelColor": "#403333",
+      "fill": "color",
+      "orient": "none"
+    }
+  ]
+}
