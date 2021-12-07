@@ -1,0 +1,209 @@
+{
+  "$schema": "https://vega.github.io/schema/vega/v5.json",
+  "description": "An interactive scatter plot of global health statistics by country and year.",
+  "width": 800,
+  "height": 600,
+  "padding": 5,
+
+  "data": [
+    {
+      "name": "football_data",
+      "url": "data/football_data.json"
+    },
+    {
+      "name": "name_timeline",
+      "source": "football_data",
+      "transform": [
+        {"type": "filter", "expr": "timeline && datum.name == timeline.name"},
+        {"type": "collect", "sort": {"field": "year"}}
+      ]
+    },
+    {
+      "name": "thisYear",
+      "source": "football_data",
+      "transform": [
+        {"type": "filter", "expr": "datum.year == currentYear"}
+      ]
+    },
+    {
+      "name": "teams",
+      "source": "football_data",
+      "transform": [
+        {"type": "aggregate", "groupby": ["name"]}
+      ]
+    },
+    {
+      "name": "interpolate",
+      "source": "teams",
+      "transform": [
+        {
+          "type": "lookup",
+          "from": "thisYear", "key": "name",
+          "fields": ["name"], "as": ["this"],
+          "default": {}
+        },
+        {
+          "type": "formula",
+          "as": "inter_wlp",
+          "expr": "datum.this['Win/Loss Percentage']"
+        },
+        {
+          "type": "formula",
+          "as": "inter_tyf",
+          "expr": "datum.this['Total Yards For']"
+        }
+      ]
+    },
+    {
+      "name": "trackTeams",
+      "on": [
+        {"trigger": "active", "toggle": "{name: active.name}"}
+      ]
+    }
+  ],
+
+  "signals": [
+    { "name": "currentYear", "value": 2010,
+      "bind": {"input": "range", "min": 2002, "max": 2020, "step": 1} },
+    { "name": "stepYear", "value": 1 },
+    {
+      "name": "active",
+      "value": {},
+      "on": [
+        {"events": "@point:mousedown, @point:touchstart", "update": "datum"},
+        {"events": "window:mouseup, window:touchend", "update": "{}"}
+      ]
+    },
+    { "name": "isActive", "update": "active.name" },
+    {
+      "name": "timeline",
+      "value": {},
+      "on": [
+        {"events": "@point:mouseover", "update": "isActive ? active : datum"},
+        {"events": "@point:mouseout", "update": "active"},
+        {"events": {"signal": "active"}, "update": "active"}
+      ]
+    }
+  ],
+
+  "scales": [
+    {
+      "name": "x",
+      "type": "linear", "nice": true,
+      "domain": {"data": "football_data", "field": "Win/Loss Percentage"},
+      "range": "width"
+    },
+    {
+      "name": "y",
+      "type": "linear", "nice": true, "zero": false,
+      "domain": {"data": "football_data", "field": "Total Yards For"},
+      "range": "height"
+    }
+  ],
+
+  "axes": [
+    {
+      "title": "Win/Loss Percentage",
+      "orient": "bottom", "scale": "x",
+      "grid": true, "tickCount": 5
+    },
+    {
+      "title": "Total Yards For",
+      "orient": "left", "scale": "y",
+      "grid": true, "tickCount": 5
+    }
+  ],
+
+
+
+  "marks": [
+    {
+      "type": "text",
+      "encode": {
+        "update": {
+          "text": {"signal": "currentYear"},
+          "x": {"value": 300},
+          "y": {"value": 300},
+          "fill": {"value": "grey"},
+          "fillOpacity": {"value": 0.25},
+          "fontSize": {"value": 100}
+        }
+      }
+    },
+    {
+      "type": "text",
+      "from": {"data": "name_timeline"},
+      "interactive": false,
+      "encode": {
+        "enter": {
+          "x": {"scale": "x", "field": "Win/Loss Percentage", "offset": 5},
+          "y": {"scale": "y", "field": "Total Yards For"},
+          "fill": {"value": "#555"},
+          "fillOpacity": {"value": 0.6},
+          "text": {"field": "year"}
+        }
+      }
+    },
+    {
+      "type": "symbol",
+      "from": {"data": "name_timeline"},
+      "encode": {
+        "update": {
+          "x": {"scale": "x", "field": "Win/Loss Percentage"},
+          "y": {"scale": "y", "field": "Total Yards For"},
+          "fill": {"value": "#333"},
+          "size": {"value": 75},
+          "fillOpacity": {"value": 0.3}
+        }
+      }
+    },
+    {
+      "name": "point",
+      "type": "symbol",
+      "from": {"data": "interpolate"},
+      "encode": {
+        "enter": {
+          "fill": {"value": "#381e3e"},
+          "size": {"value": 175}
+        },
+        "update": {
+          "x": {"scale": "x", "field": "inter_wlp"},
+          "y": {"scale": "y", "field": "inter_tyf"},
+          "fillOpacity": [
+            {
+              "test": "datum.name==timeline.name || indata('trackTeams', 'name', datum.name)",
+              "value": 1
+            },
+            {"value": 0.5}
+          ]
+        }
+      }
+    },
+    {
+      "type": "text",
+      "from": {"data": "interpolate"},
+      "interactive": false,
+      "encode": {
+        "enter": {
+          "fill": {"value": "#333"},
+          "fontSize": {"value": 14},
+          "fontWeight": {"value": "bold"},
+          "text": {"field": "name"},
+          "align": {"value": "center"},
+          "baseline": {"value": "bottom"}
+        },
+        "update": {
+          "x": {"scale": "x", "field": "inter_wlp"},
+          "y": {"scale": "y", "field": "inter_tyf", "offset": -7},
+          "fillOpacity": [
+            {
+              "test": "datum.name==timeline.name || indata('trackTeams', 'name', datum.name)",
+              "value": 0.8
+            },
+            {"value": 0}
+          ]
+        }
+      }
+    }
+  ]
+}

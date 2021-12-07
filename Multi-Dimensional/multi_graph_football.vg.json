@@ -1,0 +1,354 @@
+{
+  "$schema": "https://vega.github.io/schema/vega/v5.json",
+  "description": "An interactive scatter plot of global health statistics by country and year.",
+  "width": 800,
+  "height": 600,
+  "padding": 5,
+
+  "data": [
+    {
+      "name": "gapminder",
+      "url": "data/football_data.json"
+    },
+    {
+      "name": "clusters",
+      "values": [
+        {"id": 0, "name": "South Asia"},
+        {"id": 1, "name": "Europe & Central Asia"},
+        {"id": 2, "name": "Sub-Saharan Africa"},
+        {"id": 3, "name": "America"},
+        {"id": 4, "name": "East Asia & Pacific"},
+        {"id": 5, "name": "Middle East & North Africa"}
+      ]
+    },
+    {
+      "name": "name_timeline",
+      "source": "gapminder",
+      "transform": [
+        {"type": "filter", "expr": "timeline && datum.name == timeline.name"},
+        {"type": "collect", "sort": {"field": "year"}}
+      ]
+    },
+    {
+      "name": "thisYear",
+      "source": "gapminder",
+      "transform": [
+        {"type": "filter", "expr": "datum.year == currentYear"}
+      ]
+    },
+    {
+      "name": "prevYear",
+      "source": "gapminder",
+      "transform": [
+        {"type": "filter", "expr": "datum.year == currentYear - stepYear"}
+      ]
+    },
+    {
+      "name": "nextYear",
+      "source": "gapminder",
+      "transform": [
+        {"type": "filter", "expr": "datum.year == currentYear + stepYear"}
+      ]
+    },
+    {
+      "name": "teams",
+      "source": "gapminder",
+      "transform": [
+        {"type": "aggregate", "groupby": ["name"]}
+      ]
+    },
+    {
+      "name": "interpolate",
+      "source": "teams",
+      "transform": [
+        {
+          "type": "lookup",
+          "from": "thisYear", "key": "name",
+          "fields": ["name"], "as": ["this"],
+          "default": {}
+        },
+        {
+          "type": "lookup",
+          "from": "prevYear", "key": "name",
+          "fields": ["name"], "as": ["prev"],
+          "default": {}
+        },
+        {
+          "type": "lookup",
+          "from": "nextYear", "key": "name",
+          "fields": ["name"], "as": ["next"],
+          "default": {}
+        },
+        {
+          "type": "formula",
+          "as": "target_wlp",
+          "expr": "interYear > currentYear ? datum.next['Win/Loss Percentage'] : (datum.prev['Win/Loss Percentage']||datum.this['Win/Loss Percentage'])"
+        },
+        {
+          "type": "formula",
+          "as": "target_tyf",
+          "expr": "interYear > currentYear ? datum.next['Total Yards For'] : (datum.prev['Total Yards For']||datum.this['Total Yards For'])"
+        },
+        {
+          "type": "formula",
+          "as": "inter_wlp",
+          "expr": "interYear==2010 ? datum.this['Win/Loss Percentage'] : datum.this['Win/Loss Percentage'] + (datum.target_wlp-datum.this['Win/Loss Percentage']) * abs(interYear-datum.this.year)/1"
+        },
+        {
+          "type": "formula",
+          "as": "inter_tyf",
+          "expr": "interYear==2010 ? datum.this['Total Yards For'] : datum.this['Total Yards For'] + (datum.target_tyf-datum.this['Total Yards For']) * abs(interYear-datum.this.year)/1"
+        }
+      ]
+    },
+    {
+      "name": "trackTeams",
+      "on": [
+        {"trigger": "active", "toggle": "{name: active.name}"}
+      ]
+    }
+  ],
+
+  "signals": [
+    { "name": "minYear", "value": 2002 },
+    { "name": "maxYear", "value": 2020 },
+    { "name": "stepYear", "value": 1 },
+    {
+      "name": "active",
+      "value": {},
+      "on": [
+        {"events": "@point:mousedown, @point:touchstart", "update": "datum"},
+        {"events": "window:mouseup, window:touchend", "update": "{}"}
+      ]
+    },
+    { "name": "isActive", "update": "active.name" },
+    {
+      "name": "timeline",
+      "value": {},
+      "on": [
+        {"events": "@point:mouseover", "update": "isActive ? active : datum"},
+        {"events": "@point:mouseout", "update": "active"},
+        {"events": {"signal": "active"}, "update": "active"}
+      ]
+    },
+    {
+      "name": "tX",
+      "on": [{
+        "events": "mousemove!, touchmove!",
+        "update": "isActive ? scale('x', active.this['Win/Loss Percentage']) : tX"
+      }]
+    },
+    {
+      "name": "tY",
+      "on": [{
+        "events": "mousemove, touchmove",
+        "update": "isActive ? scale('y', active.this['Total Yards For']) : tY"
+      }]
+    },
+    {
+      "name": "pX",
+      "on": [{
+        "events": "mousemove, touchmove",
+        "update": "isActive ? scale('x', active.prev['Win/Loss Percentage']) : pX"
+      }]
+    },
+    {
+      "name": "pY",
+      "on": [{
+        "events": "mousemove, touchmove",
+        "update": "isActive ? scale('y', active.prev['Total Yards For']) : pY"
+      }]
+    },
+    {
+      "name": "nX",
+      "on": [{
+        "events": "mousemove, touchmove",
+        "update": "isActive ? scale('x', active.next['Win/Loss Percentage']) : nX"
+      }]
+    },
+    {
+      "name": "nY",
+      "on": [{
+        "events": "mousemove, touchmove",
+        "update": "isActive ? scale('y', active.next['Total Yards For']) : nY"
+      }]
+    },
+    {
+      "name": "thisDist",
+      "value": 0,
+      "on":[{
+        "events": "mousemove, touchmove",
+        "update": "isActive ? sqrt(pow(x()-tX, 2) + pow(y()-tY, 2)) : thisDist"
+      }]
+    },
+    {
+      "name": "prevDist",
+      "value": 0,
+      "on":[{
+        "events": "mousemove, touchmove",
+        "update": "isActive ? sqrt(pow(x()-pX, 2) + pow(y()-pY, 2)): prevDist"
+      }]
+    },
+    {
+      "name": "nextDist",
+      "value": 0,
+      "on":[{
+        "events": "mousemove, touchmove",
+        "update": "isActive ? sqrt(pow(x()-nX, 2) + pow(y()-nY, 2)) : nextDist"
+      }]
+    },
+    {
+      "name": "prevScore",
+      "value": 0,
+      "on": [{
+        "events": "mousemove, touchmove",
+        "update": "isActive ? ((pX-tX) * (x()-tX) + (pY-tY) * (y()-tY))/prevDist || -999999 : prevScore"
+      }]
+    },
+    {
+      "name": "nextScore",
+      "value": 0,
+      "on": [{
+        "events": "mousemove, touchmove",
+        "update": "isActive ? ((nX-tX) * (x()-tX) + (nY-tY) * (y()-tY))/nextDist || -999999 : nextScore"
+      }]
+    },
+    {
+      "name": "interYear",
+      "value": 2010,
+      "on": [{
+        "events": "mousemove, touchmove",
+        "update": "isActive ? (min(maxYear, currentYear+1, max(minYear, currentYear-1, prevScore > nextScore ? (currentYear - 0.5*prevScore/sqrt(pow(pX-tX, 2) + pow(pY-tY, 2))) : (currentYear + 0.5*nextScore/sqrt(pow(nX-tX, 2) + pow(nY-tY, 2)))))) : interYear"
+      }]
+    },
+    {
+      "name": "currentYear",
+      "value": 2010,
+      "on":[{
+        "events": "mousemove, touchmove",
+        "update": "isActive ? (min(maxYear, max(minYear, prevScore > nextScore ? (thisDist < prevDist ? currentYear : currentYear-1) : (thisDist < nextDist ? currentYear : currentYear+1)))) : currentYear"
+      }]
+    }
+  ],
+
+  "scales": [
+    {
+      "name": "x",
+      "type": "linear", "nice": true,
+      "domain": {"data": "gapminder", "field": "Win/Loss Percentage"},
+      "range": "width"
+    },
+    {
+      "name": "y",
+      "type": "linear", "nice": true, "zero": false,
+      "domain": {"data": "gapminder", "field": "Total Yards For"},
+      "range": "height"
+    }
+  ],
+
+  "axes": [
+    {
+      "title": "Win/Loss Percentage",
+      "orient": "bottom", "scale": "x",
+      "grid": true, "tickCount": 5
+    },
+    {
+      "title": "Total Yards For",
+      "orient": "left", "scale": "y",
+      "grid": true, "tickCount": 5
+    }
+  ],
+
+
+
+  "marks": [
+    {
+      "type": "text",
+      "encode": {
+        "update": {
+          "text": {"signal": "currentYear"},
+          "x": {"value": 300},
+          "y": {"value": 300},
+          "fill": {"value": "grey"},
+          "fillOpacity": {"value": 0.25},
+          "fontSize": {"value": 100}
+        }
+      }
+    },
+    {
+      "type": "text",
+      "from": {"data": "name_timeline"},
+      "interactive": false,
+      "encode": {
+        "enter": {
+          "x": {"scale": "x", "field": "Win/Loss Percentage", "offset": 5},
+          "y": {"scale": "y", "field": "Total Yards For"},
+          "fill": {"value": "#555"},
+          "fillOpacity": {"value": 0.6},
+          "text": {"field": "year"}
+        }
+      }
+    },
+    {
+      "type": "line",
+      "from": {"data": "name_timeline"},
+      "encode": {
+        "update": {
+          "x": {"scale": "x", "field": "Win/Loss Percentage"},
+          "y": {"scale": "y", "field": "Total Yards For"},
+          "stroke": {"value": "#bbb"},
+          "strokeWidth": {"value": 5},
+          "strokeOpacity": {"value": 0.5}
+        }
+      }
+    },
+    {
+      "name": "point",
+      "type": "symbol",
+      "from": {"data": "interpolate"},
+      "encode": {
+        "enter": {
+          "fill": {"value": "#333"},
+          "size": {"value": 150}
+        },
+        "update": {
+          "x": {"scale": "x", "field": "inter_wlp"},
+          "y": {"scale": "y", "field": "inter_tyf"},
+          "fillOpacity": [
+            {
+              "test": "datum.name==timeline.name || indata('trackTeams', 'name', datum.name)",
+              "value": 1
+            },
+            {"value": 0.5}
+          ]
+        }
+      }
+    },
+    {
+      "type": "text",
+      "from": {"data": "interpolate"},
+      "interactive": false,
+      "encode": {
+        "enter": {
+          "fill": {"value": "#333"},
+          "fontSize": {"value": 14},
+          "fontWeight": {"value": "bold"},
+          "text": {"field": "name"},
+          "align": {"value": "center"},
+          "baseline": {"value": "bottom"}
+        },
+        "update": {
+          "x": {"scale": "x", "field": "inter_wlp"},
+          "y": {"scale": "y", "field": "inter_tyf", "offset": -7},
+          "fillOpacity": [
+            {
+              "test": "datum.name==timeline.name || indata('trackTeams', 'name', datum.name)",
+              "value": 0.8
+            },
+            {"value": 0}
+          ]
+        }
+      }
+    }
+  ]
+}

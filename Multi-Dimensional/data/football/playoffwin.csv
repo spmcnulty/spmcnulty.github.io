@@ -1,0 +1,609 @@
+Team,WinLoss%,Playoffs,Year
+New York Jets,0.563,Y,2002
+New England Patriots,0.563,N,2002
+Miami Dolphins,0.563,N,2002
+Buffalo Bills,0.5,N,2002
+Pittsburgh Steelers,0.656,Y,2002
+Cleveland Browns,0.563,Y,2002
+Baltimore Ravens,0.438,N,2002
+Cincinnati Bengals,0.125,N,2002
+Tennessee Titans,0.688,Y,2002
+Indianapolis Colts,0.625,Y,2002
+Jacksonville Jaguars,0.375,N,2002
+Houston Texans,0.25,N,2002
+Oakland Raiders,0.688,Y,2002
+Denver Broncos,0.563,N,2002
+San Diego Chargers,0.5,N,2002
+Kansas City Chiefs,0.5,N,2002
+Philadelphia Eagles,0.75,Y,2002
+New York Giants,0.625,Y,2002
+Washington Redskins,0.438,N,2002
+Dallas Cowboys,0.313,N,2002
+Green Bay Packers,0.75,Y,2002
+Minnesota Vikings,0.375,N,2002
+Chicago Bears,0.25,N,2002
+Detroit Lions,0.188,N,2002
+Tampa Bay Buccaneers,0.75,S,2002
+Atlanta Falcons,0.594,Y,2002
+New Orleans Saints,0.563,N,2002
+Carolina Panthers,0.438,N,2002
+San Francisco 49ers,0.625,Y,2002
+St. Louis Rams,0.438,N,2002
+Seattle Seahawks,0.438,N,2002
+Arizona Cardinals,0.313,N,2002
+New York Jets,0.375,N,2003
+New England Patriots,0.875,S,2003
+Miami Dolphins,0.625,N,2003
+Buffalo Bills,0.375,N,2003
+Pittsburgh Steelers,0.375,N,2003
+Cleveland Browns,0.5,N,2003
+Baltimore Ravens,0.625,Y,2003
+Cincinnati Bengals,0.5,N,2003
+Tennessee Titans,0.75,Y,2003
+Indianapolis Colts,0.75,Y,2003
+Jacksonville Jaguars,0.313,N,2003
+Houston Texans,0.313,N,2003
+Oakland Raiders,0.25,N,2003
+Denver Broncos,0.625,Y,2003
+San Diego Chargers,0.25,N,2003
+Kansas City Chiefs,0.813,Y,2003
+Philadelphia Eagles,0.75,Y,2003
+New York Giants,0.25,N,2003
+Washington Redskins,0.313,N,2003
+Dallas Cowboys,0.625,Y,2003
+Green Bay Packers,0.625,Y,2003
+Minnesota Vikings,0.563,N,2003
+Chicago Bears,0.438,N,2003
+Detroit Lions,0.313,N,2003
+Tampa Bay Buccaneers,0.438,N,2003
+Atlanta Falcons,0.313,N,2003
+New Orleans Saints,0.5,N,2003
+Carolina Panthers,0.688,Y,2003
+San Francisco 49ers,0.438,N,2003
+St. Louis Rams,0.75,Y,2003
+Seattle Seahawks,0.625,Y,2003
+Arizona Cardinals,0.25,N,2003
+New York Jets,0.625,Y,2004
+New England Patriots,0.875,S,2004
+Miami Dolphins,0.25,N,2004
+Buffalo Bills,0.563,N,2004
+Pittsburgh Steelers,0.938,Y,2004
+Cleveland Browns,0.25,N,2004
+Baltimore Ravens,0.563,N,2004
+Cincinnati Bengals,0.5,N,2004
+Tennessee Titans,0.313,N,2004
+Indianapolis Colts,0.75,Y,2004
+Jacksonville Jaguars,0.563,N,2004
+Houston Texans,0.438,N,2004
+Oakland Raiders,0.313,N,2004
+Denver Broncos,0.625,Y,2004
+San Diego Chargers,0.75,Y,2004
+Kansas City Chiefs,0.438,N,2004
+Philadelphia Eagles,0.813,Y,2004
+New York Giants,0.375,N,2004
+Washington Redskins,0.375,N,2004
+Dallas Cowboys,0.375,N,2004
+Green Bay Packers,0.625,Y,2004
+Minnesota Vikings,0.5,Y,2004
+Chicago Bears,0.313,N,2004
+Detroit Lions,0.375,N,2004
+Tampa Bay Buccaneers,0.313,N,2004
+Atlanta Falcons,0.688,Y,2004
+New Orleans Saints,0.5,N,2004
+Carolina Panthers,0.438,N,2004
+San Francisco 49ers,0.125,N,2004
+St. Louis Rams,0.5,Y,2004
+Seattle Seahawks,0.563,Y,2004
+Arizona Cardinals,0.375,N,2004
+New York Jets,0.25,N,2005
+New England Patriots,0.625,Y,2005
+Miami Dolphins,0.563,N,2005
+Buffalo Bills,0.313,N,2005
+Pittsburgh Steelers,0.688,S,2005
+Cleveland Browns,0.375,N,2005
+Baltimore Ravens,0.375,N,2005
+Cincinnati Bengals,0.688,Y,2005
+Tennessee Titans,0.25,N,2005
+Indianapolis Colts,0.875,Y,2005
+Jacksonville Jaguars,0.75,Y,2005
+Houston Texans,0.125,N,2005
+Oakland Raiders,0.25,N,2005
+Denver Broncos,0.813,Y,2005
+San Diego Chargers,0.563,N,2005
+Kansas City Chiefs,0.625,N,2005
+Philadelphia Eagles,0.375,N,2005
+New York Giants,0.688,Y,2005
+Washington Redskins,0.625,Y,2005
+Dallas Cowboys,0.563,N,2005
+Green Bay Packers,0.25,N,2005
+Minnesota Vikings,0.563,N,2005
+Chicago Bears,0.688,Y,2005
+Detroit Lions,0.313,N,2005
+Tampa Bay Buccaneers,0.688,Y,2005
+Atlanta Falcons,0.5,N,2005
+New Orleans Saints,0.188,N,2005
+Carolina Panthers,0.688,Y,2005
+San Francisco 49ers,0.25,N,2005
+St. Louis Rams,0.375,N,2005
+Seattle Seahawks,0.813,Y,2005
+Arizona Cardinals,0.313,N,2005
+New York Jets,0.625,Y,2006
+New England Patriots,0.75,Y,2006
+Miami Dolphins,0.375,N,2006
+Buffalo Bills,0.438,N,2006
+Pittsburgh Steelers,0.5,N,2006
+Cleveland Browns,0.25,N,2006
+Baltimore Ravens,0.813,Y,2006
+Cincinnati Bengals,0.5,N,2006
+Tennessee Titans,0.5,N,2006
+Indianapolis Colts,0.75,S,2006
+Jacksonville Jaguars,0.5,N,2006
+Houston Texans,0.375,N,2006
+Oakland Raiders,0.125,N,2006
+Denver Broncos,0.563,N,2006
+San Diego Chargers,0.875,Y,2006
+Kansas City Chiefs,0.563,Y,2006
+Philadelphia Eagles,0.625,Y,2006
+New York Giants,0.5,Y,2006
+Washington Redskins,0.313,N,2006
+Dallas Cowboys,0.563,Y,2006
+Green Bay Packers,0.5,N,2006
+Minnesota Vikings,0.375,N,2006
+Chicago Bears,0.813,Y,2006
+Detroit Lions,0.188,N,2006
+Tampa Bay Buccaneers,0.25,N,2006
+Atlanta Falcons,0.438,N,2006
+New Orleans Saints,0.625,Y,2006
+Carolina Panthers,0.5,N,2006
+San Francisco 49ers,0.438,N,2006
+St. Louis Rams,0.5,N,2006
+Seattle Seahawks,0.563,Y,2006
+Arizona Cardinals,0.313,N,2006
+New York Jets,0.25,N,2007
+New England Patriots,1,Y,2007
+Miami Dolphins,0.063,N,2007
+Buffalo Bills,0.438,N,2007
+Pittsburgh Steelers,0.625,Y,2007
+Cleveland Browns,0.625,N,2007
+Baltimore Ravens,0.313,N,2007
+Cincinnati Bengals,0.438,N,2007
+Tennessee Titans,0.625,Y,2007
+Indianapolis Colts,0.813,Y,2007
+Jacksonville Jaguars,0.688,Y,2007
+Houston Texans,0.5,N,2007
+Oakland Raiders,0.25,N,2007
+Denver Broncos,0.438,N,2007
+San Diego Chargers,0.688,Y,2007
+Kansas City Chiefs,0.25,N,2007
+Philadelphia Eagles,0.5,N,2007
+New York Giants,0.625,S,2007
+Washington Redskins,0.563,Y,2007
+Dallas Cowboys,0.813,Y,2007
+Green Bay Packers,0.813,Y,2007
+Minnesota Vikings,0.5,N,2007
+Chicago Bears,0.438,N,2007
+Detroit Lions,0.438,N,2007
+Tampa Bay Buccaneers,0.563,Y,2007
+Atlanta Falcons,0.25,N,2007
+New Orleans Saints,0.438,N,2007
+Carolina Panthers,0.438,N,2007
+San Francisco 49ers,0.313,N,2007
+St. Louis Rams,0.188,N,2007
+Seattle Seahawks,0.625,Y,2007
+Arizona Cardinals,0.5,N,2007
+New York Jets,0.563,N,2008
+New England Patriots,0.688,N,2008
+Miami Dolphins,0.688,Y,2008
+Buffalo Bills,0.438,N,2008
+Pittsburgh Steelers,0.75,S,2008
+Cleveland Browns,0.25,N,2008
+Baltimore Ravens,0.688,Y,2008
+Cincinnati Bengals,0.281,N,2008
+Tennessee Titans,0.813,Y,2008
+Indianapolis Colts,0.75,Y,2008
+Jacksonville Jaguars,0.5,N,2008
+Houston Texans,0.31,N,2008
+Oakland Raiders,0.313,N,2008
+Denver Broncos,0.5,N,2008
+San Diego Chargers,0.5,Y,2008
+Kansas City Chiefs,0.125,N,2008
+Philadelphia Eagles,0.594,Y,2008
+New York Giants,0.75,Y,2008
+Washington Redskins,0.5,N,2008
+Dallas Cowboys,0.563,N,2008
+Green Bay Packers,0.375,N,2008
+Minnesota Vikings,0.625,Y,2008
+Chicago Bears,0.563,N,2008
+Detroit Lions,0,N,2008
+Tampa Bay Buccaneers,0.563,N,2008
+Atlanta Falcons,0.688,Y,2008
+New Orleans Saints,0.5,N,2008
+Carolina Panthers,0.75,Y,2008
+San Francisco 49ers,0.438,N,2008
+St. Louis Rams,0.125,N,2008
+Seattle Seahawks,0.25,N,2008
+Arizona Cardinals,0.563,Y,2008
+New York Jets,0.563,Y,2009
+New England Patriots,0.625,Y,2009
+Miami Dolphins,0.438,N,2009
+Buffalo Bills,0.375,N,2009
+Pittsburgh Steelers,0.563,N,2009
+Cleveland Browns,0.313,N,2009
+Baltimore Ravens,0.563,Y,2009
+Cincinnati Bengals,0.625,Y,2009
+Tennessee Titans,0.5,N,2009
+Indianapolis Colts,0.875,Y,2009
+Jacksonville Jaguars,0.438,N,2009
+Houston Texans,0.563,N,2009
+Oakland Raiders,0.313,N,2009
+Denver Broncos,0.5,N,2009
+San Diego Chargers,0.813,Y,2009
+Kansas City Chiefs,0.25,N,2009
+Philadelphia Eagles,0.688,Y,2009
+New York Giants,0.5,N,2009
+Washington Redskins,0.25,N,2009
+Dallas Cowboys,0.688,Y,2009
+Green Bay Packers,0.688,Y,2009
+Minnesota Vikings,0.75,Y,2009
+Chicago Bears,0.438,N,2009
+Detroit Lions,0.125,N,2009
+Tampa Bay Buccaneers,0.188,N,2009
+Atlanta Falcons,0.563,N,2009
+New Orleans Saints,0.813,S,2009
+Carolina Panthers,0.5,N,2009
+San Francisco 49ers,0.5,N,2009
+St. Louis Rams,0.063,N,2009
+Seattle Seahawks,0.313,N,2009
+Arizona Cardinals,0.625,Y,2009
+New York Jets,0.688,Y,2010
+New England Patriots,0.875,Y,2010
+Miami Dolphins,0.438,N,2010
+Buffalo Bills,0.25,N,2010
+Pittsburgh Steelers,0.75,Y,2010
+Cleveland Browns,0.313,N,2010
+Baltimore Ravens,0.75,Y,2010
+Cincinnati Bengals,0.25,N,2010
+Tennessee Titans,0.375,N,2010
+Indianapolis Colts,0.625,Y,2010
+Jacksonville Jaguars,0.5,N,2010
+Houston Texans,0.375,N,2010
+Oakland Raiders,0.5,N,2010
+Denver Broncos,0.25,N,2010
+San Diego Chargers,0.563,N,2010
+Kansas City Chiefs,0.625,Y,2010
+Philadelphia Eagles,0.625,Y,2010
+New York Giants,0.625,N,2010
+Washington Redskins,0.375,N,2010
+Dallas Cowboys,0.375,N,2010
+Green Bay Packers,0.625,S,2010
+Minnesota Vikings,0.375,N,2010
+Chicago Bears,0.688,Y,2010
+Detroit Lions,0.375,N,2010
+Tampa Bay Buccaneers,0.625,N,2010
+Atlanta Falcons,0.813,Y,2010
+New Orleans Saints,0.688,Y,2010
+Carolina Panthers,0.125,N,2010
+San Francisco 49ers,0.375,N,2010
+St. Louis Rams,0.438,N,2010
+Seattle Seahawks,0.438,Y,2010
+Arizona Cardinals,0.313,N,2010
+New York Jets,0.5,N,2011
+New England Patriots,0.813,Y,2011
+Miami Dolphins,0.375,N,2011
+Buffalo Bills,0.375,N,2011
+Pittsburgh Steelers,0.75,Y,2011
+Cleveland Browns,0.25,N,2011
+Baltimore Ravens,0.75,Y,2011
+Cincinnati Bengals,0.563,Y,2011
+Tennessee Titans,0.563,N,2011
+Indianapolis Colts,0.215,N,2011
+Jacksonville Jaguars,0.313,N,2011
+Houston Texans,0.625,Y,2011
+Oakland Raiders,0.5,N,2011
+Denver Broncos,0.5,Y,2011
+San Diego Chargers,0.5,N,2011
+Kansas City Chiefs,0.438,N,2011
+Philadelphia Eagles,0.5,N,2011
+New York Giants,0.563,S,2011
+Washington Redskins,0.313,N,2011
+Dallas Cowboys,0.5,N,2011
+Green Bay Packers,0.938,Y,2011
+Minnesota Vikings,0.188,N,2011
+Chicago Bears,0.5,N,2011
+Detroit Lions,0.625,Y,2011
+Tampa Bay Buccaneers,0.25,N,2011
+Atlanta Falcons,0.625,Y,2011
+New Orleans Saints,0.813,Y,2011
+Carolina Panthers,0.375,N,2011
+San Francisco 49ers,0.813,Y,2011
+St. Louis Rams,0.125,N,2011
+Seattle Seahawks,0.438,N,2011
+Arizona Cardinals,0.5,N,2011
+New York Jets,0.375,N,2012
+New England Patriots,0.75,Y,2012
+Miami Dolphins,0.438,N,2012
+Buffalo Bills,0.375,N,2012
+Pittsburgh Steelers,0.5,N,2012
+Cleveland Browns,0.313,N,2012
+Baltimore Ravens,0.625,S,2012
+Cincinnati Bengals,0.625,Y,2012
+Tennessee Titans,0.375,N,2012
+Indianapolis Colts,0.688,Y,2012
+Jacksonville Jaguars,0.125,N,2012
+Houston Texans,0.75,Y,2012
+Oakland Raiders,0.25,N,2012
+Denver Broncos,0.813,Y,2012
+San Diego Chargers,0.438,N,2012
+Kansas City Chiefs,0.125,N,2012
+Philadelphia Eagles,0.25,N,2012
+New York Giants,0.563,N,2012
+Washington Redskins,0.625,Y,2012
+Dallas Cowboys,0.5,N,2012
+Green Bay Packers,0.688,Y,2012
+Minnesota Vikings,0.625,Y,2012
+Chicago Bears,0.625,N,2012
+Detroit Lions,0.25,N,2012
+Tampa Bay Buccaneers,0.438,N,2012
+Atlanta Falcons,0.813,Y,2012
+New Orleans Saints,0.438,N,2012
+Carolina Panthers,0.438,N,2012
+San Francisco 49ers,0.719,Y,2012
+St. Louis Rams,0.469,N,2012
+Seattle Seahawks,0.688,Y,2012
+Arizona Cardinals,0.313,N,2012
+New York Jets,0.5,N,2013
+New England Patriots,0.75,Y,2013
+Miami Dolphins,0.5,N,2013
+Buffalo Bills,0.375,N,2013
+Pittsburgh Steelers,0.5,N,2013
+Cleveland Browns,0.25,N,2013
+Baltimore Ravens,0.5,N,2013
+Cincinnati Bengals,0.688,Y,2013
+Tennessee Titans,0.438,N,2013
+Indianapolis Colts,0.688,Y,2013
+Jacksonville Jaguars,0.25,N,2013
+Houston Texans,0.125,N,2013
+Oakland Raiders,0.25,N,2013
+Denver Broncos,0.813,Y,2013
+San Diego Chargers,0.563,Y,2013
+Kansas City Chiefs,0.688,Y,2013
+Philadelphia Eagles,0.625,Y,2013
+New York Giants,0.438,N,2013
+Washington Redskins,0.188,N,2013
+Dallas Cowboys,0.5,N,2013
+Green Bay Packers,0.531,Y,2013
+Minnesota Vikings,0.344,N,2013
+Chicago Bears,0.5,N,2013
+Detroit Lions,0.438,N,2013
+Tampa Bay Buccaneers,0.25,N,2013
+Atlanta Falcons,0.25,N,2013
+New Orleans Saints,0.688,Y,2013
+Carolina Panthers,0.75,Y,2013
+San Francisco 49ers,0.75,Y,2013
+St. Louis Rams,0.438,N,2013
+Seattle Seahawks,0.813,S,2013
+Arizona Cardinals,0.625,N,2013
+New York Jets,0.25,N,2014
+New England Patriots,0.75,S,2014
+Miami Dolphins,0.5,N,2014
+Buffalo Bills,0.563,N,2014
+Pittsburgh Steelers,0.688,Y,2014
+Cleveland Browns,0.438,N,2014
+Baltimore Ravens,0.625,Y,2014
+Cincinnati Bengals,0.656,Y,2014
+Tennessee Titans,0.125,N,2014
+Indianapolis Colts,0.688,Y,2014
+Jacksonville Jaguars,0.188,N,2014
+Houston Texans,0.563,N,2014
+Oakland Raiders,0.188,N,2014
+Denver Broncos,0.75,Y,2014
+San Diego Chargers,0.563,N,2014
+Kansas City Chiefs,0.563,N,2014
+Philadelphia Eagles,0.625,N,2014
+New York Giants,0.375,N,2014
+Washington Redskins,0.25,N,2014
+Dallas Cowboys,0.75,Y,2014
+Green Bay Packers,0.75,Y,2014
+Minnesota Vikings,0.438,N,2014
+Chicago Bears,0.313,N,2014
+Detroit Lions,0.688,N,2014
+Tampa Bay Buccaneers,0.125,N,2014
+Atlanta Falcons,0.375,N,2014
+New Orleans Saints,0.438,N,2014
+Carolina Panthers,0.469,Y,2014
+San Francisco 49ers,0.5,N,2014
+St. Louis Rams,0.375,N,2014
+Seattle Seahawks,0.75,Y,2014
+Arizona Cardinals,0.688,Y,2014
+New York Jets,0.625,N,2015
+New England Patriots,0.75,Y,2015
+Miami Dolphins,0.375,N,2015
+Buffalo Bills,0.5,N,2015
+Pittsburgh Steelers,0.625,Y,2015
+Cleveland Browns,0.188,N,2015
+Baltimore Ravens,0.313,N,2015
+Cincinnati Bengals,0.75,Y,2015
+Tennessee Titans,0.188,N,2015
+Indianapolis Colts,0.5,N,2015
+Jacksonville Jaguars,0.313,N,2015
+Houston Texans,0.563,Y,2015
+Oakland Raiders,0.438,N,2015
+Denver Broncos,0.75,S,2015
+San Diego Chargers,0.25,Y,2015
+Kansas City Chiefs,0.688,N,2015
+Philadelphia Eagles,0.438,N,2015
+New York Giants,0.375,N,2015
+Washington Redskins,0.563,Y,2015
+Dallas Cowboys,0.25,N,2015
+Green Bay Packers,0.625,Y,2015
+Minnesota Vikings,0.688,Y,2015
+Chicago Bears,0.375,N,2015
+Detroit Lions,0.438,N,2015
+Tampa Bay Buccaneers,0.375,N,2015
+Atlanta Falcons,0.5,N,2015
+New Orleans Saints,0.438,N,2015
+Carolina Panthers,0.938,Y,2015
+San Francisco 49ers,0.313,N,2015
+St. Louis Rams,0.438,N,2015
+Seattle Seahawks,0.625,Y,2015
+Arizona Cardinals,0.813,Y,2015
+New York Jets,0.313,N,2016
+New England Patriots,0.875,S,2016
+Miami Dolphins,0.625,Y,2016
+Buffalo Bills,0.438,N,2016
+Pittsburgh Steelers,0.688,Y,2016
+Cleveland Browns,0.063,N,2016
+Baltimore Ravens,0.5,N,2016
+Cincinnati Bengals,0.406,N,2016
+Tennessee Titans,0.563,N,2016
+Indianapolis Colts,0.5,N,2016
+Jacksonville Jaguars,0.188,N,2016
+Houston Texans,0.563,Y,2016
+Oakland Raiders,0.75,Y,2016
+Denver Broncos,0.563,N,2016
+San Diego Chargers,0.313,N,2016
+Kansas City Chiefs,0.75,Y,2016
+Philadelphia Eagles,0.438,N,2016
+New York Giants,0.688,Y,2016
+Washington Redskins,0.531,N,2016
+Dallas Cowboys,0.813,Y,2016
+Green Bay Packers,0.625,Y,2016
+Minnesota Vikings,0.5,N,2016
+Chicago Bears,0.188,N,2016
+Detroit Lions,0.563,Y,2016
+Tampa Bay Buccaneers,0.563,N,2016
+Atlanta Falcons,0.688,Y,2016
+New Orleans Saints,0.438,N,2016
+Carolina Panthers,0.375,N,2016
+San Francisco 49ers,0.125,N,2016
+St. Louis Rams,0.25,N,2016
+Seattle Seahawks,0.656,Y,2016
+Arizona Cardinals,0.469,N,2016
+New York Jets,0.313,N,2017
+New England Patriots,0.813,Y,2017
+Miami Dolphins,0.375,N,2017
+Buffalo Bills,0.563,Y,2017
+Pittsburgh Steelers,0.813,Y,2017
+Cleveland Browns,0,N,2017
+Baltimore Ravens,0.563,N,2017
+Cincinnati Bengals,0.438,N,2017
+Tennessee Titans,0.563,Y,2017
+Indianapolis Colts,0.25,N,2017
+Jacksonville Jaguars,0.625,Y,2017
+Houston Texans,0.25,N,2017
+Oakland Raiders,0.375,N,2017
+Denver Broncos,0.313,N,2017
+San Diego Chargers,0.563,N,2017
+Kansas City Chiefs,0.625,Y,2017
+Philadelphia Eagles,0.813,S,2017
+New York Giants,0.188,N,2017
+Washington Redskins,0.438,N,2017
+Dallas Cowboys,0.563,N,2017
+Green Bay Packers,0.438,N,2017
+Minnesota Vikings,0.813,Y,2017
+Chicago Bears,0.313,N,2017
+Detroit Lions,0.563,N,2017
+Tampa Bay Buccaneers,0.313,N,2017
+Atlanta Falcons,0.625,Y,2017
+New Orleans Saints,0.688,Y,2017
+Carolina Panthers,0.688,Y,2017
+San Francisco 49ers,0.375,N,2017
+St. Louis Rams,0.688,Y,2017
+Seattle Seahawks,0.563,N,2017
+Arizona Cardinals,0.5,N,2017
+New York Jets,0.25,N,2018
+New England Patriots,0.688,S,2018
+Miami Dolphins,0.438,N,2018
+Buffalo Bills,0.375,N,2018
+Pittsburgh Steelers,0.594,N,2018
+Cleveland Browns,0.469,N,2018
+Baltimore Ravens,0.625,Y,2018
+Cincinnati Bengals,0.375,N,2018
+Tennessee Titans,0.563,N,2018
+Indianapolis Colts,0.625,Y,2018
+Jacksonville Jaguars,0.313,N,2018
+Houston Texans,0.688,Y,2018
+Oakland Raiders,0.25,N,2018
+Denver Broncos,0.375,N,2018
+San Diego Chargers,0.75,Y,2018
+Kansas City Chiefs,0.75,Y,2018
+Philadelphia Eagles,0.563,Y,2018
+New York Giants,0.313,N,2018
+Washington Redskins,0.438,N,2018
+Dallas Cowboys,0.625,Y,2018
+Green Bay Packers,0.406,N,2018
+Minnesota Vikings,0.531,N,2018
+Chicago Bears,0.75,Y,2018
+Detroit Lions,0.375,N,2018
+Tampa Bay Buccaneers,0.313,N,2018
+Atlanta Falcons,0.438,N,2018
+New Orleans Saints,0.813,Y,2018
+Carolina Panthers,0.438,N,2018
+San Francisco 49ers,0.25,N,2018
+St. Louis Rams,0.813,Y,2018
+Seattle Seahawks,0.625,Y,2018
+Arizona Cardinals,0.188,N,2018
+New York Jets,0.438,N,2019
+New England Patriots,0.75,Y,2019
+Miami Dolphins,0.313,N,2019
+Buffalo Bills,0.625,N,2019
+Pittsburgh Steelers,0.5,N,2019
+Cleveland Browns,0.375,N,2019
+Baltimore Ravens,0.875,Y,2019
+Cincinnati Bengals,0.125,N,2019
+Tennessee Titans,0.563,Y,2019
+Indianapolis Colts,0.438,N,2019
+Jacksonville Jaguars,0.375,N,2019
+Houston Texans,0.625,Y,2019
+Oakland Raiders,0.438,N,2019
+Denver Broncos,0.438,N,2019
+San Diego Chargers,0.313,N,2019
+Kansas City Chiefs,0.75,S,2019
+Philadelphia Eagles,0.563,Y,2019
+New York Giants,0.25,N,2019
+Washington Redskins,0.188,N,2019
+Dallas Cowboys,0.5,N,2019
+Green Bay Packers,0.813,Y,2019
+Minnesota Vikings,0.625,Y,2019
+Chicago Bears,0.5,N,2019
+Detroit Lions,0.219,N,2019
+Tampa Bay Buccaneers,0.438,N,2019
+Atlanta Falcons,0.438,N,2019
+New Orleans Saints,0.813,Y,2019
+Carolina Panthers,0.313,N,2019
+San Francisco 49ers,0.813,Y,2019
+St. Louis Rams,0.563,N,2019
+Seattle Seahawks,0.688,Y,2019
+Arizona Cardinals,0.344,N,2019
+New York Jets,0.125,N,2020
+New England Patriots,0.438,N,2020
+Miami Dolphins,0.625,N,2020
+Buffalo Bills,0.813,Y,2020
+Pittsburgh Steelers,0.75,Y,2020
+Cleveland Browns,0.688,Y,2020
+Baltimore Ravens,0.688,Y,2020
+Cincinnati Bengals,0.281,N,2020
+Tennessee Titans,0.688,Y,2020
+Indianapolis Colts,0.688,Y,2020
+Jacksonville Jaguars,0.063,N,2020
+Houston Texans,0.25,N,2020
+Oakland Raiders,0.5,N,2020
+Denver Broncos,0.313,N,2020
+San Diego Chargers,0.438,N,2020
+Kansas City Chiefs,0.875,Y,2020
+Philadelphia Eagles,0.281,N,2020
+New York Giants,0.375,N,2020
+Washington Redskins,0.438,Y,2020
+Dallas Cowboys,0.375,N,2020
+Green Bay Packers,0.813,Y,2020
+Minnesota Vikings,0.438,N,2020
+Chicago Bears,0.5,Y,2020
+Detroit Lions,0.313,N,2020
+Tampa Bay Buccaneers,0.688,S,2020
+Atlanta Falcons,0.25,N,2020
+New Orleans Saints,0.75,Y,2020
+Carolina Panthers,0.313,N,2020
+San Francisco 49ers,0.375,N,2020
+St. Louis Rams,0.625,Y,2020
+Seattle Seahawks,0.75,Y,2020
+Arizona Cardinals,0.5,N,2020

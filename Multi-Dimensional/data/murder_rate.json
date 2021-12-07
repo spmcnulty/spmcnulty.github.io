@@ -1,0 +1,6368 @@
+[
+  {
+    "year": 1992,
+    "country": "Albania",
+    "hom_rate": "4.01",
+    "cluster": 2
+  },
+  {
+    "year": 1993,
+    "country": "Albania",
+    "hom_rate": "5.98",
+    "cluster": 2
+  },
+  {
+    "year": 1994,
+    "country": "Albania",
+    "hom_rate": "3.56",
+    "cluster": 2
+  },
+  {
+    "year": 1995,
+    "country": "Albania",
+    "hom_rate": "8.32",
+    "cluster": 2
+  },
+  {
+    "year": 1996,
+    "country": "Albania",
+    "hom_rate": "8.78",
+    "cluster": 2
+  },
+  {
+    "year": 1997,
+    "country": "Albania",
+    "hom_rate": "43.04",
+    "cluster": 2
+  },
+  {
+    "year": 1998,
+    "country": "Albania",
+    "hom_rate": "21.22",
+    "cluster": 2
+  },
+  {
+    "year": 1999,
+    "country": "Albania",
+    "hom_rate": "17.04",
+    "cluster": 2
+  },
+  {
+    "year": 2000,
+    "country": "Albania",
+    "hom_rate": "4.19",
+    "cluster": 2
+  },
+  {
+    "year": 2001,
+    "country": "Albania",
+    "hom_rate": "7.03",
+    "cluster": 2
+  },
+  {
+    "year": 2002,
+    "country": "Albania",
+    "hom_rate": "6.91",
+    "cluster": 2
+  },
+  {
+    "year": 2003,
+    "country": "Albania",
+    "hom_rate": "5.32",
+    "cluster": 2
+  },
+  {
+    "year": 2004,
+    "country": "Albania",
+    "hom_rate": "4.22",
+    "cluster": 2
+  },
+  {
+    "year": 2005,
+    "country": "Albania",
+    "hom_rate": "4.99",
+    "cluster": 2
+  },
+  {
+    "year": 2006,
+    "country": "Albania",
+    "hom_rate": "3.1",
+    "cluster": 2
+  },
+  {
+    "year": 2007,
+    "country": "Albania",
+    "hom_rate": "3.46",
+    "cluster": 2
+  },
+  {
+    "year": 2008,
+    "country": "Albania",
+    "hom_rate": "3.1",
+    "cluster": 2
+  },
+  {
+    "year": 2009,
+    "country": "Albania",
+    "hom_rate": "2.86",
+    "cluster": 2
+  },
+  {
+    "year": 2010,
+    "country": "Albania",
+    "hom_rate": "4.31",
+    "cluster": 2
+  },
+  {
+    "year": 2011,
+    "country": "Albania",
+    "hom_rate": "4.85",
+    "cluster": 2
+  },
+  {
+    "year": 2012,
+    "country": "Albania",
+    "hom_rate": "5.39",
+    "cluster": 2
+  },
+  {
+    "year": 2013,
+    "country": "Albania",
+    "hom_rate": "4.27",
+    "cluster": 2
+  },
+  {
+    "year": 2014,
+    "country": "Albania",
+    "hom_rate": "4.04",
+    "cluster": 2
+  },
+  {
+    "year": 2015,
+    "country": "Albania",
+    "hom_rate": "2.21",
+    "cluster": 2
+  },
+  {
+    "year": 2016,
+    "country": "Albania",
+    "hom_rate": "2.74",
+    "cluster": 2
+  },
+  {
+    "year": 2017,
+    "country": "Albania",
+    "hom_rate": "2.01",
+    "cluster": 2
+  },
+  {
+    "year": 2018,
+    "country": "Albania",
+    "hom_rate": "2.29",
+    "cluster": 2
+  },
+  {
+    "year": 2019,
+    "country": "Albania",
+    "hom_rate": "2.26",
+    "cluster": 2
+  },
+  {
+    "year": 2020,
+    "country": "Albania",
+    "hom_rate": "2.12",
+    "cluster": 2
+  },
+  {
+    "year": 1990,
+    "country": "Armenia",
+    "hom_rate": "5.03",
+    "cluster": 0
+  },
+  {
+    "year": 1991,
+    "country": "Armenia",
+    "hom_rate": "5.31",
+    "cluster": 0
+  },
+  {
+    "year": 1992,
+    "country": "Armenia",
+    "hom_rate": "8.86",
+    "cluster": 0
+  },
+  {
+    "year": 1993,
+    "country": "Armenia",
+    "hom_rate": "7.97",
+    "cluster": 0
+  },
+  {
+    "year": 1994,
+    "country": "Armenia",
+    "hom_rate": "4.78",
+    "cluster": 0
+  },
+  {
+    "year": 1995,
+    "country": "Armenia",
+    "hom_rate": "3.61",
+    "cluster": 0
+  },
+  {
+    "year": 1996,
+    "country": "Armenia",
+    "hom_rate": "3.6",
+    "cluster": 0
+  },
+  {
+    "year": 1997,
+    "country": "Armenia",
+    "hom_rate": "3.19",
+    "cluster": 0
+  },
+  {
+    "year": 1998,
+    "country": "Armenia",
+    "hom_rate": "2.99",
+    "cluster": 0
+  },
+  {
+    "year": 1999,
+    "country": "Armenia",
+    "hom_rate": "2.91",
+    "cluster": 0
+  },
+  {
+    "year": 2000,
+    "country": "Armenia",
+    "hom_rate": "2.96",
+    "cluster": 0
+  },
+  {
+    "year": 2001,
+    "country": "Armenia",
+    "hom_rate": "2.88",
+    "cluster": 0
+  },
+  {
+    "year": 2002,
+    "country": "Armenia",
+    "hom_rate": "2.27",
+    "cluster": 0
+  },
+  {
+    "year": 2004,
+    "country": "Armenia",
+    "hom_rate": "2.77",
+    "cluster": 0
+  },
+  {
+    "year": 2005,
+    "country": "Armenia",
+    "hom_rate": "1.95",
+    "cluster": 0
+  },
+  {
+    "year": 2006,
+    "country": "Armenia",
+    "hom_rate": "2.67",
+    "cluster": 0
+  },
+  {
+    "year": 2007,
+    "country": "Armenia",
+    "hom_rate": "2.63",
+    "cluster": 0
+  },
+  {
+    "year": 2008,
+    "country": "Armenia",
+    "hom_rate": "3.34",
+    "cluster": 0
+  },
+  {
+    "year": 2009,
+    "country": "Armenia",
+    "hom_rate": "3.36",
+    "cluster": 0
+  },
+  {
+    "year": 2010,
+    "country": "Armenia",
+    "hom_rate": "1.95",
+    "cluster": 0
+  },
+  {
+    "year": 2011,
+    "country": "Armenia",
+    "hom_rate": "2.47",
+    "cluster": 0
+  },
+  {
+    "year": 2012,
+    "country": "Armenia",
+    "hom_rate": "2.25",
+    "cluster": 0
+  },
+  {
+    "year": 2013,
+    "country": "Armenia",
+    "hom_rate": "2.17",
+    "cluster": 0
+  },
+  {
+    "year": 2014,
+    "country": "Armenia",
+    "hom_rate": "2.47",
+    "cluster": 0
+  },
+  {
+    "year": 2015,
+    "country": "Armenia",
+    "hom_rate": "2.56",
+    "cluster": 0
+  },
+  {
+    "year": 2016,
+    "country": "Armenia",
+    "hom_rate": "2.96",
+    "cluster": 0
+  },
+  {
+    "year": 2017,
+    "country": "Armenia",
+    "hom_rate": "2.38",
+    "cluster": 0
+  },
+  {
+    "year": 2018,
+    "country": "Armenia",
+    "hom_rate": "1.69",
+    "cluster": 0
+  },
+  {
+    "year": 2019,
+    "country": "Armenia",
+    "hom_rate": "2.47",
+    "cluster": 0
+  },
+  {
+    "year": 2020,
+    "country": "Armenia",
+    "hom_rate": "1.75",
+    "cluster": 0
+  },
+  {
+    "year": 1990,
+    "country": "Azerbaijan",
+    "hom_rate": "4.54",
+    "cluster": 0
+  },
+  {
+    "year": 1991,
+    "country": "Azerbaijan",
+    "hom_rate": "4.85",
+    "cluster": 0
+  },
+  {
+    "year": 1992,
+    "country": "Azerbaijan",
+    "hom_rate": "7.55",
+    "cluster": 0
+  },
+  {
+    "year": 1993,
+    "country": "Azerbaijan",
+    "hom_rate": "6.3",
+    "cluster": 0
+  },
+  {
+    "year": 1994,
+    "country": "Azerbaijan",
+    "hom_rate": "6.49",
+    "cluster": 0
+  },
+  {
+    "year": 1995,
+    "country": "Azerbaijan",
+    "hom_rate": "5.7",
+    "cluster": 0
+  },
+  {
+    "year": 1996,
+    "country": "Azerbaijan",
+    "hom_rate": "5.09",
+    "cluster": 0
+  },
+  {
+    "year": 1997,
+    "country": "Azerbaijan",
+    "hom_rate": "3.58",
+    "cluster": 0
+  },
+  {
+    "year": 1998,
+    "country": "Azerbaijan",
+    "hom_rate": "3.5",
+    "cluster": 0
+  },
+  {
+    "year": 1999,
+    "country": "Azerbaijan",
+    "hom_rate": "3",
+    "cluster": 0
+  },
+  {
+    "year": 2000,
+    "country": "Azerbaijan",
+    "hom_rate": "2.78",
+    "cluster": 0
+  },
+  {
+    "year": 2001,
+    "country": "Azerbaijan",
+    "hom_rate": "2.66",
+    "cluster": 0
+  },
+  {
+    "year": 2002,
+    "country": "Azerbaijan",
+    "hom_rate": "2.56",
+    "cluster": 0
+  },
+  {
+    "year": 2007,
+    "country": "Azerbaijan",
+    "hom_rate": "2.17",
+    "cluster": 0
+  },
+  {
+    "year": 2008,
+    "country": "Azerbaijan",
+    "hom_rate": "2.18",
+    "cluster": 0
+  },
+  {
+    "year": 2010,
+    "country": "Azerbaijan",
+    "hom_rate": "2.28",
+    "cluster": 0
+  },
+  {
+    "year": 2012,
+    "country": "Azerbaijan",
+    "hom_rate": "2.18",
+    "cluster": 0
+  },
+  {
+    "year": 2013,
+    "country": "Azerbaijan",
+    "hom_rate": "2.35",
+    "cluster": 0
+  },
+  {
+    "year": 2014,
+    "country": "Azerbaijan",
+    "hom_rate": "2.48",
+    "cluster": 0
+  },
+  {
+    "year": 2015,
+    "country": "Azerbaijan",
+    "hom_rate": "2.34",
+    "cluster": 0
+  },
+  {
+    "year": 2016,
+    "country": "Azerbaijan",
+    "hom_rate": "2.14",
+    "cluster": 0
+  },
+  {
+    "year": 2017,
+    "country": "Azerbaijan",
+    "hom_rate": "2.04",
+    "cluster": 0
+  },
+  {
+    "year": 2018,
+    "country": "Azerbaijan",
+    "hom_rate": "2.2",
+    "cluster": 0
+  },
+  {
+    "year": 2019,
+    "country": "Azerbaijan",
+    "hom_rate": "1.82",
+    "cluster": 0
+  },
+  {
+    "year": 2020,
+    "country": "Azerbaijan",
+    "hom_rate": "2.27",
+    "cluster": 0
+  },
+  {
+    "year": 1990,
+    "country": "Belarus",
+    "hom_rate": "5",
+    "cluster": 0
+  },
+  {
+    "year": 1991,
+    "country": "Belarus",
+    "hom_rate": "4.58",
+    "cluster": 0
+  },
+  {
+    "year": 1992,
+    "country": "Belarus",
+    "hom_rate": "5.85",
+    "cluster": 0
+  },
+  {
+    "year": 1993,
+    "country": "Belarus",
+    "hom_rate": "7.46",
+    "cluster": 0
+  },
+  {
+    "year": 1994,
+    "country": "Belarus",
+    "hom_rate": "8.2",
+    "cluster": 0
+  },
+  {
+    "year": 1995,
+    "country": "Belarus",
+    "hom_rate": "9.53",
+    "cluster": 0
+  },
+  {
+    "year": 1996,
+    "country": "Belarus",
+    "hom_rate": "9.66",
+    "cluster": 0
+  },
+  {
+    "year": 1997,
+    "country": "Belarus",
+    "hom_rate": "10.2",
+    "cluster": 0
+  },
+  {
+    "year": 1998,
+    "country": "Belarus",
+    "hom_rate": "10.39",
+    "cluster": 0
+  },
+  {
+    "year": 1999,
+    "country": "Belarus",
+    "hom_rate": "9.81",
+    "cluster": 0
+  },
+  {
+    "year": 2000,
+    "country": "Belarus",
+    "hom_rate": "10.26",
+    "cluster": 0
+  },
+  {
+    "year": 2001,
+    "country": "Belarus",
+    "hom_rate": "9.88",
+    "cluster": 0
+  },
+  {
+    "year": 2002,
+    "country": "Belarus",
+    "hom_rate": "10.15",
+    "cluster": 0
+  },
+  {
+    "year": 2007,
+    "country": "Belarus",
+    "hom_rate": "6.85",
+    "cluster": 0
+  },
+  {
+    "year": 2008,
+    "country": "Belarus",
+    "hom_rate": "5.84",
+    "cluster": 0
+  },
+  {
+    "year": 2009,
+    "country": "Belarus",
+    "hom_rate": "5.16",
+    "cluster": 0
+  },
+  {
+    "year": 2010,
+    "country": "Belarus",
+    "hom_rate": "4.26",
+    "cluster": 0
+  },
+  {
+    "year": 2011,
+    "country": "Belarus",
+    "hom_rate": "3.96",
+    "cluster": 0
+  },
+  {
+    "year": 2012,
+    "country": "Belarus",
+    "hom_rate": "3.61",
+    "cluster": 0
+  },
+  {
+    "year": 2013,
+    "country": "Belarus",
+    "hom_rate": "3.53",
+    "cluster": 0
+  },
+  {
+    "year": 2014,
+    "country": "Belarus",
+    "hom_rate": "3.6",
+    "cluster": 0
+  },
+  {
+    "year": 2015,
+    "country": "Belarus",
+    "hom_rate": "3.45",
+    "cluster": 0
+  },
+  {
+    "year": 2016,
+    "country": "Belarus",
+    "hom_rate": "3.25",
+    "cluster": 0
+  },
+  {
+    "year": 2017,
+    "country": "Belarus",
+    "hom_rate": "2.54",
+    "cluster": 0
+  },
+  {
+    "year": 2018,
+    "country": "Belarus",
+    "hom_rate": "2.39",
+    "cluster": 0
+  },
+  {
+    "year": 2019,
+    "country": "Belarus",
+    "hom_rate": "2.38",
+    "cluster": 0
+  },
+  {
+    "year": 1990,
+    "country": "Belgium",
+    "hom_rate": "1.04",
+    "cluster": 1
+  },
+  {
+    "year": 1991,
+    "country": "Belgium",
+    "hom_rate": "1.02",
+    "cluster": 1
+  },
+  {
+    "year": 1992,
+    "country": "Belgium",
+    "hom_rate": "1.2",
+    "cluster": 1
+  },
+  {
+    "year": 1993,
+    "country": "Belgium",
+    "hom_rate": "1.43",
+    "cluster": 1
+  },
+  {
+    "year": 1994,
+    "country": "Belgium",
+    "hom_rate": "1.18",
+    "cluster": 1
+  },
+  {
+    "year": 1995,
+    "country": "Belgium",
+    "hom_rate": "1.39",
+    "cluster": 1
+  },
+  {
+    "year": 1996,
+    "country": "Belgium",
+    "hom_rate": "1.18",
+    "cluster": 1
+  },
+  {
+    "year": 1997,
+    "country": "Belgium",
+    "hom_rate": "1.42",
+    "cluster": 1
+  },
+  {
+    "year": 2000,
+    "country": "Belgium",
+    "hom_rate": "2.06",
+    "cluster": 1
+  },
+  {
+    "year": 2001,
+    "country": "Belgium",
+    "hom_rate": "2.73",
+    "cluster": 1
+  },
+  {
+    "year": 2002,
+    "country": "Belgium",
+    "hom_rate": "3.08",
+    "cluster": 1
+  },
+  {
+    "year": 1990,
+    "country": "Bulgaria",
+    "hom_rate": "2.57",
+    "cluster": 2
+  },
+  {
+    "year": 1991,
+    "country": "Bulgaria",
+    "hom_rate": "4.28",
+    "cluster": 2
+  },
+  {
+    "year": 1992,
+    "country": "Bulgaria",
+    "hom_rate": "5.32",
+    "cluster": 2
+  },
+  {
+    "year": 1993,
+    "country": "Bulgaria",
+    "hom_rate": "5.71",
+    "cluster": 2
+  },
+  {
+    "year": 1994,
+    "country": "Bulgaria",
+    "hom_rate": "5.81",
+    "cluster": 2
+  },
+  {
+    "year": 1995,
+    "country": "Bulgaria",
+    "hom_rate": "5.9",
+    "cluster": 2
+  },
+  {
+    "year": 1996,
+    "country": "Bulgaria",
+    "hom_rate": "5.28",
+    "cluster": 2
+  },
+  {
+    "year": 1997,
+    "country": "Bulgaria",
+    "hom_rate": "4.85",
+    "cluster": 2
+  },
+  {
+    "year": 1998,
+    "country": "Bulgaria",
+    "hom_rate": "4.68",
+    "cluster": 2
+  },
+  {
+    "year": 1999,
+    "country": "Bulgaria",
+    "hom_rate": "4.05",
+    "cluster": 2
+  },
+  {
+    "year": 2000,
+    "country": "Bulgaria",
+    "hom_rate": "4.15",
+    "cluster": 2
+  },
+  {
+    "year": 2001,
+    "country": "Bulgaria",
+    "hom_rate": "3.88",
+    "cluster": 2
+  },
+  {
+    "year": 2002,
+    "country": "Bulgaria",
+    "hom_rate": "3.24",
+    "cluster": 2
+  },
+  {
+    "year": 2003,
+    "country": "Bulgaria",
+    "hom_rate": "3.16",
+    "cluster": 2
+  },
+  {
+    "year": 2004,
+    "country": "Bulgaria",
+    "hom_rate": "3.15",
+    "cluster": 2
+  },
+  {
+    "year": 2005,
+    "country": "Bulgaria",
+    "hom_rate": "2.59",
+    "cluster": 2
+  },
+  {
+    "year": 2006,
+    "country": "Bulgaria",
+    "hom_rate": "2.44",
+    "cluster": 2
+  },
+  {
+    "year": 2007,
+    "country": "Bulgaria",
+    "hom_rate": "2.34",
+    "cluster": 2
+  },
+  {
+    "year": 2008,
+    "country": "Bulgaria",
+    "hom_rate": "2.29",
+    "cluster": 2
+  },
+  {
+    "year": 2009,
+    "country": "Bulgaria",
+    "hom_rate": "2.01",
+    "cluster": 2
+  },
+  {
+    "year": 2010,
+    "country": "Bulgaria",
+    "hom_rate": "1.99",
+    "cluster": 2
+  },
+  {
+    "year": 2011,
+    "country": "Bulgaria",
+    "hom_rate": "1.73",
+    "cluster": 2
+  },
+  {
+    "year": 2012,
+    "country": "Bulgaria",
+    "hom_rate": "1.92",
+    "cluster": 2
+  },
+  {
+    "year": 2013,
+    "country": "Bulgaria",
+    "hom_rate": "1.5",
+    "cluster": 2
+  },
+  {
+    "year": 2014,
+    "country": "Bulgaria",
+    "hom_rate": "1.55",
+    "cluster": 2
+  },
+  {
+    "year": 2015,
+    "country": "Bulgaria",
+    "hom_rate": "1.75",
+    "cluster": 2
+  },
+  {
+    "year": 2016,
+    "country": "Bulgaria",
+    "hom_rate": "1.1",
+    "cluster": 2
+  },
+  {
+    "year": 2017,
+    "country": "Bulgaria",
+    "hom_rate": "1.45",
+    "cluster": 2
+  },
+  {
+    "year": 2018,
+    "country": "Bulgaria",
+    "hom_rate": "1.3",
+    "cluster": 2
+  },
+  {
+    "year": 2019,
+    "country": "Bulgaria",
+    "hom_rate": "1.19",
+    "cluster": 2
+  },
+  {
+    "year": 2020,
+    "country": "Bulgaria",
+    "hom_rate": "0.99",
+    "cluster": 2
+  },
+  {
+    "year": 1990,
+    "country": "Canada",
+    "hom_rate": "2.39",
+    "cluster": 1
+  },
+  {
+    "year": 1991,
+    "country": "Canada",
+    "hom_rate": "2.7",
+    "cluster": 1
+  },
+  {
+    "year": 1992,
+    "country": "Canada",
+    "hom_rate": "2.6",
+    "cluster": 1
+  },
+  {
+    "year": 1993,
+    "country": "Canada",
+    "hom_rate": "2.19",
+    "cluster": 1
+  },
+  {
+    "year": 1994,
+    "country": "Canada",
+    "hom_rate": "2.07",
+    "cluster": 1
+  },
+  {
+    "year": 1995,
+    "country": "Canada",
+    "hom_rate": "2.01",
+    "cluster": 1
+  },
+  {
+    "year": 1996,
+    "country": "Canada",
+    "hom_rate": "2.15",
+    "cluster": 1
+  },
+  {
+    "year": 1997,
+    "country": "Canada",
+    "hom_rate": "1.97",
+    "cluster": 1
+  },
+  {
+    "year": 1998,
+    "country": "Canada",
+    "hom_rate": "1.86",
+    "cluster": 1
+  },
+  {
+    "year": 1999,
+    "country": "Canada",
+    "hom_rate": "1.78",
+    "cluster": 1
+  },
+  {
+    "year": 2000,
+    "country": "Canada",
+    "hom_rate": "1.78",
+    "cluster": 1
+  },
+  {
+    "year": 2001,
+    "country": "Canada",
+    "hom_rate": "1.79",
+    "cluster": 1
+  },
+  {
+    "year": 2002,
+    "country": "Canada",
+    "hom_rate": "1.87",
+    "cluster": 1
+  },
+  {
+    "year": 2003,
+    "country": "Canada",
+    "hom_rate": "1.74",
+    "cluster": 1
+  },
+  {
+    "year": 2004,
+    "country": "Canada",
+    "hom_rate": "1.96",
+    "cluster": 1
+  },
+  {
+    "year": 2005,
+    "country": "Canada",
+    "hom_rate": "2.06",
+    "cluster": 1
+  },
+  {
+    "year": 2006,
+    "country": "Canada",
+    "hom_rate": "1.87",
+    "cluster": 1
+  },
+  {
+    "year": 2007,
+    "country": "Canada",
+    "hom_rate": "1.81",
+    "cluster": 1
+  },
+  {
+    "year": 2008,
+    "country": "Canada",
+    "hom_rate": "1.84",
+    "cluster": 1
+  },
+  {
+    "year": 2009,
+    "country": "Canada",
+    "hom_rate": "1.81",
+    "cluster": 1
+  },
+  {
+    "year": 2010,
+    "country": "Canada",
+    "hom_rate": "1.63",
+    "cluster": 1
+  },
+  {
+    "year": 2011,
+    "country": "Canada",
+    "hom_rate": "1.75",
+    "cluster": 1
+  },
+  {
+    "year": 2012,
+    "country": "Canada",
+    "hom_rate": "1.57",
+    "cluster": 1
+  },
+  {
+    "year": 2013,
+    "country": "Canada",
+    "hom_rate": "1.44",
+    "cluster": 1
+  },
+  {
+    "year": 2014,
+    "country": "Canada",
+    "hom_rate": "1.46",
+    "cluster": 1
+  },
+  {
+    "year": 2015,
+    "country": "Canada",
+    "hom_rate": "1.69",
+    "cluster": 1
+  },
+  {
+    "year": 2016,
+    "country": "Canada",
+    "hom_rate": "1.68",
+    "cluster": 1
+  },
+  {
+    "year": 2017,
+    "country": "Canada",
+    "hom_rate": "1.8",
+    "cluster": 1
+  },
+  {
+    "year": 2018,
+    "country": "Canada",
+    "hom_rate": "1.76",
+    "cluster": 1
+  },
+  {
+    "year": 2019,
+    "country": "Canada",
+    "hom_rate": "1.84",
+    "cluster": 1
+  },
+  {
+    "year": 2020,
+    "country": "Canada",
+    "hom_rate": "1.97",
+    "cluster": 1
+  },
+  {
+    "year": 1990,
+    "country": "Croatia",
+    "hom_rate": "2.87",
+    "cluster": 2
+  },
+  {
+    "year": 1991,
+    "country": "Croatia",
+    "hom_rate": "9.18",
+    "cluster": 2
+  },
+  {
+    "year": 1992,
+    "country": "Croatia",
+    "hom_rate": "8.18",
+    "cluster": 2
+  },
+  {
+    "year": 1993,
+    "country": "Croatia",
+    "hom_rate": "4.64",
+    "cluster": 2
+  },
+  {
+    "year": 1994,
+    "country": "Croatia",
+    "hom_rate": "3.07",
+    "cluster": 2
+  },
+  {
+    "year": 1995,
+    "country": "Croatia",
+    "hom_rate": "3.6",
+    "cluster": 2
+  },
+  {
+    "year": 1996,
+    "country": "Croatia",
+    "hom_rate": "2.67",
+    "cluster": 2
+  },
+  {
+    "year": 1997,
+    "country": "Croatia",
+    "hom_rate": "2.6",
+    "cluster": 2
+  },
+  {
+    "year": 1998,
+    "country": "Croatia",
+    "hom_rate": "2.34",
+    "cluster": 2
+  },
+  {
+    "year": 1999,
+    "country": "Croatia",
+    "hom_rate": "2.49",
+    "cluster": 2
+  },
+  {
+    "year": 2000,
+    "country": "Croatia",
+    "hom_rate": "2.28",
+    "cluster": 2
+  },
+  {
+    "year": 2001,
+    "country": "Croatia",
+    "hom_rate": "1.84",
+    "cluster": 2
+  },
+  {
+    "year": 2002,
+    "country": "Croatia",
+    "hom_rate": "1.66",
+    "cluster": 2
+  },
+  {
+    "year": 2003,
+    "country": "Croatia",
+    "hom_rate": "1.57",
+    "cluster": 2
+  },
+  {
+    "year": 2004,
+    "country": "Croatia",
+    "hom_rate": "1.89",
+    "cluster": 2
+  },
+  {
+    "year": 2005,
+    "country": "Croatia",
+    "hom_rate": "1.55",
+    "cluster": 2
+  },
+  {
+    "year": 2006,
+    "country": "Croatia",
+    "hom_rate": "1.69",
+    "cluster": 2
+  },
+  {
+    "year": 2007,
+    "country": "Croatia",
+    "hom_rate": "1.42",
+    "cluster": 2
+  },
+  {
+    "year": 2008,
+    "country": "Croatia",
+    "hom_rate": "1.63",
+    "cluster": 2
+  },
+  {
+    "year": 2009,
+    "country": "Croatia",
+    "hom_rate": "1.13",
+    "cluster": 2
+  },
+  {
+    "year": 2010,
+    "country": "Croatia",
+    "hom_rate": "1.43",
+    "cluster": 2
+  },
+  {
+    "year": 2011,
+    "country": "Croatia",
+    "hom_rate": "1.14",
+    "cluster": 2
+  },
+  {
+    "year": 2012,
+    "country": "Croatia",
+    "hom_rate": "1.19",
+    "cluster": 2
+  },
+  {
+    "year": 2013,
+    "country": "Croatia",
+    "hom_rate": "1.08",
+    "cluster": 2
+  },
+  {
+    "year": 2014,
+    "country": "Croatia",
+    "hom_rate": "0.85",
+    "cluster": 2
+  },
+  {
+    "year": 2015,
+    "country": "Croatia",
+    "hom_rate": "0.87",
+    "cluster": 2
+  },
+  {
+    "year": 2016,
+    "country": "Croatia",
+    "hom_rate": "1.05",
+    "cluster": 2
+  },
+  {
+    "year": 2017,
+    "country": "Croatia",
+    "hom_rate": "1.1",
+    "cluster": 2
+  },
+  {
+    "year": 2018,
+    "country": "Croatia",
+    "hom_rate": "0.58",
+    "cluster": 2
+  },
+  {
+    "year": 2019,
+    "country": "Croatia",
+    "hom_rate": "0.8",
+    "cluster": 2
+  },
+  {
+    "year": 2020,
+    "country": "Croatia",
+    "hom_rate": "0.95",
+    "cluster": 2
+  },
+  {
+    "year": 1994,
+    "country": "Czechia",
+    "hom_rate": "2",
+    "cluster": 2
+  },
+  {
+    "year": 1995,
+    "country": "Czechia",
+    "hom_rate": "1.7",
+    "cluster": 2
+  },
+  {
+    "year": 1996,
+    "country": "Czechia",
+    "hom_rate": "1.67",
+    "cluster": 2
+  },
+  {
+    "year": 1997,
+    "country": "Czechia",
+    "hom_rate": "1.81",
+    "cluster": 2
+  },
+  {
+    "year": 1998,
+    "country": "Czechia",
+    "hom_rate": "1.69",
+    "cluster": 2
+  },
+  {
+    "year": 1999,
+    "country": "Czechia",
+    "hom_rate": "1.67",
+    "cluster": 2
+  },
+  {
+    "year": 2000,
+    "country": "Czechia",
+    "hom_rate": "1.86",
+    "cluster": 2
+  },
+  {
+    "year": 2001,
+    "country": "Czechia",
+    "hom_rate": "1.31",
+    "cluster": 2
+  },
+  {
+    "year": 2002,
+    "country": "Czechia",
+    "hom_rate": "1.36",
+    "cluster": 2
+  },
+  {
+    "year": 2003,
+    "country": "Czechia",
+    "hom_rate": "1.59",
+    "cluster": 2
+  },
+  {
+    "year": 2004,
+    "country": "Czechia",
+    "hom_rate": "1.31",
+    "cluster": 2
+  },
+  {
+    "year": 2005,
+    "country": "Czechia",
+    "hom_rate": "1.05",
+    "cluster": 2
+  },
+  {
+    "year": 2006,
+    "country": "Czechia",
+    "hom_rate": "1.26",
+    "cluster": 2
+  },
+  {
+    "year": 2007,
+    "country": "Czechia",
+    "hom_rate": "1.22",
+    "cluster": 2
+  },
+  {
+    "year": 2008,
+    "country": "Czechia",
+    "hom_rate": "1.09",
+    "cluster": 2
+  },
+  {
+    "year": 2009,
+    "country": "Czechia",
+    "hom_rate": "0.9",
+    "cluster": 2
+  },
+  {
+    "year": 2010,
+    "country": "Czechia",
+    "hom_rate": "0.98",
+    "cluster": 2
+  },
+  {
+    "year": 2011,
+    "country": "Czechia",
+    "hom_rate": "0.81",
+    "cluster": 2
+  },
+  {
+    "year": 2012,
+    "country": "Czechia",
+    "hom_rate": "0.99",
+    "cluster": 2
+  },
+  {
+    "year": 2013,
+    "country": "Czechia",
+    "hom_rate": "0.85",
+    "cluster": 2
+  },
+  {
+    "year": 2014,
+    "country": "Czechia",
+    "hom_rate": "0.76",
+    "cluster": 2
+  },
+  {
+    "year": 2015,
+    "country": "Czechia",
+    "hom_rate": "0.83",
+    "cluster": 2
+  },
+  {
+    "year": 2016,
+    "country": "Czechia",
+    "hom_rate": "0.61",
+    "cluster": 2
+  },
+  {
+    "year": 2017,
+    "country": "Czechia",
+    "hom_rate": "0.62",
+    "cluster": 2
+  },
+  {
+    "year": 2019,
+    "country": "Czechia",
+    "hom_rate": "0.91",
+    "cluster": 2
+  },
+  {
+    "year": 2020,
+    "country": "Czechia",
+    "hom_rate": "0.72",
+    "cluster": 2
+  },
+  {
+    "year": 1990,
+    "country": "Denmark",
+    "hom_rate": "0.8",
+    "cluster": 1
+  },
+  {
+    "year": 1991,
+    "country": "Denmark",
+    "hom_rate": "1.32",
+    "cluster": 1
+  },
+  {
+    "year": 1992,
+    "country": "Denmark",
+    "hom_rate": "1.2",
+    "cluster": 1
+  },
+  {
+    "year": 1993,
+    "country": "Denmark",
+    "hom_rate": "1.37",
+    "cluster": 1
+  },
+  {
+    "year": 1994,
+    "country": "Denmark",
+    "hom_rate": "1.44",
+    "cluster": 1
+  },
+  {
+    "year": 1995,
+    "country": "Denmark",
+    "hom_rate": "1.13",
+    "cluster": 1
+  },
+  {
+    "year": 1996,
+    "country": "Denmark",
+    "hom_rate": "1.29",
+    "cluster": 1
+  },
+  {
+    "year": 1997,
+    "country": "Denmark",
+    "hom_rate": "1.67",
+    "cluster": 1
+  },
+  {
+    "year": 1998,
+    "country": "Denmark",
+    "hom_rate": "0.92",
+    "cluster": 1
+  },
+  {
+    "year": 1999,
+    "country": "Denmark",
+    "hom_rate": "0.98",
+    "cluster": 1
+  },
+  {
+    "year": 2000,
+    "country": "Denmark",
+    "hom_rate": "1.09",
+    "cluster": 1
+  },
+  {
+    "year": 2001,
+    "country": "Denmark",
+    "hom_rate": "0.97",
+    "cluster": 1
+  },
+  {
+    "year": 2002,
+    "country": "Denmark",
+    "hom_rate": "0.89",
+    "cluster": 1
+  },
+  {
+    "year": 2010,
+    "country": "Denmark",
+    "hom_rate": "0.76",
+    "cluster": 1
+  },
+  {
+    "year": 2011,
+    "country": "Denmark",
+    "hom_rate": "0.82",
+    "cluster": 1
+  },
+  {
+    "year": 2012,
+    "country": "Denmark",
+    "hom_rate": "0.84",
+    "cluster": 1
+  },
+  {
+    "year": 2013,
+    "country": "Denmark",
+    "hom_rate": "0.85",
+    "cluster": 1
+  },
+  {
+    "year": 2014,
+    "country": "Denmark",
+    "hom_rate": "1.31",
+    "cluster": 1
+  },
+  {
+    "year": 2015,
+    "country": "Denmark",
+    "hom_rate": "1.09",
+    "cluster": 1
+  },
+  {
+    "year": 2016,
+    "country": "Denmark",
+    "hom_rate": "0.98",
+    "cluster": 1
+  },
+  {
+    "year": 2017,
+    "country": "Denmark",
+    "hom_rate": "1.24",
+    "cluster": 1
+  },
+  {
+    "year": 2018,
+    "country": "Denmark",
+    "hom_rate": "1.01",
+    "cluster": 1
+  },
+  {
+    "year": 2019,
+    "country": "Denmark",
+    "hom_rate": "1.14",
+    "cluster": 1
+  },
+  {
+    "year": 2020,
+    "country": "Denmark",
+    "hom_rate": "0.95",
+    "cluster": 1
+  },
+  {
+    "year": 1990,
+    "country": "Estonia",
+    "hom_rate": "7.54",
+    "cluster": 3
+  },
+  {
+    "year": 1991,
+    "country": "Estonia",
+    "hom_rate": "7.69",
+    "cluster": 3
+  },
+  {
+    "year": 1992,
+    "country": "Estonia",
+    "hom_rate": "14.27",
+    "cluster": 3
+  },
+  {
+    "year": 1993,
+    "country": "Estonia",
+    "hom_rate": "18.95",
+    "cluster": 3
+  },
+  {
+    "year": 1994,
+    "country": "Estonia",
+    "hom_rate": "20.73",
+    "cluster": 3
+  },
+  {
+    "year": 1995,
+    "country": "Estonia",
+    "hom_rate": "17.17",
+    "cluster": 3
+  },
+  {
+    "year": 1996,
+    "country": "Estonia",
+    "hom_rate": "15.09",
+    "cluster": 3
+  },
+  {
+    "year": 1997,
+    "country": "Estonia",
+    "hom_rate": "12.63",
+    "cluster": 3
+  },
+  {
+    "year": 1998,
+    "country": "Estonia",
+    "hom_rate": "13.94",
+    "cluster": 3
+  },
+  {
+    "year": 1999,
+    "country": "Estonia",
+    "hom_rate": "11.18",
+    "cluster": 3
+  },
+  {
+    "year": 2000,
+    "country": "Estonia",
+    "hom_rate": "10.22",
+    "cluster": 3
+  },
+  {
+    "year": 2001,
+    "country": "Estonia",
+    "hom_rate": "9.84",
+    "cluster": 3
+  },
+  {
+    "year": 2002,
+    "country": "Estonia",
+    "hom_rate": "10.27",
+    "cluster": 3
+  },
+  {
+    "year": 2007,
+    "country": "Estonia",
+    "hom_rate": "7.14",
+    "cluster": 3
+  },
+  {
+    "year": 2008,
+    "country": "Estonia",
+    "hom_rate": "6.42",
+    "cluster": 3
+  },
+  {
+    "year": 2009,
+    "country": "Estonia",
+    "hom_rate": "5.24",
+    "cluster": 3
+  },
+  {
+    "year": 2010,
+    "country": "Estonia",
+    "hom_rate": "5.25",
+    "cluster": 3
+  },
+  {
+    "year": 2011,
+    "country": "Estonia",
+    "hom_rate": "4.9",
+    "cluster": 3
+  },
+  {
+    "year": 2012,
+    "country": "Estonia",
+    "hom_rate": "4.76",
+    "cluster": 3
+  },
+  {
+    "year": 2013,
+    "country": "Estonia",
+    "hom_rate": "3.94",
+    "cluster": 3
+  },
+  {
+    "year": 2014,
+    "country": "Estonia",
+    "hom_rate": "3.11",
+    "cluster": 3
+  },
+  {
+    "year": 2015,
+    "country": "Estonia",
+    "hom_rate": "3.42",
+    "cluster": 3
+  },
+  {
+    "year": 2016,
+    "country": "Estonia",
+    "hom_rate": "2.51",
+    "cluster": 3
+  },
+  {
+    "year": 2017,
+    "country": "Estonia",
+    "hom_rate": "2.2",
+    "cluster": 3
+  },
+  {
+    "year": 2018,
+    "country": "Estonia",
+    "hom_rate": "2.12",
+    "cluster": 3
+  },
+  {
+    "year": 2019,
+    "country": "Estonia",
+    "hom_rate": "1.73",
+    "cluster": 3
+  },
+  {
+    "year": 2020,
+    "country": "Estonia",
+    "hom_rate": "3.17",
+    "cluster": 3
+  },
+  {
+    "year": 1990,
+    "country": "France",
+    "hom_rate": "2.39",
+    "cluster": 1
+  },
+  {
+    "year": 1991,
+    "country": "France",
+    "hom_rate": "2.38",
+    "cluster": 1
+  },
+  {
+    "year": 1992,
+    "country": "France",
+    "hom_rate": "2.35",
+    "cluster": 1
+  },
+  {
+    "year": 1993,
+    "country": "France",
+    "hom_rate": "2.65",
+    "cluster": 1
+  },
+  {
+    "year": 1994,
+    "country": "France",
+    "hom_rate": "2.44",
+    "cluster": 1
+  },
+  {
+    "year": 1995,
+    "country": "France",
+    "hom_rate": "2.31",
+    "cluster": 1
+  },
+  {
+    "year": 1996,
+    "country": "France",
+    "hom_rate": "2.02",
+    "cluster": 1
+  },
+  {
+    "year": 1997,
+    "country": "France",
+    "hom_rate": "1.65",
+    "cluster": 1
+  },
+  {
+    "year": 1998,
+    "country": "France",
+    "hom_rate": "1.64",
+    "cluster": 1
+  },
+  {
+    "year": 1999,
+    "country": "France",
+    "hom_rate": "1.62",
+    "cluster": 1
+  },
+  {
+    "year": 2000,
+    "country": "France",
+    "hom_rate": "1.78",
+    "cluster": 1
+  },
+  {
+    "year": 2001,
+    "country": "France",
+    "hom_rate": "1.76",
+    "cluster": 1
+  },
+  {
+    "year": 2002,
+    "country": "France",
+    "hom_rate": "1.87",
+    "cluster": 1
+  },
+  {
+    "year": 2003,
+    "country": "France",
+    "hom_rate": "1.64",
+    "cluster": 1
+  },
+  {
+    "year": 2004,
+    "country": "France",
+    "hom_rate": "1.63",
+    "cluster": 1
+  },
+  {
+    "year": 2005,
+    "country": "France",
+    "hom_rate": "1.6",
+    "cluster": 1
+  },
+  {
+    "year": 2006,
+    "country": "France",
+    "hom_rate": "1.43",
+    "cluster": 1
+  },
+  {
+    "year": 2007,
+    "country": "France",
+    "hom_rate": "1.6",
+    "cluster": 1
+  },
+  {
+    "year": 2008,
+    "country": "France",
+    "hom_rate": "1.64",
+    "cluster": 1
+  },
+  {
+    "year": 2009,
+    "country": "France",
+    "hom_rate": "1.31",
+    "cluster": 1
+  },
+  {
+    "year": 2010,
+    "country": "France",
+    "hom_rate": "1.27",
+    "cluster": 1
+  },
+  {
+    "year": 2011,
+    "country": "France",
+    "hom_rate": "1.35",
+    "cluster": 1
+  },
+  {
+    "year": 2012,
+    "country": "France",
+    "hom_rate": "1.23",
+    "cluster": 1
+  },
+  {
+    "year": 2013,
+    "country": "France",
+    "hom_rate": "1.22",
+    "cluster": 1
+  },
+  {
+    "year": 2014,
+    "country": "France",
+    "hom_rate": "1.23",
+    "cluster": 1
+  },
+  {
+    "year": 2015,
+    "country": "France",
+    "hom_rate": "1.57",
+    "cluster": 1
+  },
+  {
+    "year": 2016,
+    "country": "France",
+    "hom_rate": "1.37",
+    "cluster": 1
+  },
+  {
+    "year": 2017,
+    "country": "France",
+    "hom_rate": "1.25",
+    "cluster": 1
+  },
+  {
+    "year": 2018,
+    "country": "France",
+    "hom_rate": "1.2",
+    "cluster": 1
+  },
+  {
+    "year": 2019,
+    "country": "France",
+    "hom_rate": "1.32",
+    "cluster": 1
+  },
+  {
+    "year": 1990,
+    "country": "Georgia",
+    "hom_rate": "4.99",
+    "cluster": 0
+  },
+  {
+    "year": 1991,
+    "country": "Georgia",
+    "hom_rate": "7.8",
+    "cluster": 0
+  },
+  {
+    "year": 1992,
+    "country": "Georgia",
+    "hom_rate": "14.52",
+    "cluster": 0
+  },
+  {
+    "year": 1993,
+    "country": "Georgia",
+    "hom_rate": "16.86",
+    "cluster": 0
+  },
+  {
+    "year": 1994,
+    "country": "Georgia",
+    "hom_rate": "11.34",
+    "cluster": 0
+  },
+  {
+    "year": 1995,
+    "country": "Georgia",
+    "hom_rate": "7.86",
+    "cluster": 0
+  },
+  {
+    "year": 1996,
+    "country": "Georgia",
+    "hom_rate": "5.57",
+    "cluster": 0
+  },
+  {
+    "year": 1997,
+    "country": "Georgia",
+    "hom_rate": "6.05",
+    "cluster": 0
+  },
+  {
+    "year": 1998,
+    "country": "Georgia",
+    "hom_rate": "5.31",
+    "cluster": 0
+  },
+  {
+    "year": 1999,
+    "country": "Georgia",
+    "hom_rate": "5.47",
+    "cluster": 0
+  },
+  {
+    "year": 2000,
+    "country": "Georgia",
+    "hom_rate": "5.48",
+    "cluster": 0
+  },
+  {
+    "year": 2001,
+    "country": "Georgia",
+    "hom_rate": "6.12",
+    "cluster": 0
+  },
+  {
+    "year": 2002,
+    "country": "Georgia",
+    "hom_rate": "6.86",
+    "cluster": 0
+  },
+  {
+    "year": 2004,
+    "country": "Georgia",
+    "hom_rate": "7.05",
+    "cluster": 0
+  },
+  {
+    "year": 2005,
+    "country": "Georgia",
+    "hom_rate": "9.57",
+    "cluster": 0
+  },
+  {
+    "year": 2006,
+    "country": "Georgia",
+    "hom_rate": "7.71",
+    "cluster": 0
+  },
+  {
+    "year": 2007,
+    "country": "Georgia",
+    "hom_rate": "7.92",
+    "cluster": 0
+  },
+  {
+    "year": 2008,
+    "country": "Georgia",
+    "hom_rate": "6.35",
+    "cluster": 0
+  },
+  {
+    "year": 2009,
+    "country": "Georgia",
+    "hom_rate": "5.1",
+    "cluster": 0
+  },
+  {
+    "year": 2010,
+    "country": "Georgia",
+    "hom_rate": "4.56",
+    "cluster": 0
+  },
+  {
+    "year": 2016,
+    "country": "Georgia",
+    "hom_rate": "0.97",
+    "cluster": 0
+  },
+  {
+    "year": 2017,
+    "country": "Georgia",
+    "hom_rate": "2.27",
+    "cluster": 0
+  },
+  {
+    "year": 2018,
+    "country": "Georgia",
+    "hom_rate": "2.22",
+    "cluster": 0
+  },
+  {
+    "year": 2019,
+    "country": "Georgia",
+    "hom_rate": "1.93",
+    "cluster": 0
+  },
+  {
+    "year": 1990,
+    "country": "Germany",
+    "hom_rate": "1.18",
+    "cluster": 1
+  },
+  {
+    "year": 1991,
+    "country": "Germany",
+    "hom_rate": "1.42",
+    "cluster": 1
+  },
+  {
+    "year": 1992,
+    "country": "Germany",
+    "hom_rate": "1.45",
+    "cluster": 1
+  },
+  {
+    "year": 1993,
+    "country": "Germany",
+    "hom_rate": "1.68",
+    "cluster": 1
+  },
+  {
+    "year": 1994,
+    "country": "Germany",
+    "hom_rate": "2.41",
+    "cluster": 1
+  },
+  {
+    "year": 1995,
+    "country": "Germany",
+    "hom_rate": "2.5",
+    "cluster": 1
+  },
+  {
+    "year": 1996,
+    "country": "Germany",
+    "hom_rate": "2.36",
+    "cluster": 1
+  },
+  {
+    "year": 1997,
+    "country": "Germany",
+    "hom_rate": "2.21",
+    "cluster": 1
+  },
+  {
+    "year": 1998,
+    "country": "Germany",
+    "hom_rate": "1.97",
+    "cluster": 1
+  },
+  {
+    "year": 1999,
+    "country": "Germany",
+    "hom_rate": "1.63",
+    "cluster": 1
+  },
+  {
+    "year": 2000,
+    "country": "Germany",
+    "hom_rate": "1.68",
+    "cluster": 1
+  },
+  {
+    "year": 2001,
+    "country": "Germany",
+    "hom_rate": "1.45",
+    "cluster": 1
+  },
+  {
+    "year": 2002,
+    "country": "Germany",
+    "hom_rate": "1.44",
+    "cluster": 1
+  },
+  {
+    "year": 2003,
+    "country": "Germany",
+    "hom_rate": "1.34",
+    "cluster": 1
+  },
+  {
+    "year": 2004,
+    "country": "Germany",
+    "hom_rate": "1.36",
+    "cluster": 1
+  },
+  {
+    "year": 2005,
+    "country": "Germany",
+    "hom_rate": "1.28",
+    "cluster": 1
+  },
+  {
+    "year": 2006,
+    "country": "Germany",
+    "hom_rate": "1.21",
+    "cluster": 1
+  },
+  {
+    "year": 2007,
+    "country": "Germany",
+    "hom_rate": "1.09",
+    "cluster": 1
+  },
+  {
+    "year": 2008,
+    "country": "Germany",
+    "hom_rate": "1.03",
+    "cluster": 1
+  },
+  {
+    "year": 2009,
+    "country": "Germany",
+    "hom_rate": "0.99",
+    "cluster": 1
+  },
+  {
+    "year": 2010,
+    "country": "Germany",
+    "hom_rate": "0.98",
+    "cluster": 1
+  },
+  {
+    "year": 2011,
+    "country": "Germany",
+    "hom_rate": "0.91",
+    "cluster": 1
+  },
+  {
+    "year": 2012,
+    "country": "Germany",
+    "hom_rate": "0.81",
+    "cluster": 1
+  },
+  {
+    "year": 2013,
+    "country": "Germany",
+    "hom_rate": "0.84",
+    "cluster": 1
+  },
+  {
+    "year": 2014,
+    "country": "Germany",
+    "hom_rate": "0.88",
+    "cluster": 1
+  },
+  {
+    "year": 2015,
+    "country": "Germany",
+    "hom_rate": "0.83",
+    "cluster": 1
+  },
+  {
+    "year": 2016,
+    "country": "Germany",
+    "hom_rate": "1.17",
+    "cluster": 1
+  },
+  {
+    "year": 2017,
+    "country": "Germany",
+    "hom_rate": "0.98",
+    "cluster": 1
+  },
+  {
+    "year": 2018,
+    "country": "Germany",
+    "hom_rate": "0.95",
+    "cluster": 1
+  },
+  {
+    "year": 2019,
+    "country": "Germany",
+    "hom_rate": "0.75",
+    "cluster": 1
+  },
+  {
+    "year": 2020,
+    "country": "Germany",
+    "hom_rate": "0.93",
+    "cluster": 1
+  },
+  {
+    "year": 1990,
+    "country": "Greece",
+    "hom_rate": "1.02",
+    "cluster": 1
+  },
+  {
+    "year": 1991,
+    "country": "Greece",
+    "hom_rate": "1.34",
+    "cluster": 1
+  },
+  {
+    "year": 1992,
+    "country": "Greece",
+    "hom_rate": "1.31",
+    "cluster": 1
+  },
+  {
+    "year": 1993,
+    "country": "Greece",
+    "hom_rate": "1.42",
+    "cluster": 1
+  },
+  {
+    "year": 1994,
+    "country": "Greece",
+    "hom_rate": "1.25",
+    "cluster": 1
+  },
+  {
+    "year": 1995,
+    "country": "Greece",
+    "hom_rate": "1.41",
+    "cluster": 1
+  },
+  {
+    "year": 1996,
+    "country": "Greece",
+    "hom_rate": "1.56",
+    "cluster": 1
+  },
+  {
+    "year": 1997,
+    "country": "Greece",
+    "hom_rate": "1.86",
+    "cluster": 1
+  },
+  {
+    "year": 1998,
+    "country": "Greece",
+    "hom_rate": "1.6",
+    "cluster": 1
+  },
+  {
+    "year": 1999,
+    "country": "Greece",
+    "hom_rate": "1.41",
+    "cluster": 1
+  },
+  {
+    "year": 2001,
+    "country": "Greece",
+    "hom_rate": "1.19",
+    "cluster": 1
+  },
+  {
+    "year": 2002,
+    "country": "Greece",
+    "hom_rate": "0.84",
+    "cluster": 1
+  },
+  {
+    "year": 2004,
+    "country": "Greece",
+    "hom_rate": "0.99",
+    "cluster": 1
+  },
+  {
+    "year": 2005,
+    "country": "Greece",
+    "hom_rate": "1.18",
+    "cluster": 1
+  },
+  {
+    "year": 2006,
+    "country": "Greece",
+    "hom_rate": "0.98",
+    "cluster": 1
+  },
+  {
+    "year": 2007,
+    "country": "Greece",
+    "hom_rate": "1.17",
+    "cluster": 1
+  },
+  {
+    "year": 2008,
+    "country": "Greece",
+    "hom_rate": "1.3",
+    "cluster": 1
+  },
+  {
+    "year": 2009,
+    "country": "Greece",
+    "hom_rate": "1.39",
+    "cluster": 1
+  },
+  {
+    "year": 2010,
+    "country": "Greece",
+    "hom_rate": "1.62",
+    "cluster": 1
+  },
+  {
+    "year": 2011,
+    "country": "Greece",
+    "hom_rate": "1.7",
+    "cluster": 1
+  },
+  {
+    "year": 2012,
+    "country": "Greece",
+    "hom_rate": "1.54",
+    "cluster": 1
+  },
+  {
+    "year": 2013,
+    "country": "Greece",
+    "hom_rate": "1.42",
+    "cluster": 1
+  },
+  {
+    "year": 2014,
+    "country": "Greece",
+    "hom_rate": "1",
+    "cluster": 1
+  },
+  {
+    "year": 2015,
+    "country": "Greece",
+    "hom_rate": "0.87",
+    "cluster": 1
+  },
+  {
+    "year": 2016,
+    "country": "Greece",
+    "hom_rate": "0.79",
+    "cluster": 1
+  },
+  {
+    "year": 2017,
+    "country": "Greece",
+    "hom_rate": "0.81",
+    "cluster": 1
+  },
+  {
+    "year": 2018,
+    "country": "Greece",
+    "hom_rate": "0.94",
+    "cluster": 1
+  },
+  {
+    "year": 2019,
+    "country": "Greece",
+    "hom_rate": "0.74",
+    "cluster": 1
+  },
+  {
+    "year": 2020,
+    "country": "Greece",
+    "hom_rate": "0.75",
+    "cluster": 1
+  },
+  {
+    "year": 1990,
+    "country": "Hungary",
+    "hom_rate": "1.94",
+    "cluster": 2
+  },
+  {
+    "year": 1991,
+    "country": "Hungary",
+    "hom_rate": "2.96",
+    "cluster": 2
+  },
+  {
+    "year": 1992,
+    "country": "Hungary",
+    "hom_rate": "2.94",
+    "cluster": 2
+  },
+  {
+    "year": 1993,
+    "country": "Hungary",
+    "hom_rate": "2.88",
+    "cluster": 2
+  },
+  {
+    "year": 1994,
+    "country": "Hungary",
+    "hom_rate": "3.02",
+    "cluster": 2
+  },
+  {
+    "year": 1995,
+    "country": "Hungary",
+    "hom_rate": "2.86",
+    "cluster": 2
+  },
+  {
+    "year": 1996,
+    "country": "Hungary",
+    "hom_rate": "2.62",
+    "cluster": 2
+  },
+  {
+    "year": 1997,
+    "country": "Hungary",
+    "hom_rate": "2.8",
+    "cluster": 2
+  },
+  {
+    "year": 1998,
+    "country": "Hungary",
+    "hom_rate": "2.81",
+    "cluster": 2
+  },
+  {
+    "year": 1999,
+    "country": "Hungary",
+    "hom_rate": "2.47",
+    "cluster": 2
+  },
+  {
+    "year": 2000,
+    "country": "Hungary",
+    "hom_rate": "2.01",
+    "cluster": 2
+  },
+  {
+    "year": 2001,
+    "country": "Hungary",
+    "hom_rate": "2.49",
+    "cluster": 2
+  },
+  {
+    "year": 2002,
+    "country": "Hungary",
+    "hom_rate": "2",
+    "cluster": 2
+  },
+  {
+    "year": 2003,
+    "country": "Hungary",
+    "hom_rate": "2.25",
+    "cluster": 2
+  },
+  {
+    "year": 2004,
+    "country": "Hungary",
+    "hom_rate": "2.07",
+    "cluster": 2
+  },
+  {
+    "year": 2005,
+    "country": "Hungary",
+    "hom_rate": "1.63",
+    "cluster": 2
+  },
+  {
+    "year": 2006,
+    "country": "Hungary",
+    "hom_rate": "1.73",
+    "cluster": 2
+  },
+  {
+    "year": 2007,
+    "country": "Hungary",
+    "hom_rate": "1.54",
+    "cluster": 2
+  },
+  {
+    "year": 2008,
+    "country": "Hungary",
+    "hom_rate": "1.81",
+    "cluster": 2
+  },
+  {
+    "year": 2009,
+    "country": "Hungary",
+    "hom_rate": "1.4",
+    "cluster": 2
+  },
+  {
+    "year": 2010,
+    "country": "Hungary",
+    "hom_rate": "1.39",
+    "cluster": 2
+  },
+  {
+    "year": 2011,
+    "country": "Hungary",
+    "hom_rate": "1.47",
+    "cluster": 2
+  },
+  {
+    "year": 2012,
+    "country": "Hungary",
+    "hom_rate": "1.26",
+    "cluster": 2
+  },
+  {
+    "year": 2013,
+    "country": "Hungary",
+    "hom_rate": "1.57",
+    "cluster": 2
+  },
+  {
+    "year": 2014,
+    "country": "Hungary",
+    "hom_rate": "1.49",
+    "cluster": 2
+  },
+  {
+    "year": 2015,
+    "country": "Hungary",
+    "hom_rate": "2.26",
+    "cluster": 2
+  },
+  {
+    "year": 2016,
+    "country": "Hungary",
+    "hom_rate": "2.07",
+    "cluster": 2
+  },
+  {
+    "year": 2017,
+    "country": "Hungary",
+    "hom_rate": "2.49",
+    "cluster": 2
+  },
+  {
+    "year": 2018,
+    "country": "Hungary",
+    "hom_rate": "0.89",
+    "cluster": 2
+  },
+  {
+    "year": 2019,
+    "country": "Hungary",
+    "hom_rate": "0.66",
+    "cluster": 2
+  },
+  {
+    "year": 2020,
+    "country": "Hungary",
+    "hom_rate": "0.83",
+    "cluster": 2
+  },
+  {
+    "year": 1994,
+    "country": "Iceland",
+    "hom_rate": "0",
+    "cluster": 1
+  },
+  {
+    "year": 1995,
+    "country": "Iceland",
+    "hom_rate": "0",
+    "cluster": 1
+  },
+  {
+    "year": 1996,
+    "country": "Iceland",
+    "hom_rate": "0.37",
+    "cluster": 1
+  },
+  {
+    "year": 1997,
+    "country": "Iceland",
+    "hom_rate": "0.73",
+    "cluster": 1
+  },
+  {
+    "year": 1998,
+    "country": "Iceland",
+    "hom_rate": "0",
+    "cluster": 1
+  },
+  {
+    "year": 1999,
+    "country": "Iceland",
+    "hom_rate": "0.72",
+    "cluster": 1
+  },
+  {
+    "year": 2000,
+    "country": "Iceland",
+    "hom_rate": "1.78",
+    "cluster": 1
+  },
+  {
+    "year": 2001,
+    "country": "Iceland",
+    "hom_rate": "0.35",
+    "cluster": 1
+  },
+  {
+    "year": 2002,
+    "country": "Iceland",
+    "hom_rate": "1.4",
+    "cluster": 1
+  },
+  {
+    "year": 2005,
+    "country": "Iceland",
+    "hom_rate": "1.02",
+    "cluster": 1
+  },
+  {
+    "year": 2006,
+    "country": "Iceland",
+    "hom_rate": "0",
+    "cluster": 1
+  },
+  {
+    "year": 2007,
+    "country": "Iceland",
+    "hom_rate": "0.66",
+    "cluster": 1
+  },
+  {
+    "year": 2008,
+    "country": "Iceland",
+    "hom_rate": "0",
+    "cluster": 1
+  },
+  {
+    "year": 2009,
+    "country": "Iceland",
+    "hom_rate": "0.32",
+    "cluster": 1
+  },
+  {
+    "year": 2010,
+    "country": "Iceland",
+    "hom_rate": "0.62",
+    "cluster": 1
+  },
+  {
+    "year": 2011,
+    "country": "Iceland",
+    "hom_rate": "0.93",
+    "cluster": 1
+  },
+  {
+    "year": 2012,
+    "country": "Iceland",
+    "hom_rate": "0.31",
+    "cluster": 1
+  },
+  {
+    "year": 2013,
+    "country": "Iceland",
+    "hom_rate": "0.31",
+    "cluster": 1
+  },
+  {
+    "year": 2014,
+    "country": "Iceland",
+    "hom_rate": "0.61",
+    "cluster": 1
+  },
+  {
+    "year": 2015,
+    "country": "Iceland",
+    "hom_rate": "0.91",
+    "cluster": 1
+  },
+  {
+    "year": 2016,
+    "country": "Iceland",
+    "hom_rate": "0.3",
+    "cluster": 1
+  },
+  {
+    "year": 2017,
+    "country": "Iceland",
+    "hom_rate": "0.9",
+    "cluster": 1
+  },
+  {
+    "year": 2018,
+    "country": "Iceland",
+    "hom_rate": "0.89",
+    "cluster": 1
+  },
+  {
+    "year": 2019,
+    "country": "Iceland",
+    "hom_rate": "0.29",
+    "cluster": 1
+  },
+  {
+    "year": 2020,
+    "country": "Iceland",
+    "hom_rate": "1.47",
+    "cluster": 1
+  },
+  {
+    "year": 1990,
+    "country": "Italy",
+    "hom_rate": "3.14",
+    "cluster": 1
+  },
+  {
+    "year": 1991,
+    "country": "Italy",
+    "hom_rate": "3.39",
+    "cluster": 1
+  },
+  {
+    "year": 1992,
+    "country": "Italy",
+    "hom_rate": "2.58",
+    "cluster": 1
+  },
+  {
+    "year": 1993,
+    "country": "Italy",
+    "hom_rate": "1.87",
+    "cluster": 1
+  },
+  {
+    "year": 1994,
+    "country": "Italy",
+    "hom_rate": "1.69",
+    "cluster": 1
+  },
+  {
+    "year": 1995,
+    "country": "Italy",
+    "hom_rate": "1.77",
+    "cluster": 1
+  },
+  {
+    "year": 1996,
+    "country": "Italy",
+    "hom_rate": "1.67",
+    "cluster": 1
+  },
+  {
+    "year": 1997,
+    "country": "Italy",
+    "hom_rate": "1.53",
+    "cluster": 1
+  },
+  {
+    "year": 1998,
+    "country": "Italy",
+    "hom_rate": "1.57",
+    "cluster": 1
+  },
+  {
+    "year": 1999,
+    "country": "Italy",
+    "hom_rate": "1.45",
+    "cluster": 1
+  },
+  {
+    "year": 2000,
+    "country": "Italy",
+    "hom_rate": "1.35",
+    "cluster": 1
+  },
+  {
+    "year": 2001,
+    "country": "Italy",
+    "hom_rate": "1.25",
+    "cluster": 1
+  },
+  {
+    "year": 2002,
+    "country": "Italy",
+    "hom_rate": "1.13",
+    "cluster": 1
+  },
+  {
+    "year": 2005,
+    "country": "Italy",
+    "hom_rate": "1.05",
+    "cluster": 1
+  },
+  {
+    "year": 2006,
+    "country": "Italy",
+    "hom_rate": "1.07",
+    "cluster": 1
+  },
+  {
+    "year": 2007,
+    "country": "Italy",
+    "hom_rate": "1.07",
+    "cluster": 1
+  },
+  {
+    "year": 2008,
+    "country": "Italy",
+    "hom_rate": "1.04",
+    "cluster": 1
+  },
+  {
+    "year": 2009,
+    "country": "Italy",
+    "hom_rate": "1",
+    "cluster": 1
+  },
+  {
+    "year": 2010,
+    "country": "Italy",
+    "hom_rate": "0.89",
+    "cluster": 1
+  },
+  {
+    "year": 2011,
+    "country": "Italy",
+    "hom_rate": "0.93",
+    "cluster": 1
+  },
+  {
+    "year": 2012,
+    "country": "Italy",
+    "hom_rate": "0.89",
+    "cluster": 1
+  },
+  {
+    "year": 2013,
+    "country": "Italy",
+    "hom_rate": "0.83",
+    "cluster": 1
+  },
+  {
+    "year": 2014,
+    "country": "Italy",
+    "hom_rate": "0.79",
+    "cluster": 1
+  },
+  {
+    "year": 2015,
+    "country": "Italy",
+    "hom_rate": "0.77",
+    "cluster": 1
+  },
+  {
+    "year": 2016,
+    "country": "Italy",
+    "hom_rate": "0.67",
+    "cluster": 1
+  },
+  {
+    "year": 2017,
+    "country": "Italy",
+    "hom_rate": "0.62",
+    "cluster": 1
+  },
+  {
+    "year": 2018,
+    "country": "Italy",
+    "hom_rate": "0.59",
+    "cluster": 1
+  },
+  {
+    "year": 2019,
+    "country": "Italy",
+    "hom_rate": "0.52",
+    "cluster": 1
+  },
+  {
+    "year": 2020,
+    "country": "Italy",
+    "hom_rate": "0.47",
+    "cluster": 1
+  },
+  {
+    "year": 1990,
+    "country": "Kazakhstan",
+    "hom_rate": "9",
+    "cluster": 0
+  },
+  {
+    "year": 1991,
+    "country": "Kazakhstan",
+    "hom_rate": "9.23",
+    "cluster": 0
+  },
+  {
+    "year": 1992,
+    "country": "Kazakhstan",
+    "hom_rate": "11.53",
+    "cluster": 0
+  },
+  {
+    "year": 1993,
+    "country": "Kazakhstan",
+    "hom_rate": "15.98",
+    "cluster": 0
+  },
+  {
+    "year": 1994,
+    "country": "Kazakhstan",
+    "hom_rate": "15.91",
+    "cluster": 0
+  },
+  {
+    "year": 1995,
+    "country": "Kazakhstan",
+    "hom_rate": "15.45",
+    "cluster": 0
+  },
+  {
+    "year": 1996,
+    "country": "Kazakhstan",
+    "hom_rate": "16.79",
+    "cluster": 0
+  },
+  {
+    "year": 1997,
+    "country": "Kazakhstan",
+    "hom_rate": "16.75",
+    "cluster": 0
+  },
+  {
+    "year": 1998,
+    "country": "Kazakhstan",
+    "hom_rate": "16.66",
+    "cluster": 0
+  },
+  {
+    "year": 1999,
+    "country": "Kazakhstan",
+    "hom_rate": "15.8",
+    "cluster": 0
+  },
+  {
+    "year": 2000,
+    "country": "Kazakhstan",
+    "hom_rate": "15.58",
+    "cluster": 0
+  },
+  {
+    "year": 2001,
+    "country": "Kazakhstan",
+    "hom_rate": "14.49",
+    "cluster": 0
+  },
+  {
+    "year": 2002,
+    "country": "Kazakhstan",
+    "hom_rate": "13.13",
+    "cluster": 0
+  },
+  {
+    "year": 2003,
+    "country": "Kazakhstan",
+    "hom_rate": "13.19",
+    "cluster": 0
+  },
+  {
+    "year": 2004,
+    "country": "Kazakhstan",
+    "hom_rate": "13.71",
+    "cluster": 0
+  },
+  {
+    "year": 2008,
+    "country": "Kazakhstan",
+    "hom_rate": "11.39",
+    "cluster": 0
+  },
+  {
+    "year": 2009,
+    "country": "Kazakhstan",
+    "hom_rate": "11.04",
+    "cluster": 0
+  },
+  {
+    "year": 2010,
+    "country": "Kazakhstan",
+    "hom_rate": "8.53",
+    "cluster": 0
+  },
+  {
+    "year": 2011,
+    "country": "Kazakhstan",
+    "hom_rate": "8.61",
+    "cluster": 0
+  },
+  {
+    "year": 2012,
+    "country": "Kazakhstan",
+    "hom_rate": "7.56",
+    "cluster": 0
+  },
+  {
+    "year": 2013,
+    "country": "Kazakhstan",
+    "hom_rate": "6.58",
+    "cluster": 0
+  },
+  {
+    "year": 2014,
+    "country": "Kazakhstan",
+    "hom_rate": "5.22",
+    "cluster": 0
+  },
+  {
+    "year": 2015,
+    "country": "Kazakhstan",
+    "hom_rate": "4.85",
+    "cluster": 0
+  },
+  {
+    "year": 2017,
+    "country": "Kazakhstan",
+    "hom_rate": "5.06",
+    "cluster": 0
+  },
+  {
+    "year": 2020,
+    "country": "Kazakhstan",
+    "hom_rate": "3.23",
+    "cluster": 0
+  },
+  {
+    "year": 1990,
+    "country": "Kyrgyzstan",
+    "hom_rate": "13.79",
+    "cluster": 0
+  },
+  {
+    "year": 1991,
+    "country": "Kyrgyzstan",
+    "hom_rate": "8.28",
+    "cluster": 0
+  },
+  {
+    "year": 1992,
+    "country": "Kyrgyzstan",
+    "hom_rate": "10.51",
+    "cluster": 0
+  },
+  {
+    "year": 1993,
+    "country": "Kyrgyzstan",
+    "hom_rate": "12.22",
+    "cluster": 0
+  },
+  {
+    "year": 1994,
+    "country": "Kyrgyzstan",
+    "hom_rate": "12.08",
+    "cluster": 0
+  },
+  {
+    "year": 1995,
+    "country": "Kyrgyzstan",
+    "hom_rate": "11.72",
+    "cluster": 0
+  },
+  {
+    "year": 1996,
+    "country": "Kyrgyzstan",
+    "hom_rate": "11.21",
+    "cluster": 0
+  },
+  {
+    "year": 1997,
+    "country": "Kyrgyzstan",
+    "hom_rate": "9.33",
+    "cluster": 0
+  },
+  {
+    "year": 1998,
+    "country": "Kyrgyzstan",
+    "hom_rate": "8.88",
+    "cluster": 0
+  },
+  {
+    "year": 1999,
+    "country": "Kyrgyzstan",
+    "hom_rate": "8.91",
+    "cluster": 0
+  },
+  {
+    "year": 2000,
+    "country": "Kyrgyzstan",
+    "hom_rate": "8.74",
+    "cluster": 0
+  },
+  {
+    "year": 2001,
+    "country": "Kyrgyzstan",
+    "hom_rate": "7.78",
+    "cluster": 0
+  },
+  {
+    "year": 2002,
+    "country": "Kyrgyzstan",
+    "hom_rate": "8.23",
+    "cluster": 0
+  },
+  {
+    "year": 2003,
+    "country": "Kyrgyzstan",
+    "hom_rate": "8.38",
+    "cluster": 0
+  },
+  {
+    "year": 2004,
+    "country": "Kyrgyzstan",
+    "hom_rate": "8.32",
+    "cluster": 0
+  },
+  {
+    "year": 2005,
+    "country": "Kyrgyzstan",
+    "hom_rate": "9.67",
+    "cluster": 0
+  },
+  {
+    "year": 2006,
+    "country": "Kyrgyzstan",
+    "hom_rate": "8.7",
+    "cluster": 0
+  },
+  {
+    "year": 2007,
+    "country": "Kyrgyzstan",
+    "hom_rate": "8.02",
+    "cluster": 0
+  },
+  {
+    "year": 2008,
+    "country": "Kyrgyzstan",
+    "hom_rate": "7.94",
+    "cluster": 0
+  },
+  {
+    "year": 2009,
+    "country": "Kyrgyzstan",
+    "hom_rate": "7.85",
+    "cluster": 0
+  },
+  {
+    "year": 2010,
+    "country": "Kyrgyzstan",
+    "hom_rate": "16.76",
+    "cluster": 0
+  },
+  {
+    "year": 2011,
+    "country": "Kyrgyzstan",
+    "hom_rate": "8.46",
+    "cluster": 0
+  },
+  {
+    "year": 2012,
+    "country": "Kyrgyzstan",
+    "hom_rate": "6.76",
+    "cluster": 0
+  },
+  {
+    "year": 2013,
+    "country": "Kyrgyzstan",
+    "hom_rate": "5.25",
+    "cluster": 0
+  },
+  {
+    "year": 2014,
+    "country": "Kyrgyzstan",
+    "hom_rate": "5.48",
+    "cluster": 0
+  },
+  {
+    "year": 2015,
+    "country": "Kyrgyzstan",
+    "hom_rate": "5.12",
+    "cluster": 0
+  },
+  {
+    "year": 2016,
+    "country": "Kyrgyzstan",
+    "hom_rate": "3",
+    "cluster": 0
+  },
+  {
+    "year": 2017,
+    "country": "Kyrgyzstan",
+    "hom_rate": "3.88",
+    "cluster": 0
+  },
+  {
+    "year": 2018,
+    "country": "Kyrgyzstan",
+    "hom_rate": "2.19",
+    "cluster": 0
+  },
+  {
+    "year": 1992,
+    "country": "Latvia",
+    "hom_rate": "9.88",
+    "cluster": 3
+  },
+  {
+    "year": 1993,
+    "country": "Latvia",
+    "hom_rate": "14.98",
+    "cluster": 3
+  },
+  {
+    "year": 1994,
+    "country": "Latvia",
+    "hom_rate": "13.68",
+    "cluster": 3
+  },
+  {
+    "year": 1995,
+    "country": "Latvia",
+    "hom_rate": "11.48",
+    "cluster": 3
+  },
+  {
+    "year": 1996,
+    "country": "Latvia",
+    "hom_rate": "10.81",
+    "cluster": 3
+  },
+  {
+    "year": 1997,
+    "country": "Latvia",
+    "hom_rate": "11.09",
+    "cluster": 3
+  },
+  {
+    "year": 1998,
+    "country": "Latvia",
+    "hom_rate": "10.29",
+    "cluster": 3
+  },
+  {
+    "year": 1999,
+    "country": "Latvia",
+    "hom_rate": "9.51",
+    "cluster": 3
+  },
+  {
+    "year": 2000,
+    "country": "Latvia",
+    "hom_rate": "9.98",
+    "cluster": 3
+  },
+  {
+    "year": 2001,
+    "country": "Latvia",
+    "hom_rate": "9.28",
+    "cluster": 3
+  },
+  {
+    "year": 2002,
+    "country": "Latvia",
+    "hom_rate": "9.17",
+    "cluster": 3
+  },
+  {
+    "year": 2012,
+    "country": "Latvia",
+    "hom_rate": "3.38",
+    "cluster": 3
+  },
+  {
+    "year": 2013,
+    "country": "Latvia",
+    "hom_rate": "2.45",
+    "cluster": 3
+  },
+  {
+    "year": 2014,
+    "country": "Latvia",
+    "hom_rate": "3.17",
+    "cluster": 3
+  },
+  {
+    "year": 2015,
+    "country": "Latvia",
+    "hom_rate": "3.35",
+    "cluster": 3
+  },
+  {
+    "year": 2016,
+    "country": "Latvia",
+    "hom_rate": "3.49",
+    "cluster": 3
+  },
+  {
+    "year": 2017,
+    "country": "Latvia",
+    "hom_rate": "4.15",
+    "cluster": 3
+  },
+  {
+    "year": 2018,
+    "country": "Latvia",
+    "hom_rate": "4.36",
+    "cluster": 3
+  },
+  {
+    "year": 2019,
+    "country": "Latvia",
+    "hom_rate": "3.93",
+    "cluster": 3
+  },
+  {
+    "year": 2020,
+    "country": "Latvia",
+    "hom_rate": "2.6",
+    "cluster": 3
+  },
+  {
+    "year": 1990,
+    "country": "Lithuania",
+    "hom_rate": "4.87",
+    "cluster": 3
+  },
+  {
+    "year": 1991,
+    "country": "Lithuania",
+    "hom_rate": "5.79",
+    "cluster": 3
+  },
+  {
+    "year": 1992,
+    "country": "Lithuania",
+    "hom_rate": "7.21",
+    "cluster": 3
+  },
+  {
+    "year": 1993,
+    "country": "Lithuania",
+    "hom_rate": "11.33",
+    "cluster": 3
+  },
+  {
+    "year": 1994,
+    "country": "Lithuania",
+    "hom_rate": "12.74",
+    "cluster": 3
+  },
+  {
+    "year": 1995,
+    "country": "Lithuania",
+    "hom_rate": "13.84",
+    "cluster": 3
+  },
+  {
+    "year": 1996,
+    "country": "Lithuania",
+    "hom_rate": "11.24",
+    "cluster": 3
+  },
+  {
+    "year": 1997,
+    "country": "Lithuania",
+    "hom_rate": "10.92",
+    "cluster": 3
+  },
+  {
+    "year": 1998,
+    "country": "Lithuania",
+    "hom_rate": "8.75",
+    "cluster": 3
+  },
+  {
+    "year": 1999,
+    "country": "Lithuania",
+    "hom_rate": "8.76",
+    "cluster": 3
+  },
+  {
+    "year": 2000,
+    "country": "Lithuania",
+    "hom_rate": "10.57",
+    "cluster": 3
+  },
+  {
+    "year": 2001,
+    "country": "Lithuania",
+    "hom_rate": "10.16",
+    "cluster": 3
+  },
+  {
+    "year": 2002,
+    "country": "Lithuania",
+    "hom_rate": "8.51",
+    "cluster": 3
+  },
+  {
+    "year": 2004,
+    "country": "Lithuania",
+    "hom_rate": "10.14",
+    "cluster": 3
+  },
+  {
+    "year": 2005,
+    "country": "Lithuania",
+    "hom_rate": "11.12",
+    "cluster": 3
+  },
+  {
+    "year": 2006,
+    "country": "Lithuania",
+    "hom_rate": "8.72",
+    "cluster": 3
+  },
+  {
+    "year": 2007,
+    "country": "Lithuania",
+    "hom_rate": "8.5",
+    "cluster": 3
+  },
+  {
+    "year": 2008,
+    "country": "Lithuania",
+    "hom_rate": "9.28",
+    "cluster": 3
+  },
+  {
+    "year": 2009,
+    "country": "Lithuania",
+    "hom_rate": "7.96",
+    "cluster": 3
+  },
+  {
+    "year": 2010,
+    "country": "Lithuania",
+    "hom_rate": "7.01",
+    "cluster": 3
+  },
+  {
+    "year": 2011,
+    "country": "Lithuania",
+    "hom_rate": "6.84",
+    "cluster": 3
+  },
+  {
+    "year": 2012,
+    "country": "Lithuania",
+    "hom_rate": "6.63",
+    "cluster": 3
+  },
+  {
+    "year": 2013,
+    "country": "Lithuania",
+    "hom_rate": "6.58",
+    "cluster": 3
+  },
+  {
+    "year": 2014,
+    "country": "Lithuania",
+    "hom_rate": "5.35",
+    "cluster": 3
+  },
+  {
+    "year": 2015,
+    "country": "Lithuania",
+    "hom_rate": "5.87",
+    "cluster": 3
+  },
+  {
+    "year": 2016,
+    "country": "Lithuania",
+    "hom_rate": "5.29",
+    "cluster": 3
+  },
+  {
+    "year": 2017,
+    "country": "Lithuania",
+    "hom_rate": "4.53",
+    "cluster": 3
+  },
+  {
+    "year": 2018,
+    "country": "Lithuania",
+    "hom_rate": "4.57",
+    "cluster": 3
+  },
+  {
+    "year": 2019,
+    "country": "Lithuania",
+    "hom_rate": "3.44",
+    "cluster": 3
+  },
+  {
+    "year": 2020,
+    "country": "Lithuania",
+    "hom_rate": "3.71",
+    "cluster": 3
+  },
+  {
+    "year": 1994,
+    "country": "Luxembourg",
+    "hom_rate": "1.49",
+    "cluster": 1
+  },
+  {
+    "year": 1995,
+    "country": "Luxembourg",
+    "hom_rate": "0.49",
+    "cluster": 1
+  },
+  {
+    "year": 1996,
+    "country": "Luxembourg",
+    "hom_rate": "0.97",
+    "cluster": 1
+  },
+  {
+    "year": 1997,
+    "country": "Luxembourg",
+    "hom_rate": "0.95",
+    "cluster": 1
+  },
+  {
+    "year": 1998,
+    "country": "Luxembourg",
+    "hom_rate": "0.94",
+    "cluster": 1
+  },
+  {
+    "year": 1999,
+    "country": "Luxembourg",
+    "hom_rate": "1.39",
+    "cluster": 1
+  },
+  {
+    "year": 2000,
+    "country": "Luxembourg",
+    "hom_rate": "0.92",
+    "cluster": 1
+  },
+  {
+    "year": 2001,
+    "country": "Luxembourg",
+    "hom_rate": "2.04",
+    "cluster": 1
+  },
+  {
+    "year": 2002,
+    "country": "Luxembourg",
+    "hom_rate": "1.35",
+    "cluster": 1
+  },
+  {
+    "year": 2003,
+    "country": "Luxembourg",
+    "hom_rate": "0.67",
+    "cluster": 1
+  },
+  {
+    "year": 2004,
+    "country": "Luxembourg",
+    "hom_rate": "0.44",
+    "cluster": 1
+  },
+  {
+    "year": 2005,
+    "country": "Luxembourg",
+    "hom_rate": "0.87",
+    "cluster": 1
+  },
+  {
+    "year": 2006,
+    "country": "Luxembourg",
+    "hom_rate": "1.5",
+    "cluster": 1
+  },
+  {
+    "year": 2007,
+    "country": "Luxembourg",
+    "hom_rate": "1.47",
+    "cluster": 1
+  },
+  {
+    "year": 2008,
+    "country": "Luxembourg",
+    "hom_rate": "1.65",
+    "cluster": 1
+  },
+  {
+    "year": 2009,
+    "country": "Luxembourg",
+    "hom_rate": "1.01",
+    "cluster": 1
+  },
+  {
+    "year": 2010,
+    "country": "Luxembourg",
+    "hom_rate": "1.97",
+    "cluster": 1
+  },
+  {
+    "year": 2011,
+    "country": "Luxembourg",
+    "hom_rate": "0.77",
+    "cluster": 1
+  },
+  {
+    "year": 2012,
+    "country": "Luxembourg",
+    "hom_rate": "0",
+    "cluster": 1
+  },
+  {
+    "year": 2013,
+    "country": "Luxembourg",
+    "hom_rate": "0.18",
+    "cluster": 1
+  },
+  {
+    "year": 2014,
+    "country": "Luxembourg",
+    "hom_rate": "0.72",
+    "cluster": 1
+  },
+  {
+    "year": 2015,
+    "country": "Luxembourg",
+    "hom_rate": "0.88",
+    "cluster": 1
+  },
+  {
+    "year": 2016,
+    "country": "Luxembourg",
+    "hom_rate": "0.86",
+    "cluster": 1
+  },
+  {
+    "year": 2017,
+    "country": "Luxembourg",
+    "hom_rate": "0.34",
+    "cluster": 1
+  },
+  {
+    "year": 2018,
+    "country": "Luxembourg",
+    "hom_rate": "0.5",
+    "cluster": 1
+  },
+  {
+    "year": 2019,
+    "country": "Luxembourg",
+    "hom_rate": "0.65",
+    "cluster": 1
+  },
+  {
+    "year": 2020,
+    "country": "Luxembourg",
+    "hom_rate": "0.16",
+    "cluster": 1
+  },
+  {
+    "year": 2002,
+    "country": "Montenegro",
+    "hom_rate": "4.4",
+    "cluster": 1
+  },
+  {
+    "year": 2007,
+    "country": "Montenegro",
+    "hom_rate": "1.94",
+    "cluster": 1
+  },
+  {
+    "year": 2008,
+    "country": "Montenegro",
+    "hom_rate": "3.86",
+    "cluster": 1
+  },
+  {
+    "year": 2009,
+    "country": "Montenegro",
+    "hom_rate": "3.37",
+    "cluster": 1
+  },
+  {
+    "year": 2010,
+    "country": "Montenegro",
+    "hom_rate": "2.4",
+    "cluster": 1
+  },
+  {
+    "year": 2011,
+    "country": "Montenegro",
+    "hom_rate": "3.36",
+    "cluster": 1
+  },
+  {
+    "year": 2012,
+    "country": "Montenegro",
+    "hom_rate": "2.72",
+    "cluster": 1
+  },
+  {
+    "year": 2013,
+    "country": "Montenegro",
+    "hom_rate": "1.6",
+    "cluster": 1
+  },
+  {
+    "year": 2014,
+    "country": "Montenegro",
+    "hom_rate": "3.19",
+    "cluster": 1
+  },
+  {
+    "year": 2015,
+    "country": "Montenegro",
+    "hom_rate": "2.71",
+    "cluster": 1
+  },
+  {
+    "year": 2016,
+    "country": "Montenegro",
+    "hom_rate": "4.46",
+    "cluster": 1
+  },
+  {
+    "year": 2017,
+    "country": "Montenegro",
+    "hom_rate": "2.39",
+    "cluster": 1
+  },
+  {
+    "year": 2018,
+    "country": "Montenegro",
+    "hom_rate": "2.23",
+    "cluster": 1
+  },
+  {
+    "year": 2019,
+    "country": "Montenegro",
+    "hom_rate": "3.66",
+    "cluster": 1
+  },
+  {
+    "year": 2020,
+    "country": "Montenegro",
+    "hom_rate": "2.87",
+    "cluster": 1
+  },
+  {
+    "year": 1990,
+    "country": "Netherlands",
+    "hom_rate": "0.9",
+    "cluster": 1
+  },
+  {
+    "year": 1991,
+    "country": "Netherlands",
+    "hom_rate": "1.17",
+    "cluster": 1
+  },
+  {
+    "year": 1992,
+    "country": "Netherlands",
+    "hom_rate": "1.27",
+    "cluster": 1
+  },
+  {
+    "year": 1993,
+    "country": "Netherlands",
+    "hom_rate": "1.26",
+    "cluster": 1
+  },
+  {
+    "year": 1994,
+    "country": "Netherlands",
+    "hom_rate": "1.11",
+    "cluster": 1
+  },
+  {
+    "year": 1995,
+    "country": "Netherlands",
+    "hom_rate": "1.25",
+    "cluster": 1
+  },
+  {
+    "year": 1996,
+    "country": "Netherlands",
+    "hom_rate": "1.36",
+    "cluster": 1
+  },
+  {
+    "year": 1997,
+    "country": "Netherlands",
+    "hom_rate": "1.33",
+    "cluster": 1
+  },
+  {
+    "year": 1998,
+    "country": "Netherlands",
+    "hom_rate": "1.12",
+    "cluster": 1
+  },
+  {
+    "year": 1999,
+    "country": "Netherlands",
+    "hom_rate": "1.28",
+    "cluster": 1
+  },
+  {
+    "year": 2000,
+    "country": "Netherlands",
+    "hom_rate": "1.13",
+    "cluster": 1
+  },
+  {
+    "year": 2001,
+    "country": "Netherlands",
+    "hom_rate": "1.26",
+    "cluster": 1
+  },
+  {
+    "year": 2002,
+    "country": "Netherlands",
+    "hom_rate": "1.21",
+    "cluster": 1
+  },
+  {
+    "year": 2003,
+    "country": "Netherlands",
+    "hom_rate": "1.25",
+    "cluster": 1
+  },
+  {
+    "year": 2004,
+    "country": "Netherlands",
+    "hom_rate": "1.17",
+    "cluster": 1
+  },
+  {
+    "year": 2005,
+    "country": "Netherlands",
+    "hom_rate": "1.06",
+    "cluster": 1
+  },
+  {
+    "year": 2006,
+    "country": "Netherlands",
+    "hom_rate": "0.78",
+    "cluster": 1
+  },
+  {
+    "year": 2007,
+    "country": "Netherlands",
+    "hom_rate": "0.87",
+    "cluster": 1
+  },
+  {
+    "year": 2008,
+    "country": "Netherlands",
+    "hom_rate": "0.91",
+    "cluster": 1
+  },
+  {
+    "year": 2009,
+    "country": "Netherlands",
+    "hom_rate": "0.93",
+    "cluster": 1
+  },
+  {
+    "year": 2010,
+    "country": "Netherlands",
+    "hom_rate": "0.86",
+    "cluster": 1
+  },
+  {
+    "year": 2011,
+    "country": "Netherlands",
+    "hom_rate": "0.85",
+    "cluster": 1
+  },
+  {
+    "year": 2012,
+    "country": "Netherlands",
+    "hom_rate": "0.86",
+    "cluster": 1
+  },
+  {
+    "year": 2013,
+    "country": "Netherlands",
+    "hom_rate": "0.74",
+    "cluster": 1
+  },
+  {
+    "year": 2014,
+    "country": "Netherlands",
+    "hom_rate": "0.73",
+    "cluster": 1
+  },
+  {
+    "year": 2015,
+    "country": "Netherlands",
+    "hom_rate": "0.61",
+    "cluster": 1
+  },
+  {
+    "year": 2016,
+    "country": "Netherlands",
+    "hom_rate": "0.55",
+    "cluster": 1
+  },
+  {
+    "year": 2017,
+    "country": "Netherlands",
+    "hom_rate": "0.78",
+    "cluster": 1
+  },
+  {
+    "year": 2018,
+    "country": "Netherlands",
+    "hom_rate": "0.59",
+    "cluster": 1
+  },
+  {
+    "year": 2019,
+    "country": "Netherlands",
+    "hom_rate": "0.64",
+    "cluster": 1
+  },
+  {
+    "year": 2020,
+    "country": "Netherlands",
+    "hom_rate": "0.62",
+    "cluster": 1
+  },
+  {
+    "year": 1998,
+    "country": "North Macedonia",
+    "hom_rate": "2.39",
+    "cluster": 2
+  },
+  {
+    "year": 1999,
+    "country": "North Macedonia",
+    "hom_rate": "1.88",
+    "cluster": 2
+  },
+  {
+    "year": 2000,
+    "country": "North Macedonia",
+    "hom_rate": "2.31",
+    "cluster": 2
+  },
+  {
+    "year": 2001,
+    "country": "North Macedonia",
+    "hom_rate": "2.69",
+    "cluster": 2
+  },
+  {
+    "year": 2002,
+    "country": "North Macedonia",
+    "hom_rate": "2.93",
+    "cluster": 2
+  },
+  {
+    "year": 2003,
+    "country": "North Macedonia",
+    "hom_rate": "3.41",
+    "cluster": 2
+  },
+  {
+    "year": 2004,
+    "country": "North Macedonia",
+    "hom_rate": "2.38",
+    "cluster": 2
+  },
+  {
+    "year": 2006,
+    "country": "North Macedonia",
+    "hom_rate": "2.23",
+    "cluster": 2
+  },
+  {
+    "year": 2007,
+    "country": "North Macedonia",
+    "hom_rate": "2.03",
+    "cluster": 2
+  },
+  {
+    "year": 2008,
+    "country": "North Macedonia",
+    "hom_rate": "1.69",
+    "cluster": 2
+  },
+  {
+    "year": 2009,
+    "country": "North Macedonia",
+    "hom_rate": "1.69",
+    "cluster": 2
+  },
+  {
+    "year": 2010,
+    "country": "North Macedonia",
+    "hom_rate": "2.08",
+    "cluster": 2
+  },
+  {
+    "year": 2011,
+    "country": "North Macedonia",
+    "hom_rate": "1.45",
+    "cluster": 2
+  },
+  {
+    "year": 2012,
+    "country": "North Macedonia",
+    "hom_rate": "1.4",
+    "cluster": 2
+  },
+  {
+    "year": 2013,
+    "country": "North Macedonia",
+    "hom_rate": "1.06",
+    "cluster": 2
+  },
+  {
+    "year": 2014,
+    "country": "North Macedonia",
+    "hom_rate": "1.68",
+    "cluster": 2
+  },
+  {
+    "year": 2015,
+    "country": "North Macedonia",
+    "hom_rate": "1.2",
+    "cluster": 2
+  },
+  {
+    "year": 2016,
+    "country": "North Macedonia",
+    "hom_rate": "0.91",
+    "cluster": 2
+  },
+  {
+    "year": 2017,
+    "country": "North Macedonia",
+    "hom_rate": "1.49",
+    "cluster": 2
+  },
+  {
+    "year": 2018,
+    "country": "North Macedonia",
+    "hom_rate": "1.2",
+    "cluster": 2
+  },
+  {
+    "year": 2019,
+    "country": "North Macedonia",
+    "hom_rate": "1.15",
+    "cluster": 2
+  },
+  {
+    "year": 1990,
+    "country": "Norway",
+    "hom_rate": "1.11",
+    "cluster": 1
+  },
+  {
+    "year": 1991,
+    "country": "Norway",
+    "hom_rate": "1.17",
+    "cluster": 1
+  },
+  {
+    "year": 1992,
+    "country": "Norway",
+    "hom_rate": "1.07",
+    "cluster": 1
+  },
+  {
+    "year": 1993,
+    "country": "Norway",
+    "hom_rate": "0.88",
+    "cluster": 1
+  },
+  {
+    "year": 1994,
+    "country": "Norway",
+    "hom_rate": "0.76",
+    "cluster": 1
+  },
+  {
+    "year": 1995,
+    "country": "Norway",
+    "hom_rate": "0.96",
+    "cluster": 1
+  },
+  {
+    "year": 1996,
+    "country": "Norway",
+    "hom_rate": "0.98",
+    "cluster": 1
+  },
+  {
+    "year": 1997,
+    "country": "Norway",
+    "hom_rate": "0.86",
+    "cluster": 1
+  },
+  {
+    "year": 1998,
+    "country": "Norway",
+    "hom_rate": "0.85",
+    "cluster": 1
+  },
+  {
+    "year": 1999,
+    "country": "Norway",
+    "hom_rate": "0.74",
+    "cluster": 1
+  },
+  {
+    "year": 2000,
+    "country": "Norway",
+    "hom_rate": "1.07",
+    "cluster": 1
+  },
+  {
+    "year": 2001,
+    "country": "Norway",
+    "hom_rate": "0.82",
+    "cluster": 1
+  },
+  {
+    "year": 2002,
+    "country": "Norway",
+    "hom_rate": "1.01",
+    "cluster": 1
+  },
+  {
+    "year": 2004,
+    "country": "Norway",
+    "hom_rate": "0.78",
+    "cluster": 1
+  },
+  {
+    "year": 2005,
+    "country": "Norway",
+    "hom_rate": "0.71",
+    "cluster": 1
+  },
+  {
+    "year": 2006,
+    "country": "Norway",
+    "hom_rate": "0.71",
+    "cluster": 1
+  },
+  {
+    "year": 2007,
+    "country": "Norway",
+    "hom_rate": "0.64",
+    "cluster": 1
+  },
+  {
+    "year": 2008,
+    "country": "Norway",
+    "hom_rate": "0.71",
+    "cluster": 1
+  },
+  {
+    "year": 2009,
+    "country": "Norway",
+    "hom_rate": "0.6",
+    "cluster": 1
+  },
+  {
+    "year": 2010,
+    "country": "Norway",
+    "hom_rate": "0.59",
+    "cluster": 1
+  },
+  {
+    "year": 2011,
+    "country": "Norway",
+    "hom_rate": "2.24",
+    "cluster": 1
+  },
+  {
+    "year": 2012,
+    "country": "Norway",
+    "hom_rate": "0.54",
+    "cluster": 1
+  },
+  {
+    "year": 2013,
+    "country": "Norway",
+    "hom_rate": "0.91",
+    "cluster": 1
+  },
+  {
+    "year": 2014,
+    "country": "Norway",
+    "hom_rate": "0.56",
+    "cluster": 1
+  },
+  {
+    "year": 2015,
+    "country": "Norway",
+    "hom_rate": "0.46",
+    "cluster": 1
+  },
+  {
+    "year": 2016,
+    "country": "Norway",
+    "hom_rate": "0.51",
+    "cluster": 1
+  },
+  {
+    "year": 2017,
+    "country": "Norway",
+    "hom_rate": "0.53",
+    "cluster": 1
+  },
+  {
+    "year": 2018,
+    "country": "Norway",
+    "hom_rate": "0.47",
+    "cluster": 1
+  },
+  {
+    "year": 2019,
+    "country": "Norway",
+    "hom_rate": "0.52",
+    "cluster": 1
+  },
+  {
+    "year": 2020,
+    "country": "Norway",
+    "hom_rate": "0.57",
+    "cluster": 1
+  },
+  {
+    "year": 1990,
+    "country": "Portugal",
+    "hom_rate": "1.57",
+    "cluster": 1
+  },
+  {
+    "year": 1991,
+    "country": "Portugal",
+    "hom_rate": "1.53",
+    "cluster": 1
+  },
+  {
+    "year": 1992,
+    "country": "Portugal",
+    "hom_rate": "1.43",
+    "cluster": 1
+  },
+  {
+    "year": 1993,
+    "country": "Portugal",
+    "hom_rate": "1.4",
+    "cluster": 1
+  },
+  {
+    "year": 1994,
+    "country": "Portugal",
+    "hom_rate": "1.42",
+    "cluster": 1
+  },
+  {
+    "year": 1995,
+    "country": "Portugal",
+    "hom_rate": "1.08",
+    "cluster": 1
+  },
+  {
+    "year": 1996,
+    "country": "Portugal",
+    "hom_rate": "1.05",
+    "cluster": 1
+  },
+  {
+    "year": 1997,
+    "country": "Portugal",
+    "hom_rate": "1.12",
+    "cluster": 1
+  },
+  {
+    "year": 1998,
+    "country": "Portugal",
+    "hom_rate": "1.22",
+    "cluster": 1
+  },
+  {
+    "year": 1999,
+    "country": "Portugal",
+    "hom_rate": "1.06",
+    "cluster": 1
+  },
+  {
+    "year": 2000,
+    "country": "Portugal",
+    "hom_rate": "1.13",
+    "cluster": 1
+  },
+  {
+    "year": 2001,
+    "country": "Portugal",
+    "hom_rate": "1.02",
+    "cluster": 1
+  },
+  {
+    "year": 2002,
+    "country": "Portugal",
+    "hom_rate": "1.15",
+    "cluster": 1
+  },
+  {
+    "year": 2005,
+    "country": "Portugal",
+    "hom_rate": "1.28",
+    "cluster": 1
+  },
+  {
+    "year": 2019,
+    "country": "Portugal",
+    "hom_rate": "0.87",
+    "cluster": 1
+  },
+  {
+    "year": 2020,
+    "country": "Portugal",
+    "hom_rate": "0.91",
+    "cluster": 1
+  },
+  {
+    "year": 1990,
+    "country": "Republic of Moldova",
+    "hom_rate": "6.64",
+    "cluster": 0
+  },
+  {
+    "year": 1991,
+    "country": "Republic of Moldova",
+    "hom_rate": "6.63",
+    "cluster": 0
+  },
+  {
+    "year": 1992,
+    "country": "Republic of Moldova",
+    "hom_rate": "11.4",
+    "cluster": 0
+  },
+  {
+    "year": 1993,
+    "country": "Republic of Moldova",
+    "hom_rate": "8.85",
+    "cluster": 0
+  },
+  {
+    "year": 1994,
+    "country": "Republic of Moldova",
+    "hom_rate": "9.2",
+    "cluster": 0
+  },
+  {
+    "year": 1995,
+    "country": "Republic of Moldova",
+    "hom_rate": "9.26",
+    "cluster": 0
+  },
+  {
+    "year": 1996,
+    "country": "Republic of Moldova",
+    "hom_rate": "9.27",
+    "cluster": 0
+  },
+  {
+    "year": 1997,
+    "country": "Republic of Moldova",
+    "hom_rate": "9.66",
+    "cluster": 0
+  },
+  {
+    "year": 1998,
+    "country": "Republic of Moldova",
+    "hom_rate": "8.81",
+    "cluster": 0
+  },
+  {
+    "year": 1999,
+    "country": "Republic of Moldova",
+    "hom_rate": "9.25",
+    "cluster": 0
+  },
+  {
+    "year": 2000,
+    "country": "Republic of Moldova",
+    "hom_rate": "10.3",
+    "cluster": 0
+  },
+  {
+    "year": 2001,
+    "country": "Republic of Moldova",
+    "hom_rate": "9.82",
+    "cluster": 0
+  },
+  {
+    "year": 2002,
+    "country": "Republic of Moldova",
+    "hom_rate": "9.6",
+    "cluster": 0
+  },
+  {
+    "year": 2003,
+    "country": "Republic of Moldova",
+    "hom_rate": "7.64",
+    "cluster": 0
+  },
+  {
+    "year": 2004,
+    "country": "Republic of Moldova",
+    "hom_rate": "6.65",
+    "cluster": 0
+  },
+  {
+    "year": 2005,
+    "country": "Republic of Moldova",
+    "hom_rate": "7.12",
+    "cluster": 0
+  },
+  {
+    "year": 2006,
+    "country": "Republic of Moldova",
+    "hom_rate": "6.32",
+    "cluster": 0
+  },
+  {
+    "year": 2007,
+    "country": "Republic of Moldova",
+    "hom_rate": "5.25",
+    "cluster": 0
+  },
+  {
+    "year": 2008,
+    "country": "Republic of Moldova",
+    "hom_rate": "5.74",
+    "cluster": 0
+  },
+  {
+    "year": 2009,
+    "country": "Republic of Moldova",
+    "hom_rate": "6",
+    "cluster": 0
+  },
+  {
+    "year": 2010,
+    "country": "Republic of Moldova",
+    "hom_rate": "6.49",
+    "cluster": 0
+  },
+  {
+    "year": 2011,
+    "country": "Republic of Moldova",
+    "hom_rate": "5.3",
+    "cluster": 0
+  },
+  {
+    "year": 2012,
+    "country": "Republic of Moldova",
+    "hom_rate": "5.62",
+    "cluster": 0
+  },
+  {
+    "year": 2013,
+    "country": "Republic of Moldova",
+    "hom_rate": "5.62",
+    "cluster": 0
+  },
+  {
+    "year": 2014,
+    "country": "Republic of Moldova",
+    "hom_rate": "3.95",
+    "cluster": 0
+  },
+  {
+    "year": 2015,
+    "country": "Republic of Moldova",
+    "hom_rate": "4.64",
+    "cluster": 0
+  },
+  {
+    "year": 2016,
+    "country": "Republic of Moldova",
+    "hom_rate": "4.92",
+    "cluster": 0
+  },
+  {
+    "year": 2017,
+    "country": "Republic of Moldova",
+    "hom_rate": "3.47",
+    "cluster": 0
+  },
+  {
+    "year": 2018,
+    "country": "Republic of Moldova",
+    "hom_rate": "4.1",
+    "cluster": 0
+  },
+  {
+    "year": 2019,
+    "country": "Republic of Moldova",
+    "hom_rate": "3.88",
+    "cluster": 0
+  },
+  {
+    "year": 1990,
+    "country": "Romania",
+    "hom_rate": "3.39",
+    "cluster": 2
+  },
+  {
+    "year": 1991,
+    "country": "Romania",
+    "hom_rate": "3.52",
+    "cluster": 2
+  },
+  {
+    "year": 1992,
+    "country": "Romania",
+    "hom_rate": "3.59",
+    "cluster": 2
+  },
+  {
+    "year": 1993,
+    "country": "Romania",
+    "hom_rate": "3.17",
+    "cluster": 2
+  },
+  {
+    "year": 1994,
+    "country": "Romania",
+    "hom_rate": "3.36",
+    "cluster": 2
+  },
+  {
+    "year": 1995,
+    "country": "Romania",
+    "hom_rate": "3.3",
+    "cluster": 2
+  },
+  {
+    "year": 1996,
+    "country": "Romania",
+    "hom_rate": "3.17",
+    "cluster": 2
+  },
+  {
+    "year": 1997,
+    "country": "Romania",
+    "hom_rate": "3.06",
+    "cluster": 2
+  },
+  {
+    "year": 1998,
+    "country": "Romania",
+    "hom_rate": "2.5",
+    "cluster": 2
+  },
+  {
+    "year": 1999,
+    "country": "Romania",
+    "hom_rate": "2.54",
+    "cluster": 2
+  },
+  {
+    "year": 2000,
+    "country": "Romania",
+    "hom_rate": "2.51",
+    "cluster": 2
+  },
+  {
+    "year": 2001,
+    "country": "Romania",
+    "hom_rate": "3.18",
+    "cluster": 2
+  },
+  {
+    "year": 2002,
+    "country": "Romania",
+    "hom_rate": "3",
+    "cluster": 2
+  },
+  {
+    "year": 2003,
+    "country": "Romania",
+    "hom_rate": "3.2",
+    "cluster": 2
+  },
+  {
+    "year": 2004,
+    "country": "Romania",
+    "hom_rate": "2.26",
+    "cluster": 2
+  },
+  {
+    "year": 2005,
+    "country": "Romania",
+    "hom_rate": "2.02",
+    "cluster": 2
+  },
+  {
+    "year": 2006,
+    "country": "Romania",
+    "hom_rate": "1.68",
+    "cluster": 2
+  },
+  {
+    "year": 2007,
+    "country": "Romania",
+    "hom_rate": "1.8",
+    "cluster": 2
+  },
+  {
+    "year": 2008,
+    "country": "Romania",
+    "hom_rate": "1.45",
+    "cluster": 2
+  },
+  {
+    "year": 2009,
+    "country": "Romania",
+    "hom_rate": "1.25",
+    "cluster": 2
+  },
+  {
+    "year": 2010,
+    "country": "Romania",
+    "hom_rate": "1.3",
+    "cluster": 2
+  },
+  {
+    "year": 2011,
+    "country": "Romania",
+    "hom_rate": "1.01",
+    "cluster": 2
+  },
+  {
+    "year": 2012,
+    "country": "Romania",
+    "hom_rate": "1.05",
+    "cluster": 2
+  },
+  {
+    "year": 2013,
+    "country": "Romania",
+    "hom_rate": "1.08",
+    "cluster": 2
+  },
+  {
+    "year": 2014,
+    "country": "Romania",
+    "hom_rate": "1.62",
+    "cluster": 2
+  },
+  {
+    "year": 2015,
+    "country": "Romania",
+    "hom_rate": "1.7",
+    "cluster": 2
+  },
+  {
+    "year": 2016,
+    "country": "Romania",
+    "hom_rate": "1.55",
+    "cluster": 2
+  },
+  {
+    "year": 2017,
+    "country": "Romania",
+    "hom_rate": "1.3",
+    "cluster": 2
+  },
+  {
+    "year": 2018,
+    "country": "Romania",
+    "hom_rate": "1.28",
+    "cluster": 2
+  },
+  {
+    "year": 2019,
+    "country": "Romania",
+    "hom_rate": "1.26",
+    "cluster": 2
+  },
+  {
+    "year": 2020,
+    "country": "Romania",
+    "hom_rate": "1.46",
+    "cluster": 2
+  },
+  {
+    "year": 1990,
+    "country": "Russian Federation",
+    "hom_rate": "14.33",
+    "cluster": 0
+  },
+  {
+    "year": 1991,
+    "country": "Russian Federation",
+    "hom_rate": "15.28",
+    "cluster": 0
+  },
+  {
+    "year": 1992,
+    "country": "Russian Federation",
+    "hom_rate": "22.87",
+    "cluster": 0
+  },
+  {
+    "year": 1993,
+    "country": "Russian Federation",
+    "hom_rate": "30.37",
+    "cluster": 0
+  },
+  {
+    "year": 1994,
+    "country": "Russian Federation",
+    "hom_rate": "32.27",
+    "cluster": 0
+  },
+  {
+    "year": 1995,
+    "country": "Russian Federation",
+    "hom_rate": "30.53",
+    "cluster": 0
+  },
+  {
+    "year": 1996,
+    "country": "Russian Federation",
+    "hom_rate": "26.4",
+    "cluster": 0
+  },
+  {
+    "year": 1997,
+    "country": "Russian Federation",
+    "hom_rate": "23.69",
+    "cluster": 0
+  },
+  {
+    "year": 1998,
+    "country": "Russian Federation",
+    "hom_rate": "22.77",
+    "cluster": 0
+  },
+  {
+    "year": 1999,
+    "country": "Russian Federation",
+    "hom_rate": "26.02",
+    "cluster": 0
+  },
+  {
+    "year": 2000,
+    "country": "Russian Federation",
+    "hom_rate": "28.07",
+    "cluster": 0
+  },
+  {
+    "year": 2001,
+    "country": "Russian Federation",
+    "hom_rate": "29.43",
+    "cluster": 0
+  },
+  {
+    "year": 2002,
+    "country": "Russian Federation",
+    "hom_rate": "30.47",
+    "cluster": 0
+  },
+  {
+    "year": 2003,
+    "country": "Russian Federation",
+    "hom_rate": "28.88",
+    "cluster": 0
+  },
+  {
+    "year": 2004,
+    "country": "Russian Federation",
+    "hom_rate": "27.25",
+    "cluster": 0
+  },
+  {
+    "year": 2005,
+    "country": "Russian Federation",
+    "hom_rate": "24.8",
+    "cluster": 0
+  },
+  {
+    "year": 2006,
+    "country": "Russian Federation",
+    "hom_rate": "20.11",
+    "cluster": 0
+  },
+  {
+    "year": 2007,
+    "country": "Russian Federation",
+    "hom_rate": "17.71",
+    "cluster": 0
+  },
+  {
+    "year": 2008,
+    "country": "Russian Federation",
+    "hom_rate": "12.7",
+    "cluster": 0
+  },
+  {
+    "year": 2009,
+    "country": "Russian Federation",
+    "hom_rate": "12.32",
+    "cluster": 0
+  },
+  {
+    "year": 2010,
+    "country": "Russian Federation",
+    "hom_rate": "11.63",
+    "cluster": 0
+  },
+  {
+    "year": 2011,
+    "country": "Russian Federation",
+    "hom_rate": "11.26",
+    "cluster": 0
+  },
+  {
+    "year": 2012,
+    "country": "Russian Federation",
+    "hom_rate": "11.28",
+    "cluster": 0
+  },
+  {
+    "year": 2013,
+    "country": "Russian Federation",
+    "hom_rate": "11.11",
+    "cluster": 0
+  },
+  {
+    "year": 2014,
+    "country": "Russian Federation",
+    "hom_rate": "11.42",
+    "cluster": 0
+  },
+  {
+    "year": 2015,
+    "country": "Russian Federation",
+    "hom_rate": "11.48",
+    "cluster": 0
+  },
+  {
+    "year": 2016,
+    "country": "Russian Federation",
+    "hom_rate": "10.92",
+    "cluster": 0
+  },
+  {
+    "year": 2017,
+    "country": "Russian Federation",
+    "hom_rate": "9.13",
+    "cluster": 0
+  },
+  {
+    "year": 2018,
+    "country": "Russian Federation",
+    "hom_rate": "8.21",
+    "cluster": 0
+  },
+  {
+    "year": 2019,
+    "country": "Russian Federation",
+    "hom_rate": "7.68",
+    "cluster": 0
+  },
+  {
+    "year": 2020,
+    "country": "Russian Federation",
+    "hom_rate": "7.33",
+    "cluster": 0
+  },
+  {
+    "year": 1990,
+    "country": "Slovakia",
+    "hom_rate": "1.76",
+    "cluster": 2
+  },
+  {
+    "year": 1991,
+    "country": "Slovakia",
+    "hom_rate": "2.41",
+    "cluster": 2
+  },
+  {
+    "year": 1993,
+    "country": "Slovakia",
+    "hom_rate": "2.56",
+    "cluster": 2
+  },
+  {
+    "year": 1994,
+    "country": "Slovakia",
+    "hom_rate": "2.41",
+    "cluster": 2
+  },
+  {
+    "year": 1995,
+    "country": "Slovakia",
+    "hom_rate": "2.38",
+    "cluster": 2
+  },
+  {
+    "year": 1996,
+    "country": "Slovakia",
+    "hom_rate": "2.45",
+    "cluster": 2
+  },
+  {
+    "year": 1997,
+    "country": "Slovakia",
+    "hom_rate": "2.6",
+    "cluster": 2
+  },
+  {
+    "year": 1998,
+    "country": "Slovakia",
+    "hom_rate": "2.37",
+    "cluster": 2
+  },
+  {
+    "year": 1999,
+    "country": "Slovakia",
+    "hom_rate": "2.61",
+    "cluster": 2
+  },
+  {
+    "year": 2000,
+    "country": "Slovakia",
+    "hom_rate": "2.39",
+    "cluster": 2
+  },
+  {
+    "year": 2001,
+    "country": "Slovakia",
+    "hom_rate": "2.19",
+    "cluster": 2
+  },
+  {
+    "year": 2002,
+    "country": "Slovakia",
+    "hom_rate": "2.24",
+    "cluster": 2
+  },
+  {
+    "year": 2003,
+    "country": "Slovakia",
+    "hom_rate": "2.54",
+    "cluster": 2
+  },
+  {
+    "year": 2004,
+    "country": "Slovakia",
+    "hom_rate": "2",
+    "cluster": 2
+  },
+  {
+    "year": 2005,
+    "country": "Slovakia",
+    "hom_rate": "1.72",
+    "cluster": 2
+  },
+  {
+    "year": 2006,
+    "country": "Slovakia",
+    "hom_rate": "1.52",
+    "cluster": 2
+  },
+  {
+    "year": 2007,
+    "country": "Slovakia",
+    "hom_rate": "1.52",
+    "cluster": 2
+  },
+  {
+    "year": 2008,
+    "country": "Slovakia",
+    "hom_rate": "1.59",
+    "cluster": 2
+  },
+  {
+    "year": 2009,
+    "country": "Slovakia",
+    "hom_rate": "1.44",
+    "cluster": 2
+  },
+  {
+    "year": 2010,
+    "country": "Slovakia",
+    "hom_rate": "1.52",
+    "cluster": 2
+  },
+  {
+    "year": 2011,
+    "country": "Slovakia",
+    "hom_rate": "1.61",
+    "cluster": 2
+  },
+  {
+    "year": 2012,
+    "country": "Slovakia",
+    "hom_rate": "1.16",
+    "cluster": 2
+  },
+  {
+    "year": 2013,
+    "country": "Slovakia",
+    "hom_rate": "1.31",
+    "cluster": 2
+  },
+  {
+    "year": 2014,
+    "country": "Slovakia",
+    "hom_rate": "1.2",
+    "cluster": 2
+  },
+  {
+    "year": 2015,
+    "country": "Slovakia",
+    "hom_rate": "0.81",
+    "cluster": 2
+  },
+  {
+    "year": 2016,
+    "country": "Slovakia",
+    "hom_rate": "1.05",
+    "cluster": 2
+  },
+  {
+    "year": 2017,
+    "country": "Slovakia",
+    "hom_rate": "1.36",
+    "cluster": 2
+  },
+  {
+    "year": 2018,
+    "country": "Slovakia",
+    "hom_rate": "1.14",
+    "cluster": 2
+  },
+  {
+    "year": 2019,
+    "country": "Slovakia",
+    "hom_rate": "1.39",
+    "cluster": 2
+  },
+  {
+    "year": 2020,
+    "country": "Slovakia",
+    "hom_rate": "1.15",
+    "cluster": 2
+  },
+  {
+    "year": 1990,
+    "country": "Slovenia",
+    "hom_rate": "2.04",
+    "cluster": 2
+  },
+  {
+    "year": 1991,
+    "country": "Slovenia",
+    "hom_rate": "1.99",
+    "cluster": 2
+  },
+  {
+    "year": 1992,
+    "country": "Slovenia",
+    "hom_rate": "2.39",
+    "cluster": 2
+  },
+  {
+    "year": 1993,
+    "country": "Slovenia",
+    "hom_rate": "1.3",
+    "cluster": 2
+  },
+  {
+    "year": 1994,
+    "country": "Slovenia",
+    "hom_rate": "2.05",
+    "cluster": 2
+  },
+  {
+    "year": 1995,
+    "country": "Slovenia",
+    "hom_rate": "2.21",
+    "cluster": 2
+  },
+  {
+    "year": 1996,
+    "country": "Slovenia",
+    "hom_rate": "1.91",
+    "cluster": 2
+  },
+  {
+    "year": 1997,
+    "country": "Slovenia",
+    "hom_rate": "1.81",
+    "cluster": 2
+  },
+  {
+    "year": 1998,
+    "country": "Slovenia",
+    "hom_rate": "0.7",
+    "cluster": 2
+  },
+  {
+    "year": 1999,
+    "country": "Slovenia",
+    "hom_rate": "1.26",
+    "cluster": 2
+  },
+  {
+    "year": 2000,
+    "country": "Slovenia",
+    "hom_rate": "1.81",
+    "cluster": 2
+  },
+  {
+    "year": 2001,
+    "country": "Slovenia",
+    "hom_rate": "1.41",
+    "cluster": 2
+  },
+  {
+    "year": 2002,
+    "country": "Slovenia",
+    "hom_rate": "1.81",
+    "cluster": 2
+  },
+  {
+    "year": 2003,
+    "country": "Slovenia",
+    "hom_rate": "1.06",
+    "cluster": 2
+  },
+  {
+    "year": 2004,
+    "country": "Slovenia",
+    "hom_rate": "1.36",
+    "cluster": 2
+  },
+  {
+    "year": 2005,
+    "country": "Slovenia",
+    "hom_rate": "1",
+    "cluster": 2
+  },
+  {
+    "year": 2006,
+    "country": "Slovenia",
+    "hom_rate": "0.6",
+    "cluster": 2
+  },
+  {
+    "year": 2007,
+    "country": "Slovenia",
+    "hom_rate": "1.19",
+    "cluster": 2
+  },
+  {
+    "year": 2008,
+    "country": "Slovenia",
+    "hom_rate": "0.49",
+    "cluster": 2
+  },
+  {
+    "year": 2009,
+    "country": "Slovenia",
+    "hom_rate": "0.64",
+    "cluster": 2
+  },
+  {
+    "year": 2010,
+    "country": "Slovenia",
+    "hom_rate": "0.73",
+    "cluster": 2
+  },
+  {
+    "year": 2011,
+    "country": "Slovenia",
+    "hom_rate": "0.78",
+    "cluster": 2
+  },
+  {
+    "year": 2012,
+    "country": "Slovenia",
+    "hom_rate": "0.68",
+    "cluster": 2
+  },
+  {
+    "year": 2013,
+    "country": "Slovenia",
+    "hom_rate": "0.58",
+    "cluster": 2
+  },
+  {
+    "year": 2014,
+    "country": "Slovenia",
+    "hom_rate": "0.77",
+    "cluster": 2
+  },
+  {
+    "year": 2015,
+    "country": "Slovenia",
+    "hom_rate": "0.97",
+    "cluster": 2
+  },
+  {
+    "year": 2016,
+    "country": "Slovenia",
+    "hom_rate": "0.48",
+    "cluster": 2
+  },
+  {
+    "year": 2017,
+    "country": "Slovenia",
+    "hom_rate": "0.92",
+    "cluster": 2
+  },
+  {
+    "year": 2018,
+    "country": "Slovenia",
+    "hom_rate": "0.48",
+    "cluster": 2
+  },
+  {
+    "year": 2019,
+    "country": "Slovenia",
+    "hom_rate": "0.48",
+    "cluster": 2
+  },
+  {
+    "year": 2020,
+    "country": "Slovenia",
+    "hom_rate": "0.53",
+    "cluster": 2
+  },
+  {
+    "year": 1990,
+    "country": "Spain",
+    "hom_rate": "1.23",
+    "cluster": 1
+  },
+  {
+    "year": 1991,
+    "country": "Spain",
+    "hom_rate": "1.12",
+    "cluster": 1
+  },
+  {
+    "year": 1992,
+    "country": "Spain",
+    "hom_rate": "1.12",
+    "cluster": 1
+  },
+  {
+    "year": 1993,
+    "country": "Spain",
+    "hom_rate": "1.2",
+    "cluster": 1
+  },
+  {
+    "year": 1994,
+    "country": "Spain",
+    "hom_rate": "1.08",
+    "cluster": 1
+  },
+  {
+    "year": 1995,
+    "country": "Spain",
+    "hom_rate": "1.03",
+    "cluster": 1
+  },
+  {
+    "year": 1996,
+    "country": "Spain",
+    "hom_rate": "0.99",
+    "cluster": 1
+  },
+  {
+    "year": 1997,
+    "country": "Spain",
+    "hom_rate": "1.16",
+    "cluster": 1
+  },
+  {
+    "year": 1998,
+    "country": "Spain",
+    "hom_rate": "1.3",
+    "cluster": 1
+  },
+  {
+    "year": 1999,
+    "country": "Spain",
+    "hom_rate": "1.2",
+    "cluster": 1
+  },
+  {
+    "year": 2000,
+    "country": "Spain",
+    "hom_rate": "1.35",
+    "cluster": 1
+  },
+  {
+    "year": 2001,
+    "country": "Spain",
+    "hom_rate": "1.4",
+    "cluster": 1
+  },
+  {
+    "year": 2002,
+    "country": "Spain",
+    "hom_rate": "1.35",
+    "cluster": 1
+  },
+  {
+    "year": 2003,
+    "country": "Spain",
+    "hom_rate": "1.38",
+    "cluster": 1
+  },
+  {
+    "year": 2004,
+    "country": "Spain",
+    "hom_rate": "1.2",
+    "cluster": 1
+  },
+  {
+    "year": 2005,
+    "country": "Spain",
+    "hom_rate": "1.18",
+    "cluster": 1
+  },
+  {
+    "year": 2006,
+    "country": "Spain",
+    "hom_rate": "1.06",
+    "cluster": 1
+  },
+  {
+    "year": 2007,
+    "country": "Spain",
+    "hom_rate": "1.06",
+    "cluster": 1
+  },
+  {
+    "year": 2008,
+    "country": "Spain",
+    "hom_rate": "0.88",
+    "cluster": 1
+  },
+  {
+    "year": 2009,
+    "country": "Spain",
+    "hom_rate": "0.88",
+    "cluster": 1
+  },
+  {
+    "year": 2010,
+    "country": "Spain",
+    "hom_rate": "0.85",
+    "cluster": 1
+  },
+  {
+    "year": 2011,
+    "country": "Spain",
+    "hom_rate": "0.82",
+    "cluster": 1
+  },
+  {
+    "year": 2012,
+    "country": "Spain",
+    "hom_rate": "0.77",
+    "cluster": 1
+  },
+  {
+    "year": 2013,
+    "country": "Spain",
+    "hom_rate": "0.64",
+    "cluster": 1
+  },
+  {
+    "year": 2014,
+    "country": "Spain",
+    "hom_rate": "0.69",
+    "cluster": 1
+  },
+  {
+    "year": 2015,
+    "country": "Spain",
+    "hom_rate": "0.65",
+    "cluster": 1
+  },
+  {
+    "year": 2016,
+    "country": "Spain",
+    "hom_rate": "0.63",
+    "cluster": 1
+  },
+  {
+    "year": 2017,
+    "country": "Spain",
+    "hom_rate": "0.66",
+    "cluster": 1
+  },
+  {
+    "year": 2018,
+    "country": "Spain",
+    "hom_rate": "0.62",
+    "cluster": 1
+  },
+  {
+    "year": 2019,
+    "country": "Spain",
+    "hom_rate": "0.71",
+    "cluster": 1
+  },
+  {
+    "year": 2020,
+    "country": "Spain",
+    "hom_rate": "0.64",
+    "cluster": 1
+  },
+  {
+    "year": 1990,
+    "country": "Tajikistan",
+    "hom_rate": "3.18",
+    "cluster": 0
+  },
+  {
+    "year": 1991,
+    "country": "Tajikistan",
+    "hom_rate": "2.74",
+    "cluster": 0
+  },
+  {
+    "year": 1992,
+    "country": "Tajikistan",
+    "hom_rate": "11",
+    "cluster": 0
+  },
+  {
+    "year": 1993,
+    "country": "Tajikistan",
+    "hom_rate": "23.31",
+    "cluster": 0
+  },
+  {
+    "year": 1994,
+    "country": "Tajikistan",
+    "hom_rate": "11.2",
+    "cluster": 0
+  },
+  {
+    "year": 1995,
+    "country": "Tajikistan",
+    "hom_rate": "7.55",
+    "cluster": 0
+  },
+  {
+    "year": 1996,
+    "country": "Tajikistan",
+    "hom_rate": "8.27",
+    "cluster": 0
+  },
+  {
+    "year": 1997,
+    "country": "Tajikistan",
+    "hom_rate": "8.39",
+    "cluster": 0
+  },
+  {
+    "year": 1998,
+    "country": "Tajikistan",
+    "hom_rate": "8.15",
+    "cluster": 0
+  },
+  {
+    "year": 1999,
+    "country": "Tajikistan",
+    "hom_rate": "5.83",
+    "cluster": 0
+  },
+  {
+    "year": 2000,
+    "country": "Tajikistan",
+    "hom_rate": "4.55",
+    "cluster": 0
+  },
+  {
+    "year": 2001,
+    "country": "Tajikistan",
+    "hom_rate": "3.69",
+    "cluster": 0
+  },
+  {
+    "year": 2002,
+    "country": "Tajikistan",
+    "hom_rate": "2.8",
+    "cluster": 0
+  },
+  {
+    "year": 2003,
+    "country": "Tajikistan",
+    "hom_rate": "2.51",
+    "cluster": 0
+  },
+  {
+    "year": 2004,
+    "country": "Tajikistan",
+    "hom_rate": "2.13",
+    "cluster": 0
+  },
+  {
+    "year": 2005,
+    "country": "Tajikistan",
+    "hom_rate": "2.31",
+    "cluster": 0
+  },
+  {
+    "year": 2006,
+    "country": "Tajikistan",
+    "hom_rate": "2.8",
+    "cluster": 0
+  },
+  {
+    "year": 2007,
+    "country": "Tajikistan",
+    "hom_rate": "1.87",
+    "cluster": 0
+  },
+  {
+    "year": 2008,
+    "country": "Tajikistan",
+    "hom_rate": "1.39",
+    "cluster": 0
+  },
+  {
+    "year": 2009,
+    "country": "Tajikistan",
+    "hom_rate": "1.32",
+    "cluster": 0
+  },
+  {
+    "year": 2010,
+    "country": "Tajikistan",
+    "hom_rate": "2.4",
+    "cluster": 0
+  },
+  {
+    "year": 2011,
+    "country": "Tajikistan",
+    "hom_rate": "1.64",
+    "cluster": 0
+  },
+  {
+    "year": 2020,
+    "country": "Tajikistan",
+    "hom_rate": "0.91",
+    "cluster": 0
+  },
+  {
+    "year": 2003,
+    "country": "Turkey",
+    "hom_rate": "4.29",
+    "cluster": 1
+  },
+  {
+    "year": 2004,
+    "country": "Turkey",
+    "hom_rate": "4.35",
+    "cluster": 1
+  },
+  {
+    "year": 2005,
+    "country": "Turkey",
+    "hom_rate": "4.87",
+    "cluster": 1
+  },
+  {
+    "year": 2006,
+    "country": "Turkey",
+    "hom_rate": "4.61",
+    "cluster": 1
+  },
+  {
+    "year": 2007,
+    "country": "Turkey",
+    "hom_rate": "5.17",
+    "cluster": 1
+  },
+  {
+    "year": 2008,
+    "country": "Turkey",
+    "hom_rate": "4.63",
+    "cluster": 1
+  },
+  {
+    "year": 2010,
+    "country": "Turkey",
+    "hom_rate": "4.24",
+    "cluster": 1
+  },
+  {
+    "year": 2011,
+    "country": "Turkey",
+    "hom_rate": "4.17",
+    "cluster": 1
+  },
+  {
+    "year": 2012,
+    "country": "Turkey",
+    "hom_rate": "4.31",
+    "cluster": 1
+  },
+  {
+    "year": 2015,
+    "country": "Turkey",
+    "hom_rate": "2.85",
+    "cluster": 1
+  },
+  {
+    "year": 2016,
+    "country": "Turkey",
+    "hom_rate": "3.39",
+    "cluster": 1
+  },
+  {
+    "year": 2017,
+    "country": "Turkey",
+    "hom_rate": "3.13",
+    "cluster": 1
+  },
+  {
+    "year": 2018,
+    "country": "Turkey",
+    "hom_rate": "2.62",
+    "cluster": 1
+  },
+  {
+    "year": 2019,
+    "country": "Turkey",
+    "hom_rate": "2.4",
+    "cluster": 1
+  },
+  {
+    "year": 1990,
+    "country": "Turkmenistan",
+    "hom_rate": "9.01",
+    "cluster": 0
+  },
+  {
+    "year": 1991,
+    "country": "Turkmenistan",
+    "hom_rate": "8.08",
+    "cluster": 0
+  },
+  {
+    "year": 1992,
+    "country": "Turkmenistan",
+    "hom_rate": "7.59",
+    "cluster": 0
+  },
+  {
+    "year": 1993,
+    "country": "Turkmenistan",
+    "hom_rate": "8.28",
+    "cluster": 0
+  },
+  {
+    "year": 1994,
+    "country": "Turkmenistan",
+    "hom_rate": "7.48",
+    "cluster": 0
+  },
+  {
+    "year": 1995,
+    "country": "Turkmenistan",
+    "hom_rate": "6.39",
+    "cluster": 0
+  },
+  {
+    "year": 1996,
+    "country": "Turkmenistan",
+    "hom_rate": "7.79",
+    "cluster": 0
+  },
+  {
+    "year": 1997,
+    "country": "Turkmenistan",
+    "hom_rate": "8.22",
+    "cluster": 0
+  },
+  {
+    "year": 1998,
+    "country": "Turkmenistan",
+    "hom_rate": "7.82",
+    "cluster": 0
+  },
+  {
+    "year": 1999,
+    "country": "Turkmenistan",
+    "hom_rate": "7.19",
+    "cluster": 0
+  },
+  {
+    "year": 2000,
+    "country": "Turkmenistan",
+    "hom_rate": "5.91",
+    "cluster": 0
+  },
+  {
+    "year": 2001,
+    "country": "Turkmenistan",
+    "hom_rate": "5.43",
+    "cluster": 0
+  },
+  {
+    "year": 2002,
+    "country": "Turkmenistan",
+    "hom_rate": "5.23",
+    "cluster": 0
+  },
+  {
+    "year": 2003,
+    "country": "Turkmenistan",
+    "hom_rate": "5",
+    "cluster": 0
+  },
+  {
+    "year": 2004,
+    "country": "Turkmenistan",
+    "hom_rate": "4.44",
+    "cluster": 0
+  },
+  {
+    "year": 2005,
+    "country": "Turkmenistan",
+    "hom_rate": "4.33",
+    "cluster": 0
+  },
+  {
+    "year": 2006,
+    "country": "Turkmenistan",
+    "hom_rate": "4.22",
+    "cluster": 0
+  },
+  {
+    "year": 1990,
+    "country": "Ukraine",
+    "hom_rate": "4.97",
+    "cluster": 0
+  },
+  {
+    "year": 1991,
+    "country": "Ukraine",
+    "hom_rate": "5.15",
+    "cluster": 0
+  },
+  {
+    "year": 1992,
+    "country": "Ukraine",
+    "hom_rate": "6.55",
+    "cluster": 0
+  },
+  {
+    "year": 1993,
+    "country": "Ukraine",
+    "hom_rate": "7.2",
+    "cluster": 0
+  },
+  {
+    "year": 1994,
+    "country": "Ukraine",
+    "hom_rate": "8.26",
+    "cluster": 0
+  },
+  {
+    "year": 1995,
+    "country": "Ukraine",
+    "hom_rate": "8.66",
+    "cluster": 0
+  },
+  {
+    "year": 1996,
+    "country": "Ukraine",
+    "hom_rate": "9.68",
+    "cluster": 0
+  },
+  {
+    "year": 1997,
+    "country": "Ukraine",
+    "hom_rate": "8.43",
+    "cluster": 0
+  },
+  {
+    "year": 1998,
+    "country": "Ukraine",
+    "hom_rate": "8.43",
+    "cluster": 0
+  },
+  {
+    "year": 1999,
+    "country": "Ukraine",
+    "hom_rate": "8.62",
+    "cluster": 0
+  },
+  {
+    "year": 2000,
+    "country": "Ukraine",
+    "hom_rate": "9.05",
+    "cluster": 0
+  },
+  {
+    "year": 2001,
+    "country": "Ukraine",
+    "hom_rate": "10.03",
+    "cluster": 0
+  },
+  {
+    "year": 2002,
+    "country": "Ukraine",
+    "hom_rate": "8.95",
+    "cluster": 0
+  },
+  {
+    "year": 2003,
+    "country": "Ukraine",
+    "hom_rate": "8.49",
+    "cluster": 0
+  },
+  {
+    "year": 2004,
+    "country": "Ukraine",
+    "hom_rate": "7.38",
+    "cluster": 0
+  },
+  {
+    "year": 2005,
+    "country": "Ukraine",
+    "hom_rate": "6.46",
+    "cluster": 0
+  },
+  {
+    "year": 2006,
+    "country": "Ukraine",
+    "hom_rate": "6.35",
+    "cluster": 0
+  },
+  {
+    "year": 2007,
+    "country": "Ukraine",
+    "hom_rate": "5.71",
+    "cluster": 0
+  },
+  {
+    "year": 2008,
+    "country": "Ukraine",
+    "hom_rate": "5.34",
+    "cluster": 0
+  },
+  {
+    "year": 2009,
+    "country": "Ukraine",
+    "hom_rate": "4.87",
+    "cluster": 0
+  },
+  {
+    "year": 2010,
+    "country": "Ukraine",
+    "hom_rate": "4.34",
+    "cluster": 0
+  },
+  {
+    "year": 2012,
+    "country": "Ukraine",
+    "hom_rate": "5.14",
+    "cluster": 0
+  },
+  {
+    "year": 2014,
+    "country": "Ukraine",
+    "hom_rate": "6.31",
+    "cluster": 0
+  },
+  {
+    "year": 2017,
+    "country": "Ukraine",
+    "hom_rate": "6.18",
+    "cluster": 0
+  },
+  {
+    "year": 1990,
+    "country": "United Kingdom",
+    "hom_rate": "1.25",
+    "cluster": 1
+  },
+  {
+    "year": 1991,
+    "country": "United Kingdom",
+    "hom_rate": "1.28",
+    "cluster": 1
+  },
+  {
+    "year": 1992,
+    "country": "United Kingdom",
+    "hom_rate": "1.51",
+    "cluster": 1
+  },
+  {
+    "year": 1993,
+    "country": "United Kingdom",
+    "hom_rate": "1.54",
+    "cluster": 1
+  },
+  {
+    "year": 1994,
+    "country": "United Kingdom",
+    "hom_rate": "1.59",
+    "cluster": 1
+  },
+  {
+    "year": 1995,
+    "country": "United Kingdom",
+    "hom_rate": "1.55",
+    "cluster": 1
+  },
+  {
+    "year": 1996,
+    "country": "United Kingdom",
+    "hom_rate": "1.45",
+    "cluster": 1
+  },
+  {
+    "year": 1997,
+    "country": "United Kingdom",
+    "hom_rate": "1.48",
+    "cluster": 1
+  },
+  {
+    "year": 1998,
+    "country": "United Kingdom",
+    "hom_rate": "1.57",
+    "cluster": 1
+  },
+  {
+    "year": 1999,
+    "country": "United Kingdom",
+    "hom_rate": "1.57",
+    "cluster": 1
+  },
+  {
+    "year": 2000,
+    "country": "United Kingdom",
+    "hom_rate": "1.55",
+    "cluster": 1
+  },
+  {
+    "year": 2001,
+    "country": "United Kingdom",
+    "hom_rate": "1.63",
+    "cluster": 1
+  },
+  {
+    "year": 2002,
+    "country": "United Kingdom",
+    "hom_rate": "1.87",
+    "cluster": 1
+  },
+  {
+    "year": 1990,
+    "country": "United States of America",
+    "hom_rate": "9.16",
+    "cluster": 1
+  },
+  {
+    "year": 1991,
+    "country": "United States of America",
+    "hom_rate": "9.56",
+    "cluster": 1
+  },
+  {
+    "year": 1992,
+    "country": "United States of America",
+    "hom_rate": "9.11",
+    "cluster": 1
+  },
+  {
+    "year": 1993,
+    "country": "United States of America",
+    "hom_rate": "9.31",
+    "cluster": 1
+  },
+  {
+    "year": 1994,
+    "country": "United States of America",
+    "hom_rate": "8.77",
+    "cluster": 1
+  },
+  {
+    "year": 1995,
+    "country": "United States of America",
+    "hom_rate": "8.03",
+    "cluster": 1
+  },
+  {
+    "year": 1996,
+    "country": "United States of America",
+    "hom_rate": "7.21",
+    "cluster": 1
+  },
+  {
+    "year": 1997,
+    "country": "United States of America",
+    "hom_rate": "6.6",
+    "cluster": 1
+  },
+  {
+    "year": 1998,
+    "country": "United States of America",
+    "hom_rate": "6.08",
+    "cluster": 1
+  },
+  {
+    "year": 1999,
+    "country": "United States of America",
+    "hom_rate": "5.49",
+    "cluster": 1
+  },
+  {
+    "year": 2000,
+    "country": "United States of America",
+    "hom_rate": "5.45",
+    "cluster": 1
+  },
+  {
+    "year": 2001,
+    "country": "United States of America",
+    "hom_rate": "6.59",
+    "cluster": 1
+  },
+  {
+    "year": 2002,
+    "country": "United States of America",
+    "hom_rate": "5.57",
+    "cluster": 1
+  },
+  {
+    "year": 2006,
+    "country": "United States of America",
+    "hom_rate": "5.74",
+    "cluster": 1
+  },
+  {
+    "year": 2007,
+    "country": "United States of America",
+    "hom_rate": "5.62",
+    "cluster": 1
+  },
+  {
+    "year": 2008,
+    "country": "United States of America",
+    "hom_rate": "5.35",
+    "cluster": 1
+  },
+  {
+    "year": 2009,
+    "country": "United States of America",
+    "hom_rate": "4.96",
+    "cluster": 1
+  },
+  {
+    "year": 2010,
+    "country": "United States of America",
+    "hom_rate": "4.7",
+    "cluster": 1
+  },
+  {
+    "year": 2011,
+    "country": "United States of America",
+    "hom_rate": "4.65",
+    "cluster": 1
+  },
+  {
+    "year": 2012,
+    "country": "United States of America",
+    "hom_rate": "4.67",
+    "cluster": 1
+  },
+  {
+    "year": 2013,
+    "country": "United States of America",
+    "hom_rate": "4.47",
+    "cluster": 1
+  },
+  {
+    "year": 2014,
+    "country": "United States of America",
+    "hom_rate": "4.39",
+    "cluster": 1
+  },
+  {
+    "year": 2015,
+    "country": "United States of America",
+    "hom_rate": "4.89",
+    "cluster": 1
+  },
+  {
+    "year": 2016,
+    "country": "United States of America",
+    "hom_rate": "5.33",
+    "cluster": 1
+  },
+  {
+    "year": 2017,
+    "country": "United States of America",
+    "hom_rate": "5.26",
+    "cluster": 1
+  },
+  {
+    "year": 2018,
+    "country": "United States of America",
+    "hom_rate": "4.95",
+    "cluster": 1
+  },
+  {
+    "year": 2019,
+    "country": "United States of America",
+    "hom_rate": "4.94",
+    "cluster": 1
+  },
+  {
+    "year": 2020,
+    "country": "United States of America",
+    "hom_rate": "6.28",
+    "cluster": 1
+  },
+  {
+    "year": 1990,
+    "country": "Uzbekistan",
+    "hom_rate": "5.52",
+    "cluster": 0
+  },
+  {
+    "year": 1991,
+    "country": "Uzbekistan",
+    "hom_rate": "5.09",
+    "cluster": 0
+  },
+  {
+    "year": 1992,
+    "country": "Uzbekistan",
+    "hom_rate": "5.36",
+    "cluster": 0
+  },
+  {
+    "year": 1993,
+    "country": "Uzbekistan",
+    "hom_rate": "5.21",
+    "cluster": 0
+  },
+  {
+    "year": 1994,
+    "country": "Uzbekistan",
+    "hom_rate": "5.46",
+    "cluster": 0
+  },
+  {
+    "year": 1995,
+    "country": "Uzbekistan",
+    "hom_rate": "5.08",
+    "cluster": 0
+  },
+  {
+    "year": 1996,
+    "country": "Uzbekistan",
+    "hom_rate": "4.96",
+    "cluster": 0
+  },
+  {
+    "year": 1997,
+    "country": "Uzbekistan",
+    "hom_rate": "4.46",
+    "cluster": 0
+  },
+  {
+    "year": 1998,
+    "country": "Uzbekistan",
+    "hom_rate": "4.43",
+    "cluster": 0
+  },
+  {
+    "year": 1999,
+    "country": "Uzbekistan",
+    "hom_rate": "4.15",
+    "cluster": 0
+  },
+  {
+    "year": 2000,
+    "country": "Uzbekistan",
+    "hom_rate": "4.31",
+    "cluster": 0
+  },
+  {
+    "year": 2001,
+    "country": "Uzbekistan",
+    "hom_rate": "4.31",
+    "cluster": 0
+  },
+  {
+    "year": 2002,
+    "country": "Uzbekistan",
+    "hom_rate": "4.16",
+    "cluster": 0
+  },
+  {
+    "year": 2003,
+    "country": "Uzbekistan",
+    "hom_rate": "3.74",
+    "cluster": 0
+  },
+  {
+    "year": 2004,
+    "country": "Uzbekistan",
+    "hom_rate": "3.69",
+    "cluster": 0
+  },
+  {
+    "year": 2005,
+    "country": "Uzbekistan",
+    "hom_rate": "3.44",
+    "cluster": 0
+  },
+  {
+    "year": 2006,
+    "country": "Uzbekistan",
+    "hom_rate": "3.21",
+    "cluster": 0
+  },
+  {
+    "year": 2007,
+    "country": "Uzbekistan",
+    "hom_rate": "3",
+    "cluster": 0
+  },
+  {
+    "year": 2008,
+    "country": "Uzbekistan",
+    "hom_rate": "3.01",
+    "cluster": 0
+  },
+  {
+    "year": 2015,
+    "country": "Uzbekistan",
+    "hom_rate": "1.64",
+    "cluster": 0
+  },
+  {
+    "year": 2016,
+    "country": "Uzbekistan",
+    "hom_rate": "2.41",
+    "cluster": 0
+  },
+  {
+    "year": 2017,
+    "country": "Uzbekistan",
+    "hom_rate": "1.85",
+    "cluster": 0
+  },
+  {
+    "year": 2018,
+    "country": "Uzbekistan",
+    "hom_rate": "1.46",
+    "cluster": 0
+  },
+  {
+    "year": 2019,
+    "country": "Uzbekistan",
+    "hom_rate": "1.2",
+    "cluster": 0
+  }
+]
