@@ -1,0 +1,329 @@
+{
+  "$schema": "https://vega.github.io/schema/vega/v5.json",
+  "description": "An interactive scatter plot of global health statistics by country and year.",
+  "width": 733,
+  "height": 550,
+  "padding": 5,
+
+  "data": [
+    {
+      "name": "football_data",
+      "url": "data/football_data.json",
+      "transform": [
+        {
+          "type":"formula",
+          "as": "chosenX",
+          "expr": "datum[XVariable]"
+        },
+        {
+          "type":"formula",
+          "as": "chosenY",
+          "expr": "datum[YVariable]"
+        }
+      ]
+    },
+    {
+      "name": "name_timeline",
+      "source": "football_data",
+      "transform": [
+        {"type": "filter", "expr": "timeline && datum.name == timeline.name"},
+        {"type": "collect", "sort": {"field": "year"}}
+      ]
+    },
+    {
+      "name": "thisYear",
+      "source": "football_data",
+      "transform": [
+        {"type": "filter", "expr": "datum.year == currentYear"}
+      ]
+    },
+    {
+      "name": "teams",
+      "source": "football_data",
+      "transform": [
+        {"type": "aggregate", "groupby": ["name"]}
+      ]
+    },
+    {
+      "name": "interpolate",
+      "source": "teams",
+      "transform": [
+        {
+          "type": "lookup",
+          "from": "thisYear", "key": "name",
+          "fields": ["name"], "as": ["this"],
+          "default": {}
+        },
+        {
+          "type": "formula",
+          "as": "pyoffs",
+          "expr": "datum.this['Playoffs']"
+        },
+        {
+          "type": "formula",
+          "as": "inter_wlp",
+          "expr": "datum.this[XVariable]"
+        },
+        {
+          "type": "formula",
+          "as": "inter_tyf",
+          "expr": "datum.this[YVariable]"
+        }
+      ]
+    },
+    {
+      "name": "trackTeams",
+      "on": [
+        {"trigger": "active", "toggle": "{name: active.name}"}
+      ]
+    }
+  ],
+
+  "signals": [
+    {
+      "name": "XVariable",
+      "value": "Win/Loss Percentage",
+      "bind": {
+        "input": "select",
+        "options": [
+          "Win/Loss Percentage",
+          "Points For",
+          "Total Yards For",
+          "Yards Per Play For",
+          "Pass Yards For",
+          "Pass TDs For",
+          "Rush Yards For",
+          "Rush TDs For",
+          "Points Against",
+          "Total Yards Against",
+          "Yards Per Play Against",
+          "Pass Yards Against",
+          "Pass TDs Against",
+          "Rush Yards Against",
+          "Rush TDs Against"
+        ]
+      }
+    },
+    {
+      "name": "YVariable",
+      "value": "Total Yards For",
+      "bind": {
+        "input": "select",
+        "options": [
+          "Win/Loss Percentage",
+          "Points For",
+          "Total Yards For",
+          "Yards Per Play For",
+          "Pass Yards For",
+          "Pass TDs For",
+          "Rush Yards For",
+          "Rush TDs For",
+          "Points Against",
+          "Total Yards Against",
+          "Yards Per Play Against",
+          "Pass Yards Against",
+          "Pass TDs Against",
+          "Rush Yards Against",
+          "Rush TDs Against"
+        ]
+      }
+    },
+    { "name": "currentYear", "value": 2011,
+      "bind": {"input": "range", "min": 2002, "max": 2020, "step": 1} },
+    {
+      "name": "active",
+      "value": {},
+      "on": [
+        {"events": "@point:mousedown, @point:touchstart", "update": "datum"},
+        {"events": "window:mouseup, window:touchend", "update": "{}"}
+      ]
+    },
+    { "name": "isActive", "update": "active.name" },
+    {
+      "name": "timeline",
+      "value": {},
+      "on": [
+        {"events": "@point:mouseover", "update": "isActive ? active : datum"},
+        {"events": "@point:mouseout", "update": "active"},
+        {"events": {"signal": "active"}, "update": "active"}
+      ]
+    }
+  ],
+
+  "scales": [
+    {
+      "name": "x",
+      "type": "linear", "nice": true, "zero": false,
+      "domain": {"data": "football_data", "field": "chosenX"},
+      "range": "width"
+    },
+    {
+      "name": "y",
+      "type": "linear", "nice": true, "zero": false,
+      "domain": {"data": "football_data", "field": "chosenY"},
+      "range": "height"
+    },
+    {
+      "name": "color",
+      "type": "ordinal",
+      "domain": ["Superbowl Winner","In Playoffs","Not In Playoffs"],
+      "range": ["#EE234B","#FF9F26","#FFE026"]
+    },
+    {
+      "name": "label",
+      "type": "ordinal",
+      "range" : ["Superbowl Winner","In Playoffs","Not In Playoffs"]
+    }
+  ],
+
+  "axes": [
+    {
+      "title": {"signal": "XVariable"},
+      "titleColor" : {"value": "#403336"},
+      "labelColor": {"value": "#403336"},
+      "orient": "bottom", "scale": "x",
+      "grid": true, "tickCount": 5
+    },
+    {
+      "title": {"signal": "YVariable"},
+      "titleColor" : {"value": "#403336"},
+      "labelColor": {"value": "#403336"},
+      "orient": "left", "scale": "y",
+      "grid": true, "tickCount": 5
+    }
+  ],
+
+  "legends": [
+    {
+      "fill": "color",
+      "title": "Season Result",
+      "titleColor": {"value": "#403336"},
+      "orient": "right",
+      "encode": {
+        "symbols": {
+          "enter": {
+            "size": {"value": 175},
+            "fillOpacity" : {"value": 0.75}
+          }
+        },
+        "labels": {
+          "update": {
+            "text": {"scale": "label", "field": "value"},
+            "fill" : {"value": "#403336"}
+          }
+        }
+      }
+    }
+  ],
+
+
+
+  "marks": [
+    {
+      "type": "text",
+      "encode": {
+        "update": {
+          "text": {"signal": "currentYear"},
+          "x": {"value": 275},
+          "y": {"value": 275},
+          "fill": {"value": "grey"},
+          "fillOpacity": {"value": 0.25},
+          "fontSize": {"value": 100}
+        }
+      }
+    },
+    {
+      "type": "text",
+      "from": {"data": "name_timeline"},
+      "interactive": false,
+      "encode": {
+        "enter": {
+          "x": {"scale": "x", "field": "chosenX", "offset": 5},
+          "y": {"scale": "y", "field": "chosenY"},
+          "fill": {"value": "#403336"},
+          "fillOpacity": {"value": 0.6},
+          "text": {"field": "year"}
+        }
+      }
+    },
+    {
+      "type": "symbol",
+      "from": {"data": "name_timeline"},
+      "encode": {
+        "update": {
+          "x": {"scale": "x", "field": "chosenX"},
+          "y": {"scale": "y", "field": "chosenY"},
+          "fill": {"value": "#2171A5"},
+          "size": {"value": 100},
+          "fillOpacity": [
+            {
+              "test": "datum.year == currentYear",
+              "value": 0
+            },
+            {"value": 0.5}
+          ]
+        }
+      }
+    },
+    {
+      "name": "point",
+      "type": "symbol",
+      "from": {"data": "interpolate"},
+      "encode": {
+        "enter": {
+          "size": {"value": 175},
+          "fillOpacity" : {"value": 0.75},
+          "stroke": {"value": "#403336"}
+        },
+        "update": {
+          "x": {"scale": "x", "field": "inter_wlp"},
+          "y": {"scale": "y", "field": "inter_tyf"},
+          "fill": [
+            {
+              "test": "datum['pyoffs'] == 'N'",
+              "value": "#FFE026"
+            },
+            {
+              "test": "datum['pyoffs'] == 'S'",
+              "value": "#EE234B"
+            },
+            {"value": "#FF9F26"}
+            ],
+          "strokeOpacity": [
+            {
+              "test": "datum.name==timeline.name || indata('trackTeams', 'name', datum.name)",
+              "value": 0.7
+            },
+            {"value": 0}
+          ]
+        }
+      }
+    },
+    {
+      "type": "text",
+      "from": {"data": "interpolate"},
+      "interactive": false,
+      "encode": {
+        "enter": {
+          "fill": {"value": "#403336"},
+          "fontSize": {"value": 14},
+          "fontWeight": {"value": "bold"},
+          "text": {"field": "name"},
+          "align": {"value": "center"},
+          "baseline": {"value": "bottom"}
+        },
+        "update": {
+          "x": {"scale": "x", "field": "inter_wlp"},
+          "y": {"scale": "y", "field": "inter_tyf", "offset": -7},
+          "fillOpacity": [
+            {
+              "test": "datum.name==timeline.name || indata('trackTeams', 'name', datum.name)",
+              "value": 0.8
+            },
+            {"value": 0}
+          ]
+        }
+      }
+    }
+  ]
+}

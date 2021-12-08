@@ -123,16 +123,79 @@ for year_ind in range(len(off_vec)):
 with open('football_data.json','w') as outfile:
     json.dump(dict_arr,outfile,indent = '  ',cls=NumpyEncoder)
 
+bar_vals = {}
 
+trans_dict = {'N':'Not In Playoffs','S':'Superbowl Winner','Y':'In Playoffs'}
 
+bar_vals['Not In Playoffs'] = {}
+bar_vals['In Playoffs'] = {}
+bar_vals['Superbowl Winner'] = {}
 
+for key in bar_vals.keys():
+    for year in np.arange(2002,2021):
+        bar_vals[key][year] = {}
+        bar_vals[key][year]['Win/Loss Percentage'] = 0
+        bar_vals[key][year]['Points For'] = 0
+        bar_vals[key][year]['Total Yards For'] = 0
+        bar_vals[key][year]['Yards Per Play For'] = 0
+        bar_vals[key][year]['Pass Yards For'] = 0
+        bar_vals[key][year]['Pass TDs For'] = 0
+        bar_vals[key][year]['Rush Yards For'] = 0
+        bar_vals[key][year]['Rush TDs For'] = 0
 
+        bar_vals[key][year]['Points Against'] = 0
+        bar_vals[key][year]['Total Yards Against'] = 0
+        bar_vals[key][year]['Yards Per Play Against'] = 0
+        bar_vals[key][year]['Pass Yards Against'] = 0
+        bar_vals[key][year]['Pass TDs Against'] = 0
+        bar_vals[key][year]['Rush Yards Against'] = 0
+        bar_vals[key][year]['Rush TDs Against'] = 0
 
+for info_dict in dict_arr:
+    key = info_dict['Playoffs']
+    key = trans_dict[key]
+    year = info_dict['year']
 
+    bar_vals[key][year]['Win/Loss Percentage'] += info_dict['Win/Loss Percentage']
+    bar_vals[key][year]['Points For'] += info_dict['Points For']
+    bar_vals[key][year]['Total Yards For'] += info_dict['Total Yards For']
+    bar_vals[key][year]['Yards Per Play For'] += info_dict['Yards Per Play For']
+    bar_vals[key][year]['Pass Yards For'] += info_dict['Pass Yards For']
+    bar_vals[key][year]['Pass TDs For'] += info_dict['Pass TDs For']
+    bar_vals[key][year]['Rush Yards For'] += info_dict['Rush Yards For']
+    bar_vals[key][year]['Rush TDs For'] += info_dict['Rush TDs For']
 
+    bar_vals[key][year]['Points Against'] += info_dict['Points Against']
+    bar_vals[key][year]['Total Yards Against'] += info_dict['Total Yards Against']
+    bar_vals[key][year]['Yards Per Play Against'] += info_dict['Yards Per Play Against']
+    bar_vals[key][year]['Pass Yards Against'] += info_dict['Pass Yards Against']
+    bar_vals[key][year]['Pass TDs Against'] += info_dict['Pass TDs Against']
+    bar_vals[key][year]['Rush Yards Against'] += info_dict['Rush Yards Against']
+    bar_vals[key][year]['Rush TDs Against'] += info_dict['Rush TDs Against']
 
+for year in bar_vals['Not In Playoffs'].keys():
+    if year == 2020: divider = 18
+    else: divider = 20
 
+    for metric in bar_vals['Not In Playoffs'][year]:
+        bar_vals['Not In Playoffs'][year][metric] /= divider
 
+for year in bar_vals['In Playoffs'].keys():
+    if year == 2020: divider = 14
+    else: divider = 12
+
+    for metric in bar_vals['In Playoffs'][year]:
+        bar_vals['In Playoffs'][year][metric] /= divider
+
+avg_dict_arr = []
+for key in bar_vals.keys():
+    for year in bar_vals[key].keys():
+        for metric in bar_vals[key][year].keys():
+            temp_dict = {'year':year,'playoff':key,'metric':metric,'value':bar_vals[key][year][metric]}
+            avg_dict_arr.append(temp_dict)
+    
+with open('avg_football_data.json','w') as outfile:
+    json.dump(avg_dict_arr,outfile,indent = '  ',cls=NumpyEncoder)
 
 
 

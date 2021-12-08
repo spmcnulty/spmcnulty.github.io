@@ -18,31 +18,6 @@
       ]
     },
     {
-      "name": "avg_football_data",
-      "url": "data/avg_football_data.json"
-    },
-    {
-      "name": "avg_football_data_year",
-      "source": "avg_football_data",
-      "transform": [
-        {"type": "filter", "expr": "datum.year == currentYear"}
-      ]
-    },
-    {
-      "name": "avg_football_data_Xmetric",
-      "source": "avg_football_data_year",
-      "transform": [
-        {"type": "filter", "expr": "datum.metric == XVariable"}
-      ]
-    },
-    {
-      "name": "avg_football_data_Ymetric",
-      "source": "avg_football_data_year",
-      "transform": [
-        {"type": "filter", "expr": "datum.metric == YVariable"}
-      ]
-    },
-    {
       "name": "football_data",
       "url": "data/football_data.json",
       "transform": [
@@ -119,7 +94,6 @@
     { "name": "sectWidth", "value": 733},
     { "name": "sectHeight", "value": 550},
     { "name": "barHeight", "value": 200},
-    { "name": "barWidth", "value": 250},
     {
       "name": "XVariable",
       "value": "Win/Loss Percentage",
@@ -392,145 +366,72 @@
     },
     {
       "type": "group",
-      "layout": {
-        "columns": 1,
-        "padding": 100,
-        "bounds": "flush"
+      "name": "bar",
+      "style": "cell",
+      "from": {
+        "facet": {"name": "facet", "data": "table", "groupby": "Group1"}
       },
-      "marks": [
+      "signals": [
+        {"name": "width", "update": "sectWidth"},
+        {"name": "height", "update": "barHeight"}
+      ],
+
+      "encode": {
+        "update": {
+          "width": {"signal": "sectWidth"},
+          "height": {"signal": "barHeight"}
+        }
+      },
+      "scales": [
         {
-          "type": "group",
-          "signals": [
-            {"name": "width", "update": "barWidth"},
-            {"name": "height", "update": "barHeight"}
-          ],
-
-          "encode": {
-            "update": {
-              "width": {"signal": "barWidth"},
-              "height": {"signal": "barHeight"}
-            }
-          },
-          "scales": [
-            {
-              "name": "xscale",
-              "type": "band",
-              "domain": {"data": "avg_football_data_Ymetric", "field": "playoff"},
-              "range": "width",
-              "padding": 0.05,
-              "round": true
-            },
-            {
-              "name": "yscale",
-              "domain": {"data": "avg_football_data_Ymetric", "field": "value"},
-              "nice": true,
-              "range": "height"
-            }
-          ],
-
-          "axes": [
-            { "orient": "bottom", "scale": "xscale" },
-            { "orient": "left", "scale": "yscale" }
-          ],
-
-          "marks": [
-            {
-              "type": "rect",
-              "from": {"data":"avg_football_data_Ymetric"},
-              "encode": {
-                "enter": {
-                  "x": {"scale": "xscale", "field": "playoff"},
-                  "width": {"scale": "xscale", "band": 1},
-                  "y": {"scale": "yscale", "field": "value"},
-                  "y2": {"scale": "yscale", "value": 0},
-                  "fill": {"scale": "color", "field": "playoff"}
-                },
-                "update": {
-                  "fillOpacity": {"value": 1}
-                },
-                "hover": {
-                  "fillOpacity": {"value": 0.5}
-                }
-              }
-            },
-            {
-              "type": "text",
-              "encode": {
-                "enter": {
-                  "align": {"value": "center"},
-                  "baseline": {"value": "bottom"},
-                  "fill": {"value": "#333"}
-                }
-              }
-            }
-          ]
+          "name": "xscale",
+          "type": "band",
+          "domain": {"data": "table", "field": "category"},
+          "range": "width",
+          "padding": 0.05,
+          "round": true
         },
         {
-          "type": "group",
-          "signals": [
-            {"name": "width", "update": "barWidth"},
-            {"name": "height", "update": "barHeight"}
-          ],
+          "name": "yscale",
+          "domain": {"data": "table", "field": "amount"},
+          "nice": true,
+          "range": "height"
+        }
+      ],
 
+      "axes": [
+        { "orient": "bottom", "scale": "xscale" },
+        { "orient": "left", "scale": "yscale" }
+      ],
+
+      "marks": [
+        {
+          "type": "rect",
+          "from": {"data":"table"},
           "encode": {
+            "enter": {
+              "x": {"scale": "xscale", "field": "category"},
+              "width": {"scale": "xscale", "band": 1},
+              "y": {"scale": "yscale", "field": "amount"},
+              "y2": {"scale": "yscale", "value": 0}
+            },
             "update": {
-              "width": {"signal": "barWidth"},
-              "height": {"signal": "barHeight"}
-            }
-          },
-          "scales": [
-            {
-              "name": "xscale",
-              "type": "band",
-              "domain": {"data": "avg_football_data_Xmetric", "field": "playoff"},
-              "range": "width",
-              "padding": 0.05,
-              "round": true
+              "fill": {"value": "steelblue"}
             },
-            {
-              "name": "yscale",
-              "domain": {"data": "avg_football_data_Xmetric", "field": "value"},
-              "nice": true,
-              "range": "height"
+            "hover": {
+              "fill": {"value": "red"}
             }
-          ],
-
-          "axes": [
-            { "orient": "bottom", "scale": "xscale" },
-            { "orient": "left", "scale": "yscale" }
-          ],
-
-          "marks": [
-            {
-              "type": "rect",
-              "from": {"data":"avg_football_data_Xmetric"},
-              "encode": {
-                "enter": {
-                  "x": {"scale": "xscale", "field": "playoff"},
-                  "width": {"scale": "xscale", "band": 1},
-                  "y": {"scale": "yscale", "field": "value"},
-                  "y2": {"scale": "yscale", "value": 0},
-                  "fill": {"scale": "color", "field": "playoff"}
-                },
-                "update": {
-                  "fillOpacity": {"value": 1}
-                },
-                "hover": {
-                  "fillOpacity": {"value": 0.5}
-                }
-              }
-            },
-            {
-              "type": "text",
-              "encode": {
-                "enter": {
-                  "align": {"value": "center"},
-                  "baseline": {"value": "bottom"},
-                  "fill": {"value": "#333"}
-                }
-              }
+          }
+        },
+        {
+          "type": "text",
+          "encode": {
+            "enter": {
+              "align": {"value": "center"},
+              "baseline": {"value": "bottom"},
+              "fill": {"value": "#333"}
             }
-          ]
+          }
         }
       ]
     }
