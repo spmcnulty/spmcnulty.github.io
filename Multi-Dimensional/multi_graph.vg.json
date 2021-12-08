@@ -1,8 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega/v5.json",
   "description": "An interactive scatter plot of global health statistics by country and year.",
-  "width": 800,
-  "height": 600,
+  "width": 733,
+  "height": 550,
   "padding": 5,
 
   "data": [
@@ -128,7 +128,7 @@
         ]
       }
     },
-    { "name": "currentYear", "value": 2010,
+    { "name": "currentYear", "value": 2011,
       "bind": {"input": "range", "min": 2002, "max": 2020, "step": 1} },
     {
       "name": "active",
@@ -179,11 +179,15 @@
   "axes": [
     {
       "title": {"signal": "XVariable"},
+      "titleColor" : {"value": "#403336"},
+      "labelColor": {"value": "#403336"},
       "orient": "bottom", "scale": "x",
       "grid": true, "tickCount": 5
     },
     {
       "title": {"signal": "YVariable"},
+      "titleColor" : {"value": "#403336"},
+      "labelColor": {"value": "#403336"},
       "orient": "left", "scale": "y",
       "grid": true, "tickCount": 5
     }
@@ -193,16 +197,19 @@
     {
       "fill": "color",
       "title": "Season Result",
+      "titleColor": {"value": "#403336"},
       "orient": "right",
       "encode": {
         "symbols": {
           "enter": {
-            "fillOpacity": {"value": 0.5}
+            "size": {"value": 175},
+            "fillOpacity" : {"value": 0.75}
           }
         },
         "labels": {
           "update": {
-            "text": {"scale": "label", "field": "value"}
+            "text": {"scale": "label", "field": "value"},
+            "fill" : {"value": "#403336"}
           }
         }
       }
@@ -217,8 +224,8 @@
       "encode": {
         "update": {
           "text": {"signal": "currentYear"},
-          "x": {"value": 300},
-          "y": {"value": 300},
+          "x": {"value": 275},
+          "y": {"value": 275},
           "fill": {"value": "grey"},
           "fillOpacity": {"value": 0.25},
           "fontSize": {"value": 100}
@@ -233,7 +240,7 @@
         "enter": {
           "x": {"scale": "x", "field": "chosenX", "offset": 5},
           "y": {"scale": "y", "field": "chosenY"},
-          "fill": {"value": "#555"},
+          "fill": {"value": "#403336"},
           "fillOpacity": {"value": 0.6},
           "text": {"field": "year"}
         }
@@ -298,7 +305,7 @@
       "interactive": false,
       "encode": {
         "enter": {
-          "fill": {"value": "#333"},
+          "fill": {"value": "#403336"},
           "fontSize": {"value": 14},
           "fontWeight": {"value": "bold"},
           "text": {"field": "name"},
