@@ -19,40 +19,29 @@
 <table>
   <thead>
   <tr>
-    <th colspan="2"><h5>Hypothesis: All media can be connected through crossovers into a large connected universe.  Animation is also more likely to have crossovers.</h5></th>
+    <th colspan="2"><h5>Hypothesis: The performance of NFL defences and offenses are correlated.</h5></th>
   </tr>
   </thead>
   <tbody>
-  <tr>
-    <td><center><h5>Network Graph of Crossovers</h5></center></td>
-  </tr>
   <tr>
     <td><center><div id="multi_graph"></div></center></td>
   </tr>
   </tbody>
 </table>
 
-
+<p style="font-size:8px"><i>
+  Often in football fan communities, there is the belief that many teams, current and past, have poor offenses which appear better due to superior defenses.  This has inspired the hypothesis for this visualization, which is in a sense a null hypothesis of this claim.</i></font></p>
 
 <p style="font-size:8px"><i>
-  This visualization was inspired by a blog post from 2002 written by Dwayne McDuffie, a writer for several comics and TV Shows.  In this blog post McDuffie claims that all shows, comics, and movies can eventually be connected together into a single "expanded universe" through crossovers.  The intent was to show the ridiculousness of claiming that a crossover would have a meaningful<br> impact on the continuty of a franchise.  As well, McDuffie highlighted a now old show St. Elsewhere which ends with the twist that the entirety of the show was in a child's imagination.  Thus, any show that can be connected to St. Elsewhere through crossovers is technically also in this child's mind.</i></font></p>
+  As can be seen using the above visualization tool, many metrics of offensive performance are correlated with metric of defensive performance, and playoff teams are regularly are superior in both cases when compared with non-playoff teams.  For example, compare points against to points for, which are extremely tightly correlated.  <br>This is perhaps the best metric to compare offenses and defenses, since it gets to the core of what the point of these positions are.  An offense is doing it's job if it scores points, and a defense is doing its job if it prevents points from being scored. </i></font></p>
 
-<p style="font-size:8px"><i>For the purposes of the visualization evidence was gathered of crossovers from 51 well known movies, shows, and franchises.  A "crossover" is considered to be significant evidence that the universes of two pieces of media are linked, either through in universe events, such as characters meeting, or "word of god" statements from the show's creators.  The majority of these crossovers come<br> from the two data sources listed below, as well as an emmy skit from 2011. </i></font></p>
-
-<p style="font-size:8px"><i>The TV Show St. Elsewhere is represented by a noticeably different mark for the purposes of highlighting its importance in the hypothesis.  As well, the links can be clicked to be taken to the wikipedia page for the respective piece of media.</i></font></p>
-
-<p style="font-size:8px"><i>The above graph should also be taken as a subgraph of the complete graph of all media and crossovers between media, since it is not feasible to represent all media.  Despite this, the graph does given significant evidence that much of the existing fictional canon that humanity has created could be linked together through various crossover events.  However, interestingly, there is an<br> informal notion among fans that animation has the most crossover events.  This doesn't appear to be true, since animation has the fewest cross overs events per show on average.  Yet, animation has the largest average number of disjoint graphs formed upon the removal of a show from the graph.  Much of this is due to the Simpsons, which would create 5 disjoint graphs upon its removal.</i></font></p>
+<p style="font-size:8px"><i>
+  While the user is invited to explore this narrative through the presentation of two variables and clear differentiation between offensive and defensive variable, they are also able to explore the dataset further as they wish, by contrasting various variable with win/loss percentage or two variables for the same side of the ball.</i></font></p>
 
 <div id="vis_bar"></div>
 
 <p style="font-size:8px">
-  Hypothesis Inspiration: <a href="https://web.archive.org/web/20120625061214/http://www.slushfactory.com/content/EpupypyZAZTDOLwdfz.php">https://web.archive.org/web/20120625061214/http://www.slushfactory.com/content/EpupypyZAZTDOLwdfz.php</a>
-</p>
-<p style="font-size:8px">
-  Crossover Data Sources: <a href="http://poobala.com/crossoverlist.html">http://poobala.com/crossoverlist.html</a> <a href="https://fictionalcrossover.fandom.com/">https://fictionalcrossover.fandom.com/</a>
-</p>
-<p style="font-size:8px">
-  2011 Emmy Skit: <a href="https://www.youtube.com/watch?v=TDJpTSQc6wc">https://www.youtube.com/watch?v=TDJpTSQc6wc</a>
+  Data Source: <a href="https://www.pro-football-reference.com/">https://www.pro-football-reference.com/</a>
 </p>
 
 <script>

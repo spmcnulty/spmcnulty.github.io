@@ -5,19 +5,6 @@
 
   "data": [
     {
-      "name": "table",
-      "values": [
-        {"category": "A", "amount": 28},
-        {"category": "B", "amount": 55},
-        {"category": "C", "amount": 43},
-        {"category": "D", "amount": 91},
-        {"category": "E", "amount": 81},
-        {"category": "F", "amount": 53},
-        {"category": "G", "amount": 19},
-        {"category": "H", "amount": 87}
-      ]
-    },
-    {
       "name": "avg_football_data",
       "url": "data/avg_football_data.json"
     },
@@ -63,6 +50,7 @@
       "source": "football_data",
       "transform": [
         {"type": "filter", "expr": "timeline && datum.name == timeline.name"},
+        {"type": "filter", "expr": "datum.year != currentYear"},
         {"type": "collect", "sort": {"field": "year"}}
       ]
     },
@@ -116,13 +104,13 @@
   ],
 
   "signals": [
-    { "name": "sectWidth", "value": 733},
-    { "name": "sectHeight", "value": 550},
+    { "name": "sectWidth", "value": 667},
+    { "name": "sectHeight", "value": 500},
     { "name": "barHeight", "value": 200},
     { "name": "barWidth", "value": 250},
     {
-      "name": "XVariable",
-      "value": "Win/Loss Percentage",
+      "name": "YVariable",
+      "value": "Total Yards For",
       "bind": {
         "input": "select",
         "options": [
@@ -145,8 +133,8 @@
       }
     },
     {
-      "name": "YVariable",
-      "value": "Total Yards For",
+      "name": "XVariable",
+      "value": "Win/Loss Percentage",
       "bind": {
         "input": "select",
         "options": [
@@ -217,7 +205,9 @@
       "fill": "color",
       "title": "Season Result",
       "titleColor": {"value": "#403336"},
-      "orient": "right",
+      "orient": "none",
+      "legendY": 5,
+      "legendX": 15,
       "encode": {
         "symbols": {
           "enter": {
@@ -297,6 +287,7 @@
         },
         {
           "type": "text",
+          "zindex": 1,
           "from": {"data": "name_timeline"},
           "interactive": false,
           "encode": {
@@ -311,6 +302,7 @@
         },
         {
           "type": "symbol",
+          "zindex": 1,
           "from": {"data": "name_timeline"},
           "encode": {
             "update": {
@@ -318,13 +310,7 @@
               "y": {"scale": "y", "field": "chosenY"},
               "fill": {"value": "#2171A5"},
               "size": {"value": 100},
-              "fillOpacity": [
-                {
-                  "test": "datum.year == currentYear",
-                  "value": 0
-                },
-                {"value": 0.5}
-              ]
+              "fillOpacity": {"value": 0.5}
             }
           }
         },
@@ -366,6 +352,7 @@
           "type": "text",
           "from": {"data": "interpolate"},
           "interactive": false,
+          "zindex": 2,
           "encode": {
             "enter": {
               "fill": {"value": "#403336"},
@@ -392,17 +379,30 @@
     },
     {
       "type": "group",
+      "title": {
+        "text":"Average of Scatter Plot Variables for Season Results",
+        "color": "#403336"
+      },
       "layout": {
         "columns": 1,
         "padding": 100,
         "bounds": "flush"
       },
       "marks": [
+
         {
           "type": "group",
           "signals": [
             {"name": "width", "update": "barWidth"},
-            {"name": "height", "update": "barHeight"}
+            {"name": "height", "update": "barHeight"},
+            {
+              "name": "tooltip",
+              "value": {},
+              "on": [
+                {"events": "rect:mouseover", "update": "datum"},
+                {"events": "rect:mouseout",  "update": "{}"}
+              ]
+            }
           ],
 
           "encode": {
@@ -429,8 +429,18 @@
           ],
 
           "axes": [
-            { "orient": "bottom", "scale": "xscale" },
-            { "orient": "left", "scale": "yscale" }
+            {
+              "orient": "bottom",
+              "scale": "xscale",
+              "labelColor": "#403336"
+            },
+            {
+              "orient": "left",
+              "scale": "yscale",
+              "title": {"signal": "'Average '+YVariable"},
+              "titleColor": "#403336",
+              "labelColor": "#403336"
+            }
           ],
 
           "marks": [
@@ -458,8 +468,18 @@
               "encode": {
                 "enter": {
                   "align": {"value": "center"},
-                  "baseline": {"value": "bottom"},
-                  "fill": {"value": "#333"}
+                  "baseline": {"value": "top"},
+                  "fill": {"value": "#403336"},
+                  "fontStyle": {"value": "bold"}
+                },
+                "update": {
+                  "x": {"scale": "xscale", "signal": "tooltip.playoff", "band": 0.5},
+                  "y": {"scale": "yscale", "signal": "tooltip.value", "offset": 10},
+                  "text": {"signal": "format(tooltip.value, '.2f')"},
+                  "fillOpacity": [
+                    {"test": "datum.value == tooltip.value", "value": 0},
+                    {"value": 1}
+                  ]
                 }
               }
             }
@@ -469,7 +489,15 @@
           "type": "group",
           "signals": [
             {"name": "width", "update": "barWidth"},
-            {"name": "height", "update": "barHeight"}
+            {"name": "height", "update": "barHeight"},
+            {
+              "name": "tooltip",
+              "value": {},
+              "on": [
+                {"events": "rect:mouseover", "update": "datum"},
+                {"events": "rect:mouseout",  "update": "{}"}
+              ]
+            }
           ],
 
           "encode": {
@@ -496,8 +524,18 @@
           ],
 
           "axes": [
-            { "orient": "bottom", "scale": "xscale" },
-            { "orient": "left", "scale": "yscale" }
+            {
+              "orient": "bottom",
+              "scale": "xscale",
+              "labelColor": "#403336"
+            },
+            {
+              "orient": "left",
+              "scale": "yscale",
+              "title": {"signal": "'Average '+XVariable"},
+              "titleColor": "#403336",
+              "labelColor": "#403336"
+            }
           ],
 
           "marks": [
@@ -525,8 +563,18 @@
               "encode": {
                 "enter": {
                   "align": {"value": "center"},
-                  "baseline": {"value": "bottom"},
-                  "fill": {"value": "#333"}
+                  "baseline": {"value": "top"},
+                  "fill": {"value": "#403336"},
+                  "fontStyle": {"value": "bold"}
+                },
+                "update": {
+                  "x": {"scale": "xscale", "signal": "tooltip.playoff", "band": 0.5},
+                  "y": {"scale": "yscale", "signal": "tooltip.value", "offset": 10},
+                  "text": {"signal": "format(tooltip.value, '.2f')"},
+                  "fillOpacity": [
+                    {"test": "datum.value == tooltip.value", "value": 0},
+                    {"value": 1}
+                  ]
                 }
               }
             }
