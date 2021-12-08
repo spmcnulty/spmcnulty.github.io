@@ -162,6 +162,17 @@
       "type": "linear", "nice": true, "zero": false,
       "domain": {"data": "football_data", "field": "chosenY"},
       "range": "height"
+    },
+    {
+      "name": "color",
+      "type": "ordinal",
+      "domain": ["Superbowl Winner","In Playoffs","Not In Playoffs"],
+      "range": ["#EE234B","#FF9F26","#FFE026"]
+    },
+    {
+      "name": "label",
+      "type": "ordinal",
+      "range" : ["Superbowl Winner","In Playoffs","Not In Playoffs"]
     }
   ],
 
@@ -175,6 +186,26 @@
       "title": {"signal": "YVariable"},
       "orient": "left", "scale": "y",
       "grid": true, "tickCount": 5
+    }
+  ],
+
+  "legends": [
+    {
+      "fill": "color",
+      "title": "Season Result",
+      "orient": "right",
+      "encode": {
+        "symbols": {
+          "enter": {
+            "fillOpacity": {"value": 0.5}
+          }
+        },
+        "labels": {
+          "update": {
+            "text": {"scale": "label", "field": "value"}
+          }
+        }
+      }
     }
   ],
 
@@ -215,9 +246,15 @@
         "update": {
           "x": {"scale": "x", "field": "chosenX"},
           "y": {"scale": "y", "field": "chosenY"},
-          "fill": {"value": "#333"},
-          "size": {"value": 75},
-          "fillOpacity": {"value": 0.3}
+          "fill": {"value": "#2171A5"},
+          "size": {"value": 100},
+          "fillOpacity": [
+            {
+              "test": "datum.year == currentYear",
+              "value": 0
+            },
+            {"value": 0.5}
+          ]
         }
       }
     },
@@ -227,7 +264,9 @@
       "from": {"data": "interpolate"},
       "encode": {
         "enter": {
-          "size": {"value": 175}
+          "size": {"value": 175},
+          "fillOpacity" : {"value": 0.75},
+          "stroke": {"value": "#403336"}
         },
         "update": {
           "x": {"scale": "x", "field": "inter_wlp"},
@@ -235,20 +274,20 @@
           "fill": [
             {
               "test": "datum['pyoffs'] == 'N'",
-              "value": "#381e3e"
+              "value": "#FFE026"
             },
             {
               "test": "datum['pyoffs'] == 'S'",
-              "value": "#38df32"
+              "value": "#EE234B"
             },
-            {"value": "#000000"}
+            {"value": "#FF9F26"}
             ],
-          "fillOpacity": [
+          "strokeOpacity": [
             {
               "test": "datum.name==timeline.name || indata('trackTeams', 'name', datum.name)",
-              "value": 1
+              "value": 0.7
             },
-            {"value": 0.5}
+            {"value": 0}
           ]
         }
       }
