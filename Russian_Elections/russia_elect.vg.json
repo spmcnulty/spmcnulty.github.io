@@ -266,13 +266,7 @@
                 },
                 {"value": "grey"}
               ],
-              "strokeOpacity": [
-                {
-                  "test": "datum.id == selected_okrug.id || indata('track_okrugi', 'id', datum.id)",
-                  "value": 1
-                },
-                {"value": 0.5}
-              ],
+              "strokeOpacity": {"value": 1},
               "zindex": [
                 {
                   "test": "datum.id == selected_okrug.id || indata('track_okrugi', 'id', datum.id)",
@@ -369,13 +363,7 @@
                     },
                     {"value": "grey"}
                   ],
-                  "strokeOpacity": [
-                    {
-                      "test": "datum.id == selected_okrug.id || indata('track_okrugi', 'id', datum.id)",
-                      "value": 1
-                    },
-                    {"value": 0.5}
-                  ],
+                  "strokeOpacity": {"value": 1},
                   "zindex": [
                     {
                       "test": "datum.id == selected_okrug.id || indata('track_okrugi', 'id', datum.id)",
