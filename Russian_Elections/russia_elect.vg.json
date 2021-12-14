@@ -234,7 +234,7 @@
         "update": {
           "width": {"signal": "fullWidth"},
           "height": {"signal": "fullHeight"},
-          "stroke": {"value": "black"},
+          "stroke": {"value": "grey"},
           "clip": {"value": true}
         }
       },
