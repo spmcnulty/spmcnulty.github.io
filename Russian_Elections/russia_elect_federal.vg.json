@@ -1,0 +1,571 @@
+{
+  "$schema": "https://vega.github.io/schema/vega/v5.json",
+  "description": "A choropleth map depicting U.S. unemployment rates by county in 2009.",
+  "autosize": "pad",
+
+  "signals": [
+    { "name": "fullHeight", "value": 560},
+    { "name": "fullWidth", "value": 890},
+    { "name": "smallHeight", "value": 275},
+    { "name": "smallWidth", "value": 350},
+    {
+      "name": "Party",
+      "value": "percent17",
+      "bind": {
+        "element": "#Big_Party"
+      }
+    },
+    {
+      "name": "regions",
+      "value": "Moscow",
+      "bind": {
+        "element": "#Region"
+      }
+    },
+    {
+      "name" : "data_sig",
+      "value": "moscow",
+      "update": "regions === 'Moscow' ? 'data/moscow.json' : (regions === 'St. Petersburg'? 'data/petersburg.json': 'data/crimea.json')"
+    },
+    {
+      "name": "sel_id",
+      "value": "17",
+      "update": "slice(Party,7)"
+    },
+    {
+      "name": "color_scheme",
+      "value": "dis_color",
+      "update": "Party === 'winner_index' ? 'nom_color' : 'dis_color'"
+    },
+    {
+      "name": "party_color",
+      "value": "dis_color",
+      "update": "sel_id === '13' || sel_id === '22' ? 'reds' : (sel_id === '14' || sel_id === '24'? 'greens' : (sel_id === '17' || sel_id === '21'? 'blues' : (sel_id === '18' || sel_id === '25'? 'purples' : (sel_id === '15'? 'browns' : (sel_id === '16'? 'teals' : (sel_id === '19'? 'greys' : (sel_id === '20'? 'tealblues' : (sel_id === '15'? 'oranges' : 'warmgreys'))))))))"
+
+
+
+    },
+    {
+      "name": "active",
+      "value": {},
+      "on": [
+        {"events": "@okrugi:mousedown, @okrugi:touchstart", "update": "datum"},
+        {"events": "window:mouseup, window:touchend", "update": "{}"}
+      ]
+    },
+    { "name": "isActive", "update": "active.id" },
+    {
+      "name": "selected_okrug",
+      "value": {},
+      "on": [
+        {"events": "@okrugi:mouseover", "update": "isActive ? active : datum"},
+        {"events": "@okrugi:mouseout", "update": "active"},
+        {"events": {"signal": "active"}, "update": "active"}
+      ]
+    },
+    {
+      "name": "clear", "value": true,
+      "on": [
+        {
+          "events": "@okrugi:mousedown,mouseup[!event.item]",
+          "update": "true",
+          "force": true
+        }
+      ]
+    }
+  ],
+
+  "data": [
+    {
+      "name": "parties",
+      "values": [
+        {"id": 13, "percent":"percent13", "name": "Communist Party"},
+        {"id": 14, "percent":"percent14", "name": "The Greens"},
+        {"id": 15, "percent":"percent15", "name": "Liberal Democrats"},
+        {"id": 16, "percent":"percent16", "name": "New People"},
+        {"id": 17, "percent":"percent17", "name": "United Russia"},
+        {"id": 18, "percent":"percent18", "name": "A Just Russia"},
+        {"id": 19, "percent":"percent19", "name": "Yabloko"},
+        {"id": 20, "percent":"percent20", "name": "Party of Growth"},
+        {"id": 21, "percent":"percent21", "name": "Party of Freedom and Justice"},
+        {"id": 22, "percent":"percent22", "name": "Communists of Russia"},
+        {"id": 23, "percent":"percent23", "name": "Civic Platform"},
+        {"id": 24, "percent":"percent24", "name": "Civil United Green Alternative"},
+        {"id": 25, "percent":"percent25", "name": "Rodina"},
+        {"id": 26, "percent":"percent26", "name": "The Party of Pensioners"}
+      ]
+    },
+    {
+      "name": "seats",
+      "values": [
+        {"id": 13, "percent":"percent13", "seats": 48},
+        {"id": 14, "percent":"percent14", "seats": 0},
+        {"id": 15, "percent":"percent15", "seats": 19},
+        {"id": 16, "percent":"percent16", "seats": 13},
+        {"id": 17, "percent":"percent17", "seats": 126},
+        {"id": 18, "percent":"percent18", "seats": 19},
+        {"id": 19, "percent":"percent19", "seats": 0},
+        {"id": 20, "percent":"percent20", "seats": 0},
+        {"id": 21, "percent":"percent21", "seats": 0},
+        {"id": 22, "percent":"percent22", "seats": 0},
+        {"id": 23, "percent":"percent23", "seats": 0},
+        {"id": 24, "percent":"percent24", "seats": 0},
+        {"id": 25, "percent":"percent25", "seats": 0},
+        {"id": 26, "percent":"percent26", "seats": 0}
+      ]
+    },
+    {
+      "name": "ur_results",
+      "url": "data/processed_data_eng.csv",
+      "format": {"type": "csv", "parse": "auto"},
+      "transform": [
+        {
+          "type":"formula",
+          "as": "chosen_percent",
+          "expr": "datum[Party]"
+        },
+        {
+          "type":"formula",
+          "as": "chosen_id",
+          "expr": "datum[sel_id]"
+        }
+      ]
+    },
+    {
+      "name": "1st_level_admin",
+      "url": "data/29.json",
+      "format": {"type": "topojson", "feature": "29"},
+      "transform": [
+        { "type": "lookup", "from": "ur_results", "key": "id", "fields": ["id"], "values": ["chosen_percent"], "default": 1 },
+        { "type": "lookup", "from": "ur_results", "key": "id", "fields": ["id"], "values": ["chosen_id"], "default": 1 },
+        { "type": "lookup", "from": "parties", "key": "id", "fields": ["chosen_percent"], "values": ["name"], "default": 1 }
+      ]
+    },
+    {
+      "name": "small_map",
+      "url": {"signal": "data_sig"},
+      "format": {"type": "topojson", "feature": "27"},
+      "transform": [
+        { "type": "lookup", "from": "ur_results", "key": "id", "fields": ["id"], "values": ["chosen_percent"], "default": 1 },
+        { "type": "lookup", "from": "ur_results", "key": "id", "fields": ["id"], "values": ["chosen_id"], "default": 1 },
+        { "type": "lookup", "from": "parties", "key": "id", "fields": ["chosen_percent"], "values": ["name"], "default": 1 }
+      ]
+    },
+    {
+      "name": "track_okrugi",
+      "on": [
+        {"trigger": "active", "toggle": "{id: active.id}"},
+        {"trigger": "clear", "remove": true}
+      ]
+    }
+  ],
+  "scales": [
+    {
+      "name": "dis_color",
+      "type": "quantize",
+      "domain": {"data": "ur_results", "field": "chosen_percent"},
+      "range": {"scheme": {"signal": "party_color"}, "count": 5}
+    },
+    {
+      "name": "nom_color",
+      "type": "ordinal",
+      "domain": {"data": "ur_results", "field": "winner_index"},
+      "range": ["#5ba3cf","#f6573f"]
+    },
+    {
+      "name": "label",
+      "type": "ordinal",
+      "range" : ["United Russia","Communist Party"]
+    }
+  ],
+
+  "layout": {
+    "columns": 2,
+    "padding": 10,
+    "bounds": "flush"
+  },
+
+  "marks": [
+    {
+      "type": "group",
+      "legends": [
+        {
+          "fill": "dis_color",
+          "orient": "none",
+          "legendX": 20,
+          "legendY": 480,
+          "direction": "horizontal",
+          "titleAnchor": "end",
+          "title": "Percent of Vote",
+          "format": "0.1%",
+          "gradientOpacity" : {"signal":  "Party === 'winner_index' ? 0 : 1"},
+          "labelOpacity" : {"signal":  "Party === 'winner_index' ? 0 : 1"},
+          "titleOpacity" : {"signal":  "Party === 'winner_index' ? 0 : 1"}
+        },
+        {
+          "fill": "nom_color",
+          "title": "Parties",
+          "orient": "none",
+          "legendX": 125,
+          "legendY": 480,
+          "gradientOpacity" : {"signal":  "Party === 'winner_index' ? 1 : 0"},
+          "labelOpacity" : {"signal":  "Party === 'winner_index' ? 1 : 0"},
+          "titleOpacity" : {"signal":  "Party === 'winner_index' ? 1 : 0"},
+          "symbolOpacity": {"signal":  "Party === 'winner_index' ? 0.5 : 0"},
+          "symbolType" : "square",
+          "encode": {
+            "labels": {
+              "update": {
+                "text": {"scale": "label", "field": "value"}
+              }
+            }
+          }
+        }
+      ],
+      "signals": [
+        {"name": "width", "update": "fullWidth"},
+        {"name": "height", "update": "fullHeight"}
+      ],
+      "encode": {
+        "update": {
+          "width": {"signal": "fullWidth"},
+          "height": {"signal": "fullHeight"},
+          "stroke": {"value": "black"},
+          "clip": {"value": true}
+        }
+      },
+      "projections": [
+        {
+          "name": "projection_big",
+          "type": "azimuthalEqualArea",
+          "scale": {"signal": "700"},
+          "rotate": [
+            {"signal": "-97"},
+            {"signal": "-70"},
+            {"signal": "0"}
+          ]
+        }
+      ],
+      "marks":[
+        {
+          "name": "okrugi",
+          "type": "shape",
+          "from": {"data": "1st_level_admin"},
+          "encode": {
+            "update": {
+              "fill": {"scale": {"signal": "color_scheme"}, "field": "chosen_percent"},
+              "tooltip": {"signal": "{'title': datum.properties.wiki_name,'Percent of Vote': Party === 'winner_index' ? datum.nothing : format(datum.chosen_percent, '.2%'),'Number of Votes': Party === 'winner_index' ? datum.nothing : datum.chosen_id,'Party': Party === 'winner_index' ? datum.name : datum.nothing}"},
+              "stroke": [
+                {
+                  "test": "datum.id == selected_okrug.id || indata('track_okrugi', 'id', datum.id)",
+                  "value": "black"
+                },
+                {"value": "grey"}
+              ],
+              "strokeOpacity": [
+                {
+                  "test": "datum.id == selected_okrug.id || indata('track_okrugi', 'id', datum.id)",
+                  "value": 1
+                },
+                {"value": 0.5}
+              ],
+              "zindex": [
+                {
+                  "test": "datum.id == selected_okrug.id || indata('track_okrugi', 'id', datum.id)",
+                  "value": 1
+                },
+                {"value": 0}
+              ]
+            }
+          },
+          "transform": [
+            { "type": "geoshape", "projection": "projection_big" }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "layout": {
+        "columns": 1,
+        "padding": 10,
+        "bounds": "flush"
+      },
+      "marks": [
+        {
+          "type": "group",
+          "signals": [
+            {"name": "width", "update": "smallWidth"},
+            {"name": "height", "update": "smallHeight"}
+          ],
+          "encode": {
+            "update": {
+              "width": {"signal": "smallWidth"},
+              "height": {"signal": "smallHeight"},
+              "clip": {"value": true}
+            }
+          },
+          "projections": [
+            {
+              "name": "projection_small",
+              "type": "azimuthalEqualArea",
+              "scale": {"signal": "regions === 'Moscow' ? '25000' : (regions === 'St. Petersburg'? '23000': '6000')"},
+              "rotate": [
+                {"signal": "regions === 'Moscow' ? '-29' : (regions === 'St. Petersburg'? '-29': '-33')"},
+                {"signal": "regions === 'Moscow' ? '-66' : (regions === 'St. Petersburg'? '-59': '-46')"},
+                {"signal": "regions === 'Moscow' ? '-50' : '0'"}
+              ],
+              "center": [
+                {"signal": "regions === 'Moscow' ? '-3.85' : (regions === 'St. Petersburg'? '1.3': '4')"},
+                {"signal": "regions === 'Moscow' ? '-10.25' : (regions === 'St. Petersburg'? '0.65': '-1.75')"}
+              ]
+            }
+          ],
+          "marks":[
+            {
+              "type": "rect",
+              "zindex": 1,
+              "encode": {
+                "enter": {
+                  "width": {"signal": "width"},
+                  "height": {"signal": "height"},
+                  "fill": {"value": "transparent"},
+                  "stroke": {"value": "#17171a"},
+                  "strokeOpacity": {"value": 1},
+                  "strokeWidth": {"value": 1}
+                }
+              }
+            },
+            {
+              "name": "okrugi2",
+              "type": "shape",
+              "from": {"data": "small_map"},
+              "encode": {
+                "update": {
+                  "fill": {"scale": {"signal": "color_scheme"}, "field": "chosen_percent"}
+                }
+              },
+              "transform": [
+                { "type": "geoshape", "projection": "projection_small" }
+              ]
+            },
+            {
+              "name": "okrugi",
+              "zindex": 2,
+              "type": "shape",
+              "from": {"data": "small_map"},
+              "encode": {
+                "update": {
+                  "fill": {"value": "transparent"},
+                  "tooltip": {"signal": "{'title': datum.properties.wiki_name,'Percent of Vote': Party === 'winner_index' ? datum.nothing : format(datum.chosen_percent, '.2%'),'Number of Votes': Party === 'winner_index' ? datum.nothing : datum.chosen_id,'Party': Party === 'winner_index' ? datum.name : datum.nothing}"},
+                  "stroke": [
+                    {
+                      "test": "datum.id == selected_okrug.id || indata('track_okrugi', 'id', datum.id)",
+                      "value": "black"
+                    },
+                    {"value": "grey"}
+                  ],
+                  "strokeOpacity": [
+                    {
+                      "test": "datum.id == selected_okrug.id || indata('track_okrugi', 'id', datum.id)",
+                      "value": 1
+                    },
+                    {"value": 0.5}
+                  ],
+                  "zindex": [
+                    {
+                      "test": "datum.id == selected_okrug.id || indata('track_okrugi', 'id', datum.id)",
+                      "value": 1
+                    },
+                    {"value": 0}
+                  ]
+                }
+              },
+              "transform": [
+                { "type": "geoshape", "projection": "projection_small" }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "signals": [
+            {"name": "width", "update": "smallWidth"},
+            {"name": "height", "update": "smallHeight"},
+            {
+              "name": "tooltip",
+              "value": {},
+              "on": [
+                {"events": "rect:mouseover", "update": "datum"},
+                {"events": "rect:mouseout",  "update": "{}"}
+              ]
+            }
+          ],
+          "encode": {
+            "update": {
+              "width": {"signal": "smallWidth"},
+              "height": {"signal": "smallHeight"},
+              "clip": {"value": false}
+            }
+          },
+          "data": [
+            {
+              "name": "table",
+              "values": [
+                {"category": "Communist Party", "amount": 0.28},
+                {"category": "The Greens", "amount": 0.55},
+                {"category": "Liberal Democrats", "amount": 0.43},
+                {"category": "New People", "amount": 0.91},
+                {"category": "United Russia", "amount": 0.81},
+                {"category": "A Just Russia", "amount": 0.53},
+                {"category": "Yabloko", "amount": 0.19},
+                {"category": "Party of Growth", "amount": 0.87},
+                {"category": "Party of Freedom and Justice", "amount": 0.43},
+                {"category": "Communists of Russia", "amount": 1},
+                {"category": "Civic Platform", "amount": 0.81},
+                {"category": "Civil United Green Alternative", "amount": 0.53},
+                {"category": "Rodina", "amount": 0.19},
+                {"category": "The Party of Pensioners", "amount": 0.87}
+              ]
+            },
+            {
+              "name": "filter_count",
+              "source": "ur_results",
+              "transform": [
+                {"type":"filter",
+                  "expr":"datum.id === 'Сумма' || indata('track_okrugi', 'id', datum.id)"
+                }
+              ]
+            },
+            {
+              "name": "filtered",
+              "source": "ur_results",
+              "transform": [
+                {"type":"filter",
+                  "expr":"datum.id === 'Сумма' || indata('track_okrugi', 'id', datum.id)"
+                },
+                {
+                  "type": "fold",
+                  "fields": ["percent13","percent14","percent15","percent16","percent17","percent18","percent19","percent20","percent21","percent22","percent23","percent24","percent25","percent26"]
+                },
+                {
+                  "type":"formula",
+                  "as": "to_use",
+                  "expr": "length(data('filter_count')) >1 ? (datum.id === 'Сумма' ? 0 : 1) : (datum.id === 'Сумма' ? 1 : 0)"
+                },
+                {"type":"filter",
+                  "expr":"datum.to_use === 1"
+                },
+                {
+                  "type":"formula",
+                  "as": "text_x",
+                  "expr": "width - (datum.value * width)"
+                },
+                { "type": "lookup",
+                  "from": "1st_level_admin",
+                  "key": "id",
+                  "fields": ["id"],
+                  "values": ["properties['wiki_name']"],
+                  "as": ["wiki_name"],
+                  "default": "Вся Россия"
+                },
+                { "type": "lookup",
+                  "from": "seats",
+                  "key": "percent",
+                  "fields": ["key"],
+                  "values": ["seats"],
+                  "default": 0
+                },
+                {
+                  "type":"formula",
+                  "as": "formatted_value",
+                  "expr": "length(data('filter_count')) >1 ? format(datum.value, '.2%') : format(datum.value, '.2%') + ' ('+ datum.seats +' seats)'"
+                }
+              ]
+            }
+          ],
+          "scales": [
+            {
+              "name": "y_ax_scale",
+              "type": "band",
+              "domain": {"data": "table", "field": "category"},
+              "range": "height",
+              "padding": 0.05,
+              "round": true
+            },
+            {
+              "name": "yscale",
+              "type": "band",
+              "domain": {"data": "filtered", "field": "key"},
+              "range": "height",
+              "padding": 0.05,
+              "round": true
+            },
+            {
+              "name": "xscale",
+              "domain": {"data": "table", "field": "amount"},
+              "nice": true,
+              "range": "width",
+              "reverse": true
+            }
+          ],
+
+          "axes": [
+            { "orient": "bottom", "scale": "xscale"},
+            { "orient": "right", "scale": "y_ax_scale" }
+          ],
+
+          "marks": [
+            {
+              "type": "rect",
+              "name": "bars",
+              "from": {"data":"filtered"},
+              "encode": {
+                "enter": {
+                  "y": {"scale": "yscale", "field": "key"},
+                  "height": {"scale": "yscale", "band": 1},
+                  "x": {"scale": "xscale", "field": "value"},
+                  "x2": {"scale": "xscale", "value": 0}
+                },
+                "update": {
+                  "fill": {"value": "#c2712b"}
+                }
+              }
+            },
+            {
+              "type": "text",
+              "from": {"data": "bars"},
+              "encode": {
+                "enter": {
+                  "x": {"field": "datum.text_x", "offset": -5},
+                  "y": {"field": "y", "offset": {"field": "height", "mult": 0.5}},
+                  "align": {"value": "right"},
+                  "baseline": {"value": "middle"},
+                  "text": {"field": "datum.formatted_value"},
+                  "fill": {"value": "#333"}
+                }
+              }
+            },
+            {
+              "type": "text",
+              "from": {"data": "bars"},
+              "encode": {
+                "enter": {
+                  "text": {"field": "datum.wiki_name"},
+                  "x": {"signal": "width"},
+                  "y": {"signal": "height + 35"},
+                  "baseline": {"value": "bottom"},
+                  "align": {"value": "right"},
+                  "fill": {"value": "black"},
+                  "fillOpacity": {"value": 0.1},
+                  "fontSize": {"value": 15}
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+

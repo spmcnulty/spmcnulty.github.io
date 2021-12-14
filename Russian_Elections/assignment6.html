@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+  <script>
+    function changediv()
+    {
+      if (document.getElementById("russia_elect_federal").style.display != 'none') {
+        document.getElementById("russia_elect_federal").style.display = 'none';
+        document.getElementById("russia_elect").style.display = 'block';
+        document.getElementById("Big_Party_Div").style.display = 'none';
+        document.getElementById("Small_Party_Div").style.display = 'block';
+      }
+      else {
+        document.getElementById("russia_elect").style.display = 'none';
+        document.getElementById("russia_elect_federal").style.display = 'block';
+        document.getElementById("Small_Party_Div").style.display = 'none';
+        document.getElementById("Big_Party_Div").style.display = 'block';
+      }
+    }
+  </script>
+  <title>Russian Elections</title>
+  <style>
+    body{
+      background-color:#f2f2e6;
+      color:#17171a;
+    }
+  </style>
+</head>
+
+<body>
+<table>
+  <thead>
+  <tr>
+    <th colspan="2"><h5>Hypothesis: There is evidence in the Russian election to suggest an unfair advantage for United Russia (Putin's Party). </h5></th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      <select onChange="changediv();">
+        <option value="Federal Party List Election">Federal Party List Election</option>
+        <option value="Single Mandate Constituencies">Single Mandate Constituencies</option>
+      </select>
+    </td>
+    <td align="right" style="padding-right:178px">
+      <select id="Region">
+        <option value="Moscow">Moscow</option>
+        <option value="St. Petersburg">St. Petersburg</option>
+        <option value="Crimea">Crimea</option>
+      </select>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><center><div id="russia_elect_federal"></div></center>
+      <center><div id="russia_elect" style="display: none;"></div></center></td>
+  </tr>
+  <tr>
+    <td align="left" colspan="2">
+      <div id= "Big_Party_Div">
+      <select id="Big_Party">
+        <option value="winner_index">All Parties</option>
+        <option value="percent13">Communist Party</option>
+        <option value="percent14">The Greens</option>
+        <option value="percent15">Liberal Democrats</option>
+        <option value="percent16">New People</option>
+        <option selected="selected" value="percent17">United Russia</option>
+        <option value="percent18">A Just Russia</option>
+        <option value="percent19">Yabloko</option>
+        <option value="percent20">Party of Growth</option>
+        <option value="percent21">Party of Freedom and Justice</option>
+        <option value="percent22">Communists of Russia</option>
+        <option value="percent23">Civil Platform</option>
+        <option value="percent24">Civil United Green Alternative</option>
+        <option value="percent25">Rodina</option>
+        <option value="percent26">The Party of Pensioners</option>
+      </select>
+      </div>
+      <div id= "Small_Party_Div" style="display: none;">
+        <select id="Party">
+          <option value="winner_index">All Parties</option>
+          <option value="percent13">Communist Party</option>
+          <option value="percent14">The Greens</option>
+          <option value="percent15">Liberal Democrats</option>
+          <option value="percent16">New People</option>
+          <option selected="selected" value="percent17">United Russia</option>
+          <option value="percent18">A Just Russia</option>
+          <option value="percent19">Yabloko</option>
+          <option value="percent20">Party of Growth</option>
+          <option value="percent21">Party of Freedom and Justice</option>
+          <option value="percent22">Communists of Russia</option>
+          <option value="percent23">Civil Platform</option>
+          <option value="percent24">Civil United Green Alternative</option>
+          <option value="percent25">Rodina</option>
+          <option value="percent26">The Party of Pensioners</option>
+          <option value="percent27">Independents</option>
+        </select>
+      </div>
+    </td>
+  </tr>
+  </tbody>
+</table>
+
+<p style="font-size:8px">
+  geojson source: <a href="https://gis-lab.info/qa/duma2016.html">https://gis-lab.info/qa/duma2016.html</a>
+</p>
+
+<p style="font-size:8px">
+  geojson to json converter: <a href="https://mapshaper.org/">https://mapshaper.org/</a>
+</p>
+
+<p style="font-size:8px">
+  party list election data: <a href="http://www.vybory.izbirkom.ru/region/region/izbirkom?action=show&root=1&tvd=100100225883177&vrn=100100225883172&region=0&global=1&sub_region=0&prver=0&pronetvd=0&vibid=100100225883177&type=242
+">http://www.vybory.izbirkom.ru/region/region/izbirkom?action=show&root=1&tvd=100100225883177&vrn=100100225883172&region=0&global=1&sub_region=0&prver=0&pronetvd=0&vibid=100100225883177&type=242
+</a>
+</p>
+
+<p style="font-size:8px">
+  single mandate candidate party information: <a href="https://election.gogov.ru/type/100100225883172">https://election.gogov.ru/type/100100225883172</a>
+</p>
+
+<p style="font-size:8px">
+  single mandate candidate result information: <a href="http://www.cikrf.ru/opendata/82.xml">http://www.cikrf.ru/opendata/82.xml</a>
+</p>
+
+<script>
+  vega.scheme('comm', ['#f2a9a9','#f28585','#f26161','#f23d3d','#f21818']);
+  const spec_russia_elect = "russia_elect.vg.json";
+  vegaEmbed("#russia_elect", spec_russia_elect)
+          .then(result => console.log(result))
+          .catch(console.warn);
+  const spec_russia_elect_federal = "russia_elect_federal.vg.json";
+  vegaEmbed("#russia_elect_federal", spec_russia_elect_federal)
+          .then(result => console.log(result))
+          .catch(console.warn);
+
+</script>
+</body>
+
+</html>

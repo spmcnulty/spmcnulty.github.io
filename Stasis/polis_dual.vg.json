@@ -221,7 +221,7 @@
         {
           "type": "text",
           "encode": {
-            "enter": {
+            "update": {
               "fill": {"value": "#17171a"},
               "x": {"value": 5},
               "y": {"signal": "mapHeight - 5"},
@@ -238,9 +238,6 @@
       "type": "group",
       "name": "scatter",
       "style": "cell",
-      "from": {
-        "facet": {"name": "facet", "data": "polis", "groupby": "Group1"}
-      },
       "signals": [
         {"name": "width", "update": "mapWidth"},
         {"name": "height", "update": "mapHeight"}
